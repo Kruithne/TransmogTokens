@@ -84,6 +84,7 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 				local line = _G[tooltip:GetName() .. "TextLeft" .. t.tooltipCache["textLineID"]];
 
 				line:SetText(t.calculateNeededText(relatedItems, itemID));
+				tooltip:Show();
 			end
 
 			eventFrame.DoTooltipUpdate = false;

@@ -4,4 +4,5 @@
 ## Author: Kruithne
 ## Version: 1.4.1
 TransmogTokens.lua
+localization/deDE.lua
 ItemData.lua

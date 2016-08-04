@@ -5,9 +5,15 @@ TransmogTokens = {
 	["SORTED_DATA"] = {},
 	["INVENTORY_SLOTS"] = {},
 	["SET_DATA"] = {},
+	["L"] = setmetatable({}, { __index = function(t, k)
+		local v = tostring(k)
+		rawset(t, k, v)
+		return v
+	end })
 };
 
 local t = TransmogTokens;
+local L = t.L;
 
 t.tooltipCache = {
 	["active"] = false,
@@ -248,7 +254,7 @@ TransmogTokens.updateTierFrame = function(selectedID)
 		if hasInterest then
 			icon.interest = interest;
 			itemTexture = "Interface\\Icons\\Inv_misc_questionmark";
-			itemName = ORANGE .. "Loading item information...";
+			itemName = ORANGE .. L["Loading item information..."];
 
 			icon.pendingItemID = tokenID;
 			icon.obtainString = obtainString;
@@ -497,19 +503,20 @@ TransmogTokens.calculateNeededText = function(relatedItems, itemID)
 	local message = "";
 
 	if #needed > 0 then
-		message = message .. ORANGE .. "You need " .. #needed .. " appearance";
+		message = message .. ORANGE;
 
 		if #needed > 1 then
-			message = message .. "s";
+			message = message .. string.format (L["You need %d appearances from this token."], #needed);
+		else
+			message = message .. L["You need one appearance from this token."];
 		end
 
-		message = message .. " from this token.";
 
 		if t.SPEC_CLASS_TOKENS[itemID] then
-			message = message .. "\nAppearances from this are class and/or spec dependant.";
+			message = message .. "\n" .. L["Appearances from this are class and/or spec dependant."];
 		end
 	else
-		message = GRAY .. "You do not need any appearances from this token.";
+		message = GRAY .. L["You do not need any appearances from this token."];
 	end
 
 	return message;

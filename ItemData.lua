@@ -210,7 +210,7 @@ t.ITEM_DATA = {
 	[71682] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [3] = {}, [7] = {}, }, -- Helm of the Fiery Protector
 	[71688] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [3] = {}, [7] = {}, }, -- Mantle of the Fiery Protector
 	[64316] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [3] = {}, [7] = {}, }, -- Mantle of the Forlorn Protector
-	[71681] = { ["NOTE"] = NO_USE, [2] = {}, [5] = {}, [9] = {}, }, -- Mantle of the Fiery Conqueror
+	[71681] = { ["NOTE"] = NO_USE, [CLASS_PALADIN] = {}, [5] = {}, [9] = {}, }, -- Mantle of the Fiery Conqueror
 	[63684] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [3] = {}, [7] = {}, }, -- Helm of the Forlorn Protector
 
 	[34664] = { -- Sunmote
@@ -229,8 +229,8 @@ t.ITEM_DATA = {
 	[71617] = { -- Crystallized Firestone
 		[0] = REDEEM_FIRELANDS_BOE,
 		[CLASS_WARRIOR] = {71562, 71557, 71559, 71560, 71558},
-		[2] = {71562, 71557}, -- Paladin
-		[3] = {71562, 71557, 71559, 71560, 71558, 71561}, -- Hunter 
+		[CLASS_PALADIN] = {71562, 71557},
+		[3] = {71562, 71557, 71559, 71560, 71558, 71561}, -- Hunter
 		[4] = {71562, 71560, 71558, 71641}, -- Rogue
 		[5] = {71559, 71560, 71579, 71575}, -- Priest
 		[6] = {71562, 71557}, -- Death Knight
@@ -253,7 +253,7 @@ t.ITEM_DATA = {
 	[29754] = { -- Chestguard of the Fallen Champion
 		["OBTAIN"] = {SET_TIER_4, "Magtheridon (Magtheridon's Lair)"},
 		[0] = REDEEM_TIER_4,
-		[2] = {31613, 27702, 27879, 29071, 29062, 29066},
+		[CLASS_PALADIN] = {31613, 27702, 27879, 29071, 29062, 29066},
 		[4] = {25831, 29045},
 		[7] = {25997, 27469, 31396, 29033, 29038, 29029},
 	},
@@ -277,7 +277,7 @@ t.ITEM_DATA = {
 	[29757] = { -- Gloves of the Fallen Champion
 		["OBTAIN"] = {SET_TIER_4, "The Curator (Karazhan)"},
 		[0] = REDEEM_TIER_4,
-		[2] = {27703, 27880, 31614, 29072, 29065, 29067},
+		[CLASS_PALADIN] = {27703, 27880, 31614, 29072, 29065, 29067},
 		[4] = {25834, 29048},
 		[7] = {31397, 26000, 27470, 29034, 29039, 29032},
 	},
@@ -301,7 +301,7 @@ t.ITEM_DATA = {
 	[29760] = { -- Helm of the Fallen Champion
 		["OBTAIN"] = {SET_TIER_4, "Prince Malchezaar (Karazhan)"},
 		[0] = REDEEM_TIER_4,
-		[2] = {27704, 27881, 31616, 29073, 29061, 29068},
+		[CLASS_PALADIN] = {27704, 27881, 31616, 29073, 29061, 29068},
 		[4] = {25830, 29044},
 		[7] = {27471, 31400, 25998, 29035, 29040, 29028},
 	},
@@ -325,7 +325,7 @@ t.ITEM_DATA = {
 	[29763] = { -- Pauldrons of the Fallen Champion
 		["OBTAIN"] = {SET_TIER_4, "High King Maulgar (Gruul's Lair)"},
 		[0] = REDEEM_TIER_4,
-		[2] = {31619, 27706, 27883, 29075, 29064, 29070},
+		[CLASS_PALADIN] = {31619, 27706, 27883, 29075, 29064, 29070},
 		[4] = {25832, 29047},
 		[7] = {25999, 27473, 31407, 29037, 29043, 29031},
 	},
@@ -349,7 +349,7 @@ t.ITEM_DATA = {
 	[29766] = { -- Leggings of the Fallen Champion
 		["OBTAIN"] = {SET_TIER_4, "Gruul (Gruul's Lair)"},
 		[0] = REDEEM_TIER_4,
-		[2] = {31618, 27705, 27882, 29074, 29063, 29069},
+		[CLASS_PALADIN] = {31618, 27705, 27882, 29074, 29063, 29069},
 		[4] = {25833, 29046},
 		[7] = {26001, 27472, 31406, 29036, 29042, 29030},
 	},
@@ -365,7 +365,7 @@ t.ITEM_DATA = {
 	[30236] = { -- Chestguard of the Vanquished Champion
 		["OBTAIN"] = {SET_TIER_5, "Kael'thas Sunstrider (The Eye)"},
 		[0] = REDEEM_TIER_5,
-		[2] = {32020, 32039, 31992, 30129, 30134, 30123},
+		[CLASS_PALADIN] = {32020, 32039, 31992, 30129, 30134, 30123},
 		[4] = {32002, 30144},
 		[7] = {32009, 32029, 32004, 30185, 30164, 30169},
 	},
@@ -389,7 +389,7 @@ t.ITEM_DATA = {
 	[30239] = { -- Gloves of the Vanquished Champion
 		["OBTAIN"] = {SET_TIER_5, "Leothersas the Blind (Serpentshrine Cavern)"},
 		[0] = REDEEM_TIER_5,
-		[2] = {31993, 32021, 32040, 30130, 30135, 30124},
+		[CLASS_PALADIN] = {31993, 32021, 32040, 30130, 30135, 30124},
 		[4] = {31998, 30145},
 		[7] = {32005, 32010, 32030, 30189, 30165, 30170},
 	},
@@ -413,7 +413,7 @@ t.ITEM_DATA = {
 	[30242] = { -- Helm of the Vanquished Champion
 		["OBTAIN"] = {SET_TIER_5, "Lady Vashj (Serpentshrine Cavern)"},
 		[0] = REDEEM_TIER_5,
-		[2] = {31997, 32022, 32041, 30131, 30136, 30125},
+		[CLASS_PALADIN] = {31997, 32022, 32041, 30131, 30136, 30125},
 		[4] = {31999, 30146},
 		[7] = {32006, 32011, 32031, 30190, 30166, 30171},
 	},
@@ -437,7 +437,7 @@ t.ITEM_DATA = {
 	[30245] = { -- Leggings of the Vanquished Champion
 		["OBTAIN"] = {SET_TIER_5, "Fathom-Lord Karathress (Serpentshrine Cavern)"},
 		[0] = REDEEM_TIER_5,
-		[2] = {31995, 32023, 32042, 30132, 30137, 30126},
+		[CLASS_PALADIN] = {31995, 32023, 32042, 30132, 30137, 30126},
 		[4] = {32000, 30148},
 		[7] = {32032, 32007, 32012, 30192, 30167, 30172},
 	},
@@ -461,7 +461,7 @@ t.ITEM_DATA = {
 	[30248] = { -- Pauldrons of the Vanquished Champion
 		["OBTAIN"] = {SET_TIER_5, "Void Reaver (The Eye)"},
 		[0] = REDEEM_TIER_5,
-		[2] = {31996, 32024, 32043, 30133, 30138, 30127},
+		[CLASS_PALADIN] = {31996, 32024, 32043, 30133, 30138, 30127},
 		[4] = {32001, 30149},
 		[7] = {32008, 32013, 32033, 30194, 30168, 30173},
 	},
@@ -485,7 +485,7 @@ t.ITEM_DATA = {
 	[31089] = { -- Chestguard of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Illidan Stormrage (Black Temple)"},
 		[0] = REDEEM_TBC_HYAL,
-		[2] = {30990, 30992, 30991, 32039, 31992, 32020},
+		[CLASS_PALADIN] = {30990, 30992, 30991, 32039, 31992, 32020},
 		[5] = {31065, 31066, 32019, 32038},
 		[9] = {31052, 31982, 31977},
 	},
@@ -509,7 +509,7 @@ t.ITEM_DATA = {
 	[31092] = { -- Gloves of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Azgalor (Hyjal Summit)"},
 		[0] = REDEEM_TBC_HYAL,
-		[2] = {30982, 30985, 30983, 32021, 32040, 31993},
+		[CLASS_PALADIN] = {30982, 30985, 30983, 32021, 32040, 31993},
 		[5] = {31060, 31061, 32015, 32034},
 		[9] = {31050, 31981, 31973},
 	},
@@ -549,7 +549,7 @@ t.ITEM_DATA = {
 	[31097] = { -- Helm of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Archimonde (Hyjal Summit)"},
 		[0] = REDEEM_TBC_HYAL,
-		[2] = {30987, 30989, 30988, 32041, 31997, 32022},
+		[CLASS_PALADIN] = {30987, 30989, 30988, 32041, 31997, 32022},
 		[5] = {31063, 31064, 32016, 32035},
 		[9] = {31051, 31980, 31974},
 	},
@@ -557,7 +557,7 @@ t.ITEM_DATA = {
 	[31098] = { -- Leggings of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "The Illidari Council (Black Temple)"},
 		[0] = REDEEM_TBC_HYAL,
-		[2] = {30993, 30995, 30994, 32042, 31995, 32023},
+		[CLASS_PALADIN] = {30993, 30995, 30994, 32042, 31995, 32023},
 		[5] = {31067, 31068, 32017, 32036},
 		[9] = {31053, 31983, 31975},
 	},
@@ -581,7 +581,7 @@ t.ITEM_DATA = {
 	[31101] = { -- Pauldrons of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Mother Shahraz (Black Temple)"},
 		[0] = REDEEM_TBC_HYAL,
-		[2] = {30996, 30998, 30997, 32043, 31996, 32024},
+		[CLASS_PALADIN] = {30996, 30998, 30997, 32043, 31996, 32024},
 		[5] = {31069, 31070, 32018, 32037},
 		[9] = {31054, 31979, 31976},
 	},
@@ -606,7 +606,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {33910, 33889, 33904},
-		[2] = {34431, 34433, 34432, 33910, 33889, 33904},
+		[CLASS_PALADIN] = {34431, 34433, 34432, 33910, 33889, 33904},
 		[5] = {34434, 34435, 33883, 33901},
 		[8] = {33883, 33901},
 		[9] = {34436, 33883, 33901},
@@ -616,7 +616,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {34441, 34442, 33813},
-		[2] = {33813},
+		[CLASS_PALADIN] = {33813},
 		[3] = {34443, 33876, 33894, 33897, 33906},
 		[7] = {34437, 34439, 34438, 33876, 33894, 33897, 33906},
 	},
@@ -636,7 +636,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {33888, 33903, 33909},
-		[2] = {34485, 34488, 34487, 33888, 33903, 33909},
+		[CLASS_PALADIN] = {34485, 34488, 34487, 33888, 33903, 33909},
 		[5] = {34527, 34528, 33882, 33900},
 		[8] = {33882, 33900},
 		[9] = {34541, 33882, 33900},
@@ -646,7 +646,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {34547, 34546, 33811},
-		[2] = {33811},
+		[CLASS_PALADIN] = {33811},
 		[3] = {34549, 33877, 33895, 33898, 33907},
 		[7] = {34543, 34545, 34542, 33877, 33895, 33898, 33907},
 	},
@@ -666,7 +666,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {33890, 33905, 33911},
-		[2] = {34559, 34561, 34560, 33890, 33905, 33911},
+		[CLASS_PALADIN] = {34559, 34561, 34560, 33890, 33905, 33911},
 		[5] = {34562, 34563, 33884, 33902},
 		[8] = {33884, 33902},
 		[9] = {34564, 33884, 33902},
@@ -676,7 +676,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_6, "Multiple Bosses (Sunwell Plateau)"},
 		[0] = REDEEM_TBC_TIER_6,
 		[CLASS_WARRIOR] = {34568, 34569, 33812},
-		[2] = {33812},
+		[CLASS_PALADIN] = {33812},
 		[3] = {34570, 33878, 33896, 33899, 33908},
 		[7] = {34565, 34567, 34566, 33878, 33896, 33899, 33908},
 	},
@@ -695,7 +695,7 @@ t.ITEM_DATA = {
 	[40610] = { -- Chestguard of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Gluth (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {39629, 39633, 39638},
+		[CLASS_PALADIN] = {39629, 39633, 39638},
 		[5] = {39515, 39523},
 		[9] = {39497},
 	},
@@ -720,7 +720,7 @@ t.ITEM_DATA = {
 	[40613] = { -- Gloves of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [10-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {39632, 39634, 39639},
+		[CLASS_PALADIN] = {39632, 39634, 39639},
 		[5] = {39519, 39530},
 		[9] = {39500},
 	},
@@ -745,7 +745,7 @@ t.ITEM_DATA = {
 	[40616] = { -- Helm of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {39628, 39635, 39640},
+		[CLASS_PALADIN] = {39628, 39635, 39640},
 		[5] = {39514, 39521},
 		[9] = {39496},
 	},
@@ -770,7 +770,7 @@ t.ITEM_DATA = {
 	[40619] = { -- Leggings of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {39630, 39636, 39641},
+		[CLASS_PALADIN] = {39630, 39636, 39641},
 		[5] = {39517, 39528},
 		[9] = {39498},
 	},
@@ -795,7 +795,7 @@ t.ITEM_DATA = {
 	[40622] = { -- Spaulders of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {39631, 39637, 39642},
+		[CLASS_PALADIN] = {39631, 39637, 39642},
 		[5] = {39518, 39529},
 		[9] = {39499},
 	},
@@ -822,7 +822,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_7,
 		[9] = {40423},
 		[5] = {40449, 40458},
-		[2] = {40569, 40574, 40579},
+		[CLASS_PALADIN] = {40569, 40574, 40579},
 	},
 
 	[40626] = { -- Breastplate of the Lost Protector
@@ -845,7 +845,7 @@ t.ITEM_DATA = {
 	[40628] = { -- Gauntlets of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [25-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {40570, 40575, 40580},
+		[CLASS_PALADIN] = {40570, 40575, 40580},
 		[5] = {40445, 40454},
 		[9] = {40420},
 	},
@@ -870,7 +870,7 @@ t.ITEM_DATA = {
 	[40631] = { -- Crown of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {40571, 40576, 40581},
+		[CLASS_PALADIN] = {40571, 40576, 40581},
 		[5] = {40447, 40456},
 		[9] = {40421},
 	},
@@ -895,7 +895,7 @@ t.ITEM_DATA = {
 	[40634] = { -- Legplates of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {40572, 40577, 40583},
+		[CLASS_PALADIN] = {40572, 40577, 40583},
 		[5] = {40448, 40457},
 		[9] = {40422},
 	},
@@ -920,7 +920,7 @@ t.ITEM_DATA = {
 	[40637] = { -- Mantle of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
-		[2] = {40573, 40578, 40584},
+		[CLASS_PALADIN] = {40573, 40578, 40584},
 		[5] = {40450, 40459},
 		[9] = {40424},
 	},
@@ -944,7 +944,7 @@ t.ITEM_DATA = {
 
 	[45632] = { -- Breastplate of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {46154, 46173, 46178},
+		[CLASS_PALADIN] = {46154, 46173, 46178},
 		[5] = {46168, 46193},
 		[9] = {46137},
 	},
@@ -966,7 +966,7 @@ t.ITEM_DATA = {
 
 	[45635] = { -- Chestguard of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {45374, 45375, 45381},
+		[CLASS_PALADIN] = {45374, 45375, 45381},
 		[5] = {45389, 45395},
 		[9] = {45421},
 	},
@@ -988,7 +988,7 @@ t.ITEM_DATA = {
 
 	[45638] = { -- Crown of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {46156, 46175, 46180},
+		[CLASS_PALADIN] = {46156, 46175, 46180},
 		[5] = {46172, 46197},
 		[9] = {46140},
 	},
@@ -1018,7 +1018,7 @@ t.ITEM_DATA = {
 
 	[45641] = { -- Gauntlets of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {46155, 46174, 46179},
+		[CLASS_PALADIN] = {46155, 46174, 46179},
 		[5] = {46163, 46188},
 		[9] = {46135},
 	},
@@ -1032,7 +1032,7 @@ t.ITEM_DATA = {
 
 	[45644] = { -- Gloves of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {45370, 45376, 45383},
+		[CLASS_PALADIN] = {45370, 45376, 45383},
 		[5] = {45387, 45392},
 		[9] = {45419},
 	},
@@ -1054,7 +1054,7 @@ t.ITEM_DATA = {
 
 	[45647] = { -- Helm of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {45372, 45377, 45382},
+		[CLASS_PALADIN] = {45372, 45377, 45382},
 		[5] = {45386, 45391},
 		[9] = {45417},
 	},
@@ -1076,7 +1076,7 @@ t.ITEM_DATA = {
 
 	[45650] = { -- Leggings of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {45371, 45379, 45384},
+		[CLASS_PALADIN] = {45371, 45379, 45384},
 		[5] = {45388, 45394},
 		[9] = {45420},
 	},
@@ -1098,7 +1098,7 @@ t.ITEM_DATA = {
 
 	[45653] = { -- Legplates of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {46153, 46176, 46181},
+		[CLASS_PALADIN] = {46153, 46176, 46181},
 		[5] = {46170, 46195},
 		[9] = {46139},
 	},
@@ -1120,7 +1120,7 @@ t.ITEM_DATA = {
 
 	[45656] = { -- Mantle of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {46177, 46182, 46152},
+		[CLASS_PALADIN] = {46177, 46182, 46152},
 		[5] = {46165, 46190},
 		[9] = {46136},
 	},
@@ -1142,7 +1142,7 @@ t.ITEM_DATA = {
 
 	[45659] = { -- Spaulders of the Wayward Conqueror
 		[0] = REDEEM_TIER_8,
-		[2] = {45373, 45380, 45385},
+		[CLASS_PALADIN] = {45373, 45380, 45385},
 		[5] = {45390, 45393},
 		[9] = {45422},
 	},
@@ -1179,7 +1179,7 @@ t.ITEM_DATA = {
 
 	[52027] = { -- Conqueror's Mark of Sanctification
 		[0] = REDEEM_TIER_10,
-		[2] = {51161, 51162, 51163, 51164, 51170, 51171, 51172, 51173, 51174, 51165, 51166, 51167, 51168, 51169, 51160},
+		[CLASS_PALADIN] = {51161, 51162, 51163, 51164, 51170, 51171, 51172, 51173, 51174, 51165, 51166, 51167, 51168, 51169, 51160},
 		[5] = {51184, 51178, 51179, 51180, 51181, 51182, 51183, 51177, 51175, 51176},
 		[9] = {51205, 51206, 51207, 51208, 51209},
 	},
@@ -1201,7 +1201,7 @@ t.ITEM_DATA = {
 
 	[52030] = { -- Conqueror's Mark of Sanctification
 		[0] = REDEEM_TIER_10,
-		[2] = {51265, 51266, 51267, 51268, 51269, 51270, 51271, 51272, 51273, 51274, 51275, 51276, 51277, 51278, 51279},
+		[CLASS_PALADIN] = {51265, 51266, 51267, 51268, 51269, 51270, 51271, 51272, 51273, 51274, 51275, 51276, 51277, 51278, 51279},
 		[5] = {51257, 51258, 51259, 51256, 51260, 51261, 51262, 51263, 51264, 51255},
 		[9] = {51233, 51230, 51231, 51232, 51234},
 	},
@@ -1215,7 +1215,7 @@ t.ITEM_DATA = {
 
 	[65001] = { -- Crown of the Forlorn Conqueror
 		[0] = REDEEM_TIER_11,
-		[2] = {65216, 65221, 65226},
+		[CLASS_PALADIN] = {65216, 65221, 65226},
 		[5] = {65230, 65235},
 		[9] = {65260},
 	},
@@ -1237,7 +1237,7 @@ t.ITEM_DATA = {
 
 	[65088] = { -- Shoulders of the Forlorn Conqueror
 		[0] = REDEEM_TIER_11,
-		[2] = {65218, 65223, 65228},
+		[CLASS_PALADIN] = {65218, 65223, 65228},
 		[5] = {65233, 65238},
 		[9] = {65263},
 	},
@@ -1252,7 +1252,7 @@ t.ITEM_DATA = {
 
 	[67423] = { -- Chest of the Forlorn Conqueror
 		[0] = REDEEM_TIER_11,
-		[2] = {65224, 65219, 65214},
+		[CLASS_PALADIN] = {65224, 65219, 65214},
 		[5] = {65237, 65232},
 		[9] = {65262},
 	},
@@ -1289,14 +1289,14 @@ t.ITEM_DATA = {
 
 	[67428] = { -- Leggings of the Forlorn Conqueror
 		[0] = REDEEM_TIER_11,
-		[2] = {65227, 65222, 65217},
+		[CLASS_PALADIN] = {65227, 65222, 65217},
 		[5] = {65236, 65231},
 		[9] = {65261},
 	},
 
 	[67429] = { -- Gauntlets of the Forlorn Conqueror
 		[0] = REDEEM_TIER_11,
-		[2] = {65215, 65220, 65225},
+		[CLASS_PALADIN] = {65215, 65220, 65225},
 		[5] = {65229, 65234},
 		[9] = {65259},
 	},
@@ -1358,35 +1358,35 @@ t.ITEM_DATA = {
 
 	[71676] = { -- Gauntlets of the Fiery Conqueror
 		[0] = REDEEM_TIER_12,
-		[2] = {71513, 71518, 71523},
+		[CLASS_PALADIN] = {71513, 71518, 71523},
 		[5] = {71527, 71532},
 		[9] = {71594},
 	},
 
 	[71677] = { -- Crown of the Fiery Conqueror
 		[0] = REDEEM_TIER_12,
-		[2] = {71514, 71519, 71524},
+		[CLASS_PALADIN] = {71514, 71519, 71524},
 		[5] = {71528, 71533},
 		[9] = {71595},
 	},
 
 	[71678] = { -- Leggings of the Fiery Conqueror
 		[0] = REDEEM_TIER_12,
-		[2] = {71515, 71520, 71525},
+		[CLASS_PALADIN] = {71515, 71520, 71525},
 		[5] = {71529, 71534},
 		[9] = {71596},
 	},
 
 	[71679] = { -- Chest of the Fiery Conqueror
 		[0] = REDEEM_TIER_12,
-		[2] = {71522, 71512, 71517},
+		[CLASS_PALADIN] = {71522, 71512, 71517},
 		[5] = {71530, 71535},
 		[9] = {71597},
 	},
 
 	[71680] = { -- Shoulders of the Fiery Conqueror
 		[0] = REDEEM_TIER_12,
-		[2] = {71516, 71521, 71526},
+		[CLASS_PALADIN] = {71516, 71521, 71526},
 		[5] = {71531, 71536},
 		[9] = {71598},
 	},
@@ -1503,42 +1503,42 @@ t.ITEM_DATA = {
 
 	[78180] = { -- Shoulders of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {76769, 76878, 77007},
+		[CLASS_PALADIN] = {76769, 76878, 77007},
 		[5] = {76344, 76361},
 		[9] = {76339},
 	},
 
 	[78181] = { -- Leggings of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {76768, 76877, 77006},
+		[CLASS_PALADIN] = {76768, 76877, 77006},
 		[5] = {76346, 76359},
 		[9] = {76341},
 	},
 
 	[78182] = { -- Crown of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {76767, 76876, 77005},
+		[CLASS_PALADIN] = {76767, 76876, 77005},
 		[5] = {76347, 76358},
 		[9] = {76342},
 	},
 
 	[78183] = { -- Gauntlets of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {76766, 76875, 77004},
+		[CLASS_PALADIN] = {76766, 76875, 77004},
 		[5] = {76348, 76357},
 		[9] = {76343},
 	},
 
 	[78184] = { -- Chest of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {76765, 76874, 77003},
+		[CLASS_PALADIN] = {76765, 76874, 77003},
 		[5] = {76345, 76360},
 		[9] = {76340},
 	},
 
 	[78847] = { -- Chest of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78726, 78727, 78732},
+		[CLASS_PALADIN] = {78726, 78727, 78732},
 		[5] = {78728, 78731},
 		[9] = {78730},
 	},
@@ -1560,7 +1560,7 @@ t.ITEM_DATA = {
 
 	[78850] = { -- Crown of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78692, 78693, 78695},
+		[CLASS_PALADIN] = {78692, 78693, 78695},
 		[5] = {78700, 78703},
 		[9] = {78702},
 	},
@@ -1582,7 +1582,7 @@ t.ITEM_DATA = {
 
 	[78853] = { -- Gauntlets of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78673, 78675, 78677},
+		[CLASS_PALADIN] = {78673, 78675, 78677},
 		[5] = {78682, 78683},
 		[9] = {78681},
 	},
@@ -1604,7 +1604,7 @@ t.ITEM_DATA = {
 
 	[78856] = { -- Leggings of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78712, 78715, 78717},
+		[CLASS_PALADIN] = {78712, 78715, 78717},
 		[5] = {78719, 78722},
 		[9] = {78721},
 	},
@@ -1626,7 +1626,7 @@ t.ITEM_DATA = {
 
 	[78859] = { -- Shoulders of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78742, 78745, 78746},
+		[CLASS_PALADIN] = {78742, 78745, 78746},
 		[5] = {78747, 78750},
 		[9] = {78749},
 	},
@@ -1656,7 +1656,7 @@ t.ITEM_DATA = {
 
 	[78863] = { -- Chest of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78821, 78822, 78827},
+		[CLASS_PALADIN] = {78821, 78822, 78827},
 		[5] = {78823, 78826},
 		[9] = {78825},
 	},
@@ -1678,7 +1678,7 @@ t.ITEM_DATA = {
 
 	[78866] = { -- Gauntlets of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78768, 78770, 78772},
+		[CLASS_PALADIN] = {78768, 78770, 78772},
 		[5] = {78777, 78778},
 		[9] = {78776},
 	},
@@ -1700,7 +1700,7 @@ t.ITEM_DATA = {
 
 	[78869] = { -- Crown of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78787, 78788, 78790},
+		[CLASS_PALADIN] = {78787, 78788, 78790},
 		[5] = {78795, 78798},
 		[9] = {78797},
 	},
@@ -1722,7 +1722,7 @@ t.ITEM_DATA = {
 
 	[78872] = { -- Leggings of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78807, 78810, 78812},
+		[CLASS_PALADIN] = {78807, 78810, 78812},
 		[5] = {78814, 78817},
 		[9] = {78816},
 	},
@@ -1744,7 +1744,7 @@ t.ITEM_DATA = {
 
 	[78875] = { -- Shoulders of the Corrupted Conqueror
 		[0] = REDEEM_TIER_13,
-		[2] = {78840, 78841, 78837},
+		[CLASS_PALADIN] = {78840, 78841, 78837},
 		[5] = {78842, 78845},
 		[9] = {78844},
 	},
@@ -1766,7 +1766,7 @@ t.ITEM_DATA = {
 
 	[89235] = { -- Helm of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {85321, 85341, 85346},
+		[CLASS_PALADIN] = {85321, 85341, 85346},
 		[5] = {85362, 85365},
 		[9] = {85370},
 	},
@@ -1781,7 +1781,7 @@ t.ITEM_DATA = {
 
 	[89237] = { -- Chest of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {85323, 85343, 85348},
+		[CLASS_PALADIN] = {85323, 85343, 85348},
 		[5] = {85360, 85367},
 		[9] = {85372},
 	},
@@ -1804,7 +1804,7 @@ t.ITEM_DATA = {
 
 	[89240] = { -- Gauntlets of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {85322, 85342, 85347},
+		[CLASS_PALADIN] = {85322, 85342, 85347},
 		[5] = {85363, 85364},
 		[9] = {85369},
 	},
@@ -1827,7 +1827,7 @@ t.ITEM_DATA = {
 
 	[89243] = { -- Leggings of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {85320, 85340, 85345},
+		[CLASS_PALADIN] = {85320, 85340, 85345},
 		[5] = {85361, 85366},
 		[9] = {85371},
 	},
@@ -1850,7 +1850,7 @@ t.ITEM_DATA = {
 
 	[89246] = { -- Shoulders of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {85319, 85339, 85344},
+		[CLASS_PALADIN] = {85319, 85339, 85344},
 		[5] = {85359, 85368},
 		[9] = {85373},
 	},
@@ -1881,7 +1881,7 @@ t.ITEM_DATA = {
 
 	[89250] = { -- Chest of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {87099, 87104, 87109},
+		[CLASS_PALADIN] = {87099, 87104, 87109},
 		[5] = {87117, 87122},
 		[9] = {87190},
 	},
@@ -1904,7 +1904,7 @@ t.ITEM_DATA = {
 
 	[89253] = { -- Leggings of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {87102, 87107, 87112},
+		[CLASS_PALADIN] = {87102, 87107, 87112},
 		[5] = {87116, 87121},
 		[9] = {87189},
 	},
@@ -1927,7 +1927,7 @@ t.ITEM_DATA = {
 
 	[89256] = { -- Gauntlets of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {87100, 87105, 87110},
+		[CLASS_PALADIN] = {87100, 87105, 87110},
 		[5] = {87114, 87119},
 		[9] = {87187},
 	},
@@ -1950,7 +1950,7 @@ t.ITEM_DATA = {
 
 	[89259] = { -- Helm of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {87101, 87106, 87111},
+		[CLASS_PALADIN] = {87101, 87106, 87111},
 		[5] = {87115, 87120},
 		[9] = {87188},
 	},
@@ -1973,7 +1973,7 @@ t.ITEM_DATA = {
 
 	[89262] = { -- Shoulders of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {87103, 87108, 87113},
+		[CLASS_PALADIN] = {87103, 87108, 87113},
 		[5] = {87118, 87123},
 		[9] = {87191},
 	},
@@ -1996,7 +1996,7 @@ t.ITEM_DATA = {
 
 	[89265] = { -- Chest of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {86663, 86683, 86688},
+		[CLASS_PALADIN] = {86663, 86683, 86688},
 		[5] = {86700, 86707},
 		[9] = {86712},
 	},
@@ -2019,7 +2019,7 @@ t.ITEM_DATA = {
 
 	[89268] = { -- Leggings of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {86660, 86680, 86685},
+		[CLASS_PALADIN] = {86660, 86680, 86685},
 		[5] = {86706, 86701},
 		[9] = {86711},
 	},
@@ -2042,7 +2042,7 @@ t.ITEM_DATA = {
 
 	[89271] = { -- Gauntlets of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {86662, 86682, 86687},
+		[CLASS_PALADIN] = {86662, 86682, 86687},
 		[5] = {86703, 86704},
 		[9] = {86709},
 	},
@@ -2065,7 +2065,7 @@ t.ITEM_DATA = {
 
 	[89274] = { -- Helm of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {86661, 86681, 86686},
+		[CLASS_PALADIN] = {86661, 86681, 86686},
 		[5] = {86702, 86705},
 		[9] = {86710},
 	},
@@ -2088,7 +2088,7 @@ t.ITEM_DATA = {
 
 	[89277] = { -- Shoulders of the Shadowy Conqueror
 		[0] = REDEEM_MOP_OXHEART,
-		[2] = {86659, 86679, 86684},
+		[CLASS_PALADIN] = {86659, 86679, 86684},
 		[5] = {86699, 86708},
 		[9] = {86713},
 	},
@@ -2143,35 +2143,35 @@ t.ITEM_DATA = {
 
 	[95574] = { -- Chest of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95280, 95285, 95290},
+		[CLASS_PALADIN] = {95280, 95285, 95290},
 		[5] = {95298, 95303},
 		[9] = {95328},
 	},
 
 	[95575] = { -- Gauntlets of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95281, 95286, 95291},
+		[CLASS_PALADIN] = {95281, 95286, 95291},
 		[5] = {95295, 95300},
 		[9] = {95325},
 	},
 
 	[95576] = { -- Leggings of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95283, 95288, 95293},
+		[CLASS_PALADIN] = {95283, 95288, 95293},
 		[5] = {95297, 95302},
 		[9] = {95327},
 	},
 
 	[95577] = { -- Helm of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95282, 95287, 95292},
+		[CLASS_PALADIN] = {95282, 95287, 95292},
 		[5] = {95296, 95301},
 		[9] = {95326},
 	},
 
 	[95578] = { -- Shoulders of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95284, 95289, 95294},
+		[CLASS_PALADIN] = {95284, 95289, 95294},
 		[5] = {95299, 95304},
 		[9] = {95329},
 	},
@@ -2226,7 +2226,7 @@ t.ITEM_DATA = {
 
 	[95823] = { -- Chest of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95910, 95915, 95920},
+		[CLASS_PALADIN] = {95910, 95915, 95920},
 		[5] = {95928, 95933},
 		[9] = {95984},
 	},
@@ -2249,7 +2249,7 @@ t.ITEM_DATA = {
 
 	[95856] = { -- Gauntlets of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95911, 95916, 95921},
+		[CLASS_PALADIN] = {95911, 95916, 95921},
 		[5] = {95925, 95930},
 		[9] = {95981},
 	},
@@ -2272,7 +2272,7 @@ t.ITEM_DATA = {
 
 	[95880] = { -- Helm of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95912, 95917, 95922},
+		[CLASS_PALADIN] = {95912, 95917, 95922},
 		[5] = {95926, 95931},
 		[9] = {95982},
 	},
@@ -2311,7 +2311,7 @@ t.ITEM_DATA = {
 
 	[95956] = { -- Shoulders of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {95924, 95914, 95919},
+		[CLASS_PALADIN] = {95924, 95914, 95919},
 		[5] = {95929, 95934},
 		[9] = {95985},
 	},
@@ -2334,7 +2334,7 @@ t.ITEM_DATA = {
 
 	[96567] = { -- Chest of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {96654, 96659, 96664},
+		[CLASS_PALADIN] = {96654, 96659, 96664},
 		[5] = {96672, 96677},
 		[9] = {96728},
 	},
@@ -2373,7 +2373,7 @@ t.ITEM_DATA = {
 
 	[96624] = { -- Helm of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {96656, 96661, 96666},
+		[CLASS_PALADIN] = {96656, 96661, 96666},
 		[5] = {96670, 96675},
 		[9] = {96726},
 	},
@@ -2396,7 +2396,7 @@ t.ITEM_DATA = {
 
 	[96632] = { -- Leggings of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {96657, 96662, 96667},
+		[CLASS_PALADIN] = {96657, 96662, 96667},
 		[5] = {96671, 96676},
 		[9] = {96727},
 	},
@@ -2419,7 +2419,7 @@ t.ITEM_DATA = {
 
 	[96700] = { -- Shoulders of the Crackling Conqueror
 		[0] = REDEEM_TIER_15,
-		[2] = {96658, 96663, 96668},
+		[CLASS_PALADIN] = {96658, 96663, 96668},
 		[5] = {96673, 96678},
 		[9] = {96729},
 	},
@@ -2450,7 +2450,7 @@ t.ITEM_DATA = {
 
 	[99669] = { -- Shoulders of the Cursed Conqueror (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
-		[2] = {98987, 99027, 99076},
+		[CLASS_PALADIN] = {98987, 99027, 99076},
 		[5] = {99005, 99018},
 		[9] = {99045},
 	},
@@ -2473,7 +2473,7 @@ t.ITEM_DATA = {
 
 	[99672] = { -- Helm of the Cursed Conqueror (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
-		[2] = {98979, 98985, 99029},
+		[CLASS_PALADIN] = {98979, 98985, 99029},
 		[5] = {99020, 99024},
 		[9] = {99054},
 	},
@@ -2496,7 +2496,7 @@ t.ITEM_DATA = {
 
 	[99675] = { -- Leggings of the Cursed Conqueror (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
-		[2] = {99026, 98980, 98986},
+		[CLASS_PALADIN] = {99026, 98980, 98986},
 		[5] = {99025, 99021},
 		[9] = {99055},
 	},
@@ -2519,7 +2519,7 @@ t.ITEM_DATA = {
 
 	[99678] = { -- Chest of the Cursed Conqueror (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
-		[2] = {99003, 99031, 99052},
+		[CLASS_PALADIN] = {99003, 99031, 99052},
 		[5] = {99004, 99017},
 		[9] = {99056},
 	},
@@ -2542,7 +2542,7 @@ t.ITEM_DATA = {
 
 	[99681] = { -- Gauntlets of the Cursed Conqueror (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
-		[2] = {98982, 99002, 99028},
+		[CLASS_PALADIN] = {98982, 99002, 99028},
 		[5] = {99019, 99023},
 		[9] = {99053},
 	},
@@ -2581,35 +2581,35 @@ t.ITEM_DATA = {
 
 	[99686] = { -- Chest of the Cursed Conqueror (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
-		[2] = {99126, 99133, 99136},
+		[CLASS_PALADIN] = {99126, 99133, 99136},
 		[5] = {99110, 99119},
 		[9] = {99204},
 	},
 
 	[99687] = { -- Gauntlets of the Cursed Conqueror (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
-		[2] = {99127, 99134, 99137},
+		[CLASS_PALADIN] = {99127, 99134, 99137},
 		[5] = {99121, 99131},
 		[9] = {99096},
 	},
 
 	[99688] = { -- Leggings of the Cursed Conqueror (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
-		[2] = {99124, 99129, 99139},
+		[CLASS_PALADIN] = {99124, 99129, 99139},
 		[5] = {99118, 99123},
 		[9] = {99098},
 	},
 
 	[99689] = { -- Helm of the Cursed Conqueror (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
-		[2] = {99128, 99135, 99138},
+		[CLASS_PALADIN] = {99128, 99135, 99138},
 		[5] = {99117, 99122},
 		[9] = {99097},
 	},
 
 	[99690] = { -- Shoulders of the Cursed Conqueror (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
-		[2] = {99125, 99130, 99132},
+		[CLASS_PALADIN] = {99125, 99130, 99132},
 		[5] = {99111, 99120},
 		[9] = {99205},
 	},
@@ -2664,7 +2664,7 @@ t.ITEM_DATA = {
 
 	[99712] = { -- Leggings of the Cursed Conqueror (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
-		[2] = {99371, 99372, 99377},
+		[CLASS_PALADIN] = {99371, 99372, 99377},
 		[5] = {99361, 99367},
 		[9] = {99426},
 	},
@@ -2687,7 +2687,7 @@ t.ITEM_DATA = {
 
 	[99715] = { -- Chest of the Cursed Conqueror (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
-		[2] = {99368, 99374, 99387},
+		[CLASS_PALADIN] = {99368, 99374, 99387},
 		[5] = {99357, 99362},
 		[9] = {99416},
 	},
@@ -2710,7 +2710,7 @@ t.ITEM_DATA = {
 
 	[99718] = { -- Shoulders of the Cursed Conqueror (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
-		[2] = {99364, 99373, 99378},
+		[CLASS_PALADIN] = {99364, 99373, 99378},
 		[5] = {99358, 99363},
 		[9] = {99417},
 	},
@@ -2733,7 +2733,7 @@ t.ITEM_DATA = {
 
 	[99721] = { -- Gauntlets of the Cursed Conqueror (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
-		[2] = {99369, 99375, 99380},
+		[CLASS_PALADIN] = {99369, 99375, 99380},
 		[5] = {99359, 99365},
 		[9] = {99424},
 	},
@@ -2756,7 +2756,7 @@ t.ITEM_DATA = {
 
 	[99724] = { -- Helm of the Cursed Conqueror (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
-		[2] = {99370, 99376, 99379},
+		[CLASS_PALADIN] = {99370, 99376, 99379},
 		[5] = {99360, 99366},
 		[9] = {99425},
 	},
@@ -2787,7 +2787,7 @@ t.ITEM_DATA = {
 
 	[99743] = { -- Chest of the Cursed Conqueror
 		[0] = REDEEM_TIER_16_NORMAL,
-		[2] = {99566, 99598, 99626},
+		[CLASS_PALADIN] = {99566, 99598, 99626},
 		[5] = {99584, 99627},
 		[9] = {99570},
 	},
@@ -2810,7 +2810,7 @@ t.ITEM_DATA = {
 
 	[99746] = { -- Gauntlets of the Cursed Conqueror
 		[0] = REDEEM_TIER_16_NORMAL,
-		[2] = {99595, 99625, 99648},
+		[CLASS_PALADIN] = {99595, 99625, 99648},
 		[5] = {99586, 99590},
 		[9] = {99567},
 	},
@@ -2833,7 +2833,7 @@ t.ITEM_DATA = {
 
 	[99749] = { -- Helm of the Cursed Conqueror
 		[0] = REDEEM_TIER_16_NORMAL,
-		[2] = {99596, 99651, 99665},
+		[CLASS_PALADIN] = {99596, 99651, 99665},
 		[5] = {99587, 99591},
 		[9] = {99568},
 	},
@@ -2856,7 +2856,7 @@ t.ITEM_DATA = {
 
 	[99752] = { -- Leggings of the Cursed Conqueror
 		[0] = REDEEM_TIER_16_NORMAL,
-		[2] = {99593, 99661, 99666},
+		[CLASS_PALADIN] = {99593, 99661, 99666},
 		[5] = {99588, 99592},
 		[9] = {99569},
 	},
@@ -2879,7 +2879,7 @@ t.ITEM_DATA = {
 
 	[99755] = { -- Shoulders of the Cursed Conqueror
 		[0] = REDEEM_TIER_16_NORMAL,
-		[2] = {99594, 99656, 99662},
+		[CLASS_PALADIN] = {99594, 99656, 99662},
 		[5] = {99585, 99628},
 		[9] = {99601},
 	},
@@ -2895,7 +2895,7 @@ t.ITEM_DATA = {
 	[124550] = { -- Baleful Bracers
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124566},
-		[2] = {124566},
+		[CLASS_PALADIN] = {124566},
 		[6] = {124566},
 		[3] = {124565},
 		[7] = {124565},
@@ -2911,7 +2911,7 @@ t.ITEM_DATA = {
 	[124551] = { -- Baleful Tunic
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124569},
-		[2] = {124569},
+		[CLASS_PALADIN] = {124569},
 		[6] = {124569},
 		[3] = {124568},
 		[7] = {124568},
@@ -2927,7 +2927,7 @@ t.ITEM_DATA = {
 	[124552] = { -- Baleful Treads
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124574},
-		[2] = {124574},
+		[CLASS_PALADIN] = {124574},
 		[6] = {124574},
 		[3] = {124573},
 		[7] = {124573},
@@ -2943,7 +2943,7 @@ t.ITEM_DATA = {
 	[124553] = { -- Baleful Gauntlets
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124578},
-		[2] = {124578},
+		[CLASS_PALADIN] = {124578},
 		[6] = {124578},
 		[3] = {124577},
 		[7] = {124577},
@@ -2959,7 +2959,7 @@ t.ITEM_DATA = {
 	[124554] = { -- Baleful Hood
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124582},
-		[2] = {124582},
+		[CLASS_PALADIN] = {124582},
 		[6] = {124582},
 		[3] = {124581},
 		[7] = {124581},
@@ -2975,7 +2975,7 @@ t.ITEM_DATA = {
 	[124555] = { -- Baleful Leggings
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124586},
-		[2] = {124586},
+		[CLASS_PALADIN] = {124586},
 		[6] = {124586},
 		[3] = {124585},
 		[7] = {124585},
@@ -2991,7 +2991,7 @@ t.ITEM_DATA = {
 	[124556] = { -- Baleful Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
-		[2] = {124590},
+		[CLASS_PALADIN] = {124590},
 		[6] = {124590},
 		[3] = {124589},
 		[7] = {124589},
@@ -3007,7 +3007,7 @@ t.ITEM_DATA = {
 	[124557] = { -- Baleful Girdle
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124594},
-		[2] = {124594},
+		[CLASS_PALADIN] = {124594},
 		[6] = {124594},
 		[3] = {124593},
 		[7] = {124593},
@@ -3191,63 +3191,63 @@ t.ITEM_DATA = {
 	[127816] = { -- Baleful Plate Bracers
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124566},
-		[2] = {124566},
+		[CLASS_PALADIN] = {124566},
 		[6] = {124566},
 	},
 
 	[127817] = { -- Baleful Plate Chest
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124569},
-		[2] = {124569},
+		[CLASS_PALADIN] = {124569},
 		[6] = {124569},
 	},
 
 	[127818] = { -- Baleful Plate Treads
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124574},
-		[2] = {124574},
+		[CLASS_PALADIN] = {124574},
 		[6] = {124574},
 	},
 
 	[127819] = { -- Baleful Plate Gauntlets
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124578},
-		[2] = {124578},
+		[CLASS_PALADIN] = {124578},
 		[6] = {124578},
 	},
 
 	[127820] = { -- Baleful Plate Hood
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124582},
-		[2] = {124582},
+		[CLASS_PALADIN] = {124582},
 		[6] = {124582},
 	},
 
 	[127821] = { -- Baleful Plate Leggings
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124586},
-		[2] = {124586},
+		[CLASS_PALADIN] = {124586},
 		[6] = {124586},
 	},
 
 	[127822] = { -- Baleful Plate Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
-		[2] = {124590},
+		[CLASS_PALADIN] = {124590},
 		[6] = {124590},
 	},
 
 	[127823] = { -- Baleful Plate Girdle
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124594},
-		[2] = {124594},
+		[CLASS_PALADIN] = {124594},
 		[6] = {124594},
 	},
 
 	[128348] = { -- Baleful Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
-		[2] = {124590},
+		[CLASS_PALADIN] = {124590},
 		[6] = {124590},
 		[3] = {124589},
 		[7] = {124589},
@@ -3263,7 +3263,7 @@ t.ITEM_DATA = {
 	[127800] = { -- Baleful Cloak
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[2] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_PALADIN] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[6] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[3] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[7] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3279,7 +3279,7 @@ t.ITEM_DATA = {
 	[124560] = { -- Baleful Cloak
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[2] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_PALADIN] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[6] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[3] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[7] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3295,7 +3295,7 @@ t.ITEM_DATA = {
 	[124562] = { -- Baleful Armament
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {BALEFUL_WEP_STAFF, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_GUN, BALEFUL_WEP_DAGGER, BALEFUL_WEP_POLEARM, BALEFUL_WEP_1H_AXE},
-		[2] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM}, -- Paladin
+		[CLASS_PALADIN] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM},
 		[6] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM}, -- Death Knight
 		[3] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER, BALEFUL_WEP_GUN}, -- Hunter
 		[7] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER}, -- Shaman 
@@ -3311,49 +3311,49 @@ t.ITEM_DATA = {
 	[102263] = { -- Timeless Plate Chestpiece
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101789, 101851, 101819},
-		[2] = {101789, 101851, 101819},
+		[CLASS_PALADIN] = {101789, 101851, 101819},
 		[6] = {101789, 101851, 101819},
 	},
 
 	[102264] = { -- Timeless Plate Boots
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101797, 101859, 101825},
-		[2] = {101797, 101859, 101825},
+		[CLASS_PALADIN] = {101797, 101859, 101825},
 		[6] = {101797, 101859, 101825},
 	},
 
 	[102265] = { -- Timeless Plate Gloves
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101791, 101853, 101820},
-		[2] = {101791, 101853, 101820},
+		[CLASS_PALADIN] = {101791, 101853, 101820},
 		[6] = {101791, 101853, 101820},
 	},
 
 	[102266] = { -- Timeless Plate Helm
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101793, 101855, 101822},
-		[2] = {101793, 101855, 101822},
+		[CLASS_PALADIN] = {101793, 101855, 101822},
 		[6] = {101793, 101855, 101822},
 	},
 
 	[102267] = { -- Timeless Plate Leggings
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101794, 101856, 101823},
-		[2] = {101794, 101856, 101823},
+		[CLASS_PALADIN] = {101794, 101856, 101823},
 		[6] = {101794, 101856, 101823},
 	},
 
 	[102268] = { -- Timeless Plate Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101796, 101858, 101824},
-		[2] = {101796, 101858, 101824},
+		[CLASS_PALADIN] = {101796, 101858, 101824},
 		[6] = {101796, 101858, 101824},
 	},
 
 	[102269] = { -- Timeless Plate Belt
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101792, 101854, 101821},
-		[2] = {101792, 101854, 101821},
+		[CLASS_PALADIN] = {101792, 101854, 101821},
 		[6] = {101792, 101854, 101821},
 	},
 
@@ -3507,7 +3507,7 @@ t.ITEM_DATA = {
 	[102320] = { -- Timeless Plate Bracers
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101799, 101861, 101826},
-		[2] = {101799, 101861, 101826},
+		[CLASS_PALADIN] = {101799, 101861, 101826},
 		[6] = {101799, 101861, 101826},
 	},
 
@@ -3535,7 +3535,7 @@ t.ITEM_DATA = {
 	[102318] = { -- Timeless Cloak
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101800, 101790, 101852, 101848, 101828},
-		[2] = {101800, 101790, 101852, 101848, 101828},
+		[CLASS_PALADIN] = {101800, 101790, 101852, 101848, 101828},
 		[6] = {101800, 101790, 101852, 101848, 101828},
 		[3] = {101800, 101790, 101852, 101848, 101828},
 		[7] = {101800, 101790, 101852, 101848, 101828},
@@ -3553,7 +3553,7 @@ t.HORDE_ONLY_DATA = {
 	[47242] = { -- Trophy of the Crusade
 		[0] = REDEEM_TOC,
 		[CLASS_WARRIOR] = {48465, 48463, 48391, 48461, 48392, 48393, 48462, 48464, 48394, 48395},
-		[2] = {48626, 48622, 48657, 48658, 48623, 48659, 48593, 48594, 48592, 48591, 48590, 48660, 48624, 48661, 48625},
+		[CLASS_PALADIN] = {48626, 48622, 48657, 48658, 48623, 48659, 48593, 48594, 48592, 48591, 48590, 48660, 48624, 48661, 48625},
 		[3] = {48271, 48272, 48273, 48274, 48270},
 		[4] = {48240, 48238, 48241, 48242, 48239},
 		[5] = {48094, 48062, 48096, 48063, 48064, 48095, 48065, 48066, 48092, 48093},
@@ -3569,7 +3569,7 @@ t.ALLIANCE_ONLY_DATA = {
 	[47242] = { -- Trophy of the Crusade
 		[0] = REDEEM_TOC,
 		[CLASS_WARRIOR] = {48380, 48430, 48446, 48450, 48452, 48454, 48376, 48377, 48378, 48379},
-		[2] = {48575, 48576, 48577, 48578, 48579, 48607, 48608, 48609, 48610, 48611, 48637, 48638, 48639, 48640, 48641},
+		[CLASS_PALADIN] = {48575, 48576, 48577, 48578, 48579, 48607, 48608, 48609, 48610, 48611, 48637, 48638, 48639, 48640, 48641},
 		[3] = {48255, 48256, 48257, 48258, 48259},
 		[4] = {48223, 48224, 48225, 48226, 48227},
 		[5] = {48078, 48079, 48080, 48081, 47983, 47984, 47985, 47986, 47987, 48077},

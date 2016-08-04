@@ -472,10 +472,6 @@ TransmogTokens.calculateNeeded = function(relatedItems)
 		if link ~= nil then
 			local appearanceID = t.getAppearanceID(link);
 
-			if appearanceID == nil then
-				DEFAULT_CHAT_FRAME:AddMessage(ORANGE .. "There was an error getting the apperance information for " .. itemName .. " from the wardrobe, data may not be correct!");
-			end
-
 			if appearanceID ~= nil and not t.hasApperance(appearanceID) then
 				local hasAlready = false;
 

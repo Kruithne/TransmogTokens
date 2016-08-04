@@ -1,5 +1,7 @@
 == TransmogTokens ==
 
+This project is open-source and maintained on GitHub here: https://github.com/Kruithne/TransmogTokens
+
 This addon adds two pieces of information onto the tooltips of tier tokens.
 
 * States if you need the appearance of an item the tier token can buy.

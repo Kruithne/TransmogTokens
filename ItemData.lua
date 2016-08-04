@@ -238,7 +238,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {71559, 71560, 71579, 71575},
 		[CLASS_WARLOCK] = {71559, 71560, 71579, 71575},
 		[CLASS_MONK] = {71562, 71557, 71559, 71641},
-		[11] = {71557, 71559, 71560, 71579, 71575, 71641}, -- Druid
+		[CLASS_DRUID] = {71557, 71559, 71560, 71579, 71575, 71641},
 		[12] = {71562, 71560, 71641}, -- Demon Hunter
 	},
 
@@ -247,7 +247,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_4,
 		[CLASS_WARRIOR] = {24544, 29019, 29012},
 		[CLASS_PRIEST] = {31413, 27711, 29050, 29056},
-		[11] = {28130, 28140, 31379, 29096, 29087, 29091},
+		[CLASS_DRUID] = {28130, 28140, 31379, 29096, 29087, 29091},
 	},
 
 	[29754] = { -- Chestguard of the Fallen Champion
@@ -287,7 +287,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_4,
 		[CLASS_WARRIOR] = {24549, 29020, 29017},
 		[CLASS_PRIEST] = {27707, 31409, 29055, 29057},
-		[11] = {31375, 28126, 28136, 29097, 29090, 29092},
+		[CLASS_DRUID] = {31375, 28126, 28136, 29097, 29090, 29092},
 	},
 
 	[29759] = { -- Helm of the Fallen Hero
@@ -311,7 +311,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_4,
 		[CLASS_WARRIOR] = {24545, 29021, 29011},
 		[CLASS_PRIEST] = {27708, 31410, 29049, 29058},
-		[11] = {28137, 31376, 28127, 29098, 29086, 29093},
+		[CLASS_DRUID] = {28137, 31376, 28127, 29098, 29086, 29093},
 	},
 
 	[29762] = { -- Pauldrons of the Fallen Hero
@@ -335,7 +335,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_4,
 		[CLASS_WARRIOR] = {24546, 29023, 29016},
 		[CLASS_PRIEST] = {31412, 27710, 29054, 29060},
-		[11] = {28129, 28139, 31378, 29100, 29089, 29095},
+		[CLASS_DRUID] = {28129, 28139, 31378, 29100, 29089, 29095},
 	},
 
 	[29765] = { -- Leggings of the Fallen Hero
@@ -359,7 +359,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_4,
 		[CLASS_WARRIOR] = {24547, 29022, 29015},
 		[CLASS_PRIEST] = {31411, 27709, 29053, 29059},
-		[11] = {28128, 28138, 31377, 29099, 29088, 29094},
+		[CLASS_DRUID] = {28128, 28138, 31377, 29099, 29088, 29094},
 	},
 
 	[30236] = { -- Chestguard of the Vanquished Champion
@@ -375,7 +375,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_5,
 		[CLASS_WARRIOR] = {30486, 30118, 30113},
 		[CLASS_PRIEST] = {32019, 32038, 30150, 30159},
-		[11] = {31991, 32060, 31972, 30231, 30216, 30222},
+		[CLASS_DRUID] = {31991, 32060, 31972, 30231, 30216, 30222},
 	},
 
 	[30238] = { -- Chestguard of the Vanquished Hero
@@ -399,7 +399,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_5,
 		[CLASS_WARRIOR] = {30487, 30119, 30114},
 		[CLASS_PRIEST] = {32015, 32034, 30151, 30160},
-		[11] = {31987, 32056, 31967, 30232, 30217, 30223},
+		[CLASS_DRUID] = {31987, 32056, 31967, 30232, 30217, 30223},
 	},
 
 	[30241] = { -- Gloves of the Vanquished Hero
@@ -423,7 +423,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_5,
 		[CLASS_WARRIOR] = {30488, 30120, 30115},
 		[CLASS_PRIEST] = {32016, 32035, 30152, 30161},
-		[11] = {32057, 31968, 31988, 30233, 30219, 30228},
+		[CLASS_DRUID] = {32057, 31968, 31988, 30233, 30219, 30228},
 	},
 
 	[30244] = { -- Helm of the Vanquished Hero
@@ -447,7 +447,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_5,
 		[CLASS_WARRIOR] = {30489, 30121, 30116},
 		[CLASS_PRIEST] = {32017, 32036, 30153, 30162},
-		[11] = {31989, 32058, 31969, 30234, 30220, 30229},
+		[CLASS_DRUID] = {31989, 32058, 31969, 30234, 30220, 30229},
 	},
 
 	[30247] = { -- Leggings of the Vanquished Hero
@@ -471,7 +471,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TIER_5,
 		[CLASS_WARRIOR] = {30490, 30117, 30122},
 		[CLASS_PRIEST] = {32018, 32037, 30154, 30163},
-		[11] = {31990, 32059, 31971, 30221, 30230, 30235},
+		[CLASS_DRUID] = {31990, 32059, 31971, 30221, 30230, 30235},
 	},
 
 	[30250] = { -- Pauldrons of the Vanquished Hero
@@ -495,7 +495,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TBC_HYAL,
 		[CLASS_ROGUE] = {31028, 32002},
 		[CLASS_MAGE] = {31057, 32050},
-		[11] = {31041, 31042, 31043, 31972, 31991, 32060},
+		[CLASS_DRUID] = {31041, 31042, 31043, 31972, 31991, 32060},
 	},
 
 	[31091] = { -- Chestguard of the Forgotten Protector
@@ -519,7 +519,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TBC_HYAL,
 		[CLASS_ROGUE] = {31026, 31998},
 		[CLASS_MAGE] = {31055, 32049},
-		[11] = {31032, 31034, 31035, 31967, 31987, 32056},
+		[CLASS_DRUID] = {31032, 31034, 31035, 31967, 31987, 32056},
 	},
 
 	[31094] = { -- Gloves of the Forgotten Protector
@@ -543,7 +543,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TBC_HYAL,
 		[CLASS_ROGUE] = {31027, 31999},
 		[CLASS_MAGE] = {31056, 32048},
-		[11] = {31037, 31039, 31040, 31968, 31988, 32057},
+		[CLASS_DRUID] = {31037, 31039, 31040, 31968, 31988, 32057},
 	},
 
 	[31097] = { -- Helm of the Forgotten Conqueror
@@ -567,7 +567,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TBC_HYAL,
 		[CLASS_ROGUE] = {31029, 32000},
 		[CLASS_MAGE] = {31058, 32051},
-		[11] = {31044, 31045, 31046, 31969, 31989, 32058},
+		[CLASS_DRUID] = {31044, 31045, 31046, 31969, 31989, 32058},
 	},
 
 	[31100] = { -- Leggings of the Forgotten Protector
@@ -591,7 +591,7 @@ t.ITEM_DATA = {
 		[0] = REDEEM_TBC_HYAL,
 		[CLASS_ROGUE] = {31030, 32001},
 		[CLASS_MAGE] = {31059, 32047},
-		[11] = {31047, 31048, 31049, 32059, 31971, 31990},
+		[CLASS_DRUID] = {31047, 31048, 31049, 32059, 31971, 31990},
 	},
 
 	[31103] = { -- Pauldrons of the Forgotten Protector
@@ -629,7 +629,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {34447, 33913},
 		[CLASS_WARLOCK] = {33913},
 		[CLASS_MONK] = {33917, 33881, 33887, 33893},
-		[11] = {34444, 34445, 34446, 33917, 33881, 33887, 33893},
+		[CLASS_DRUID] = {34444, 34445, 34446, 33917, 33881, 33887, 33893},
 	},
 
 	[34853] = { -- Belt of the Forgotten Conqueror
@@ -659,7 +659,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {34557, 33912},
 		[CLASS_WARLOCK] = {33912},
 		[CLASS_MONK] = {33879, 33885, 33891, 33915},
-		[11] = {34554, 34555, 34556, 33879, 33885, 33891, 33915},
+		[CLASS_DRUID] = {34554, 34555, 34556, 33879, 33885, 33891, 33915},
 	},
 
 	[34856] = { -- Boots of the Forgotten Conqueror
@@ -689,7 +689,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {34574, 33914},
 		[CLASS_WARLOCK] = {33914},
 		[CLASS_MONK] = {33880, 33886, 33892, 33916},
-		[11] = {34571, 34572, 34573, 33880, 33886, 33892, 33916},
+		[CLASS_DRUID] = {34571, 34572, 34573, 33880, 33886, 33892, 33916},
 	},
 
 	[40610] = { -- Chestguard of the Lost Conqueror
@@ -714,7 +714,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {39558},
 		[CLASS_DEATHKNIGHT] = {39617, 39623},
 		[CLASS_MAGE] = {39492},
-		[11] = {39538, 39547, 39554},
+		[CLASS_DRUID] = {39538, 39547, 39554},
 	},
 
 	[40613] = { -- Gloves of the Lost Conqueror
@@ -739,7 +739,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {39560},
 		[CLASS_DEATHKNIGHT] = {39618, 39624},
 		[CLASS_MAGE] = {39495},
-		[11] = {39543, 39544, 39557},
+		[CLASS_DRUID] = {39543, 39544, 39557},
 	},
 
 	[40616] = { -- Helm of the Lost Conqueror
@@ -764,7 +764,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {39561},
 		[CLASS_DEATHKNIGHT] = {39619, 39625},
 		[CLASS_MAGE] = {39491},
-		[11] = {39531, 39545, 39553},
+		[CLASS_DRUID] = {39531, 39545, 39553},
 	},
 
 	[40619] = { -- Leggings of the Lost Conqueror
@@ -789,7 +789,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {39564},
 		[CLASS_DEATHKNIGHT] = {39620, 39626},
 		[CLASS_MAGE] = {39493},
-		[11] = {39539, 39546, 39555},
+		[CLASS_DRUID] = {39539, 39546, 39555},
 	},
 
 	[40622] = { -- Spaulders of the Lost Conqueror
@@ -814,7 +814,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {39565},
 		[CLASS_DEATHKNIGHT] = {39621, 39627},
 		[CLASS_MAGE] = {39494},
-		[11] = {39542, 39548, 39556},
+		[CLASS_DRUID] = {39542, 39548, 39556},
 	},
 
 	[40625] = {	-- Breastplate of the Lost Conqueror
@@ -839,7 +839,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {40495},
 		[CLASS_DEATHKNIGHT] = {40550, 40559},
 		[CLASS_MAGE] = {40418},
-		[11] = {40463, 40469, 40471},
+		[CLASS_DRUID] = {40463, 40469, 40471},
 	},
 
 	[40628] = { -- Gauntlets of the Lost Conqueror
@@ -864,7 +864,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {40496},
 		[CLASS_DEATHKNIGHT] = {40552, 40563},
 		[CLASS_MAGE] = {40415},
-		[11] = {40460, 40466, 40472},
+		[CLASS_DRUID] = {40460, 40466, 40472},
 	},
 
 	[40631] = { -- Crown of the Lost Conqueror
@@ -889,7 +889,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {40499},
 		[CLASS_DEATHKNIGHT] = {40554, 40565},
 		[CLASS_MAGE] = {40416},
-		[11] = {40461, 40467, 40473},
+		[CLASS_DRUID] = {40461, 40467, 40473},
 	},
 
 	[40634] = { -- Legplates of the Lost Conqueror
@@ -914,7 +914,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {40500},
 		[CLASS_DEATHKNIGHT] = {40556, 40567},
 		[CLASS_MAGE] = {40417},
-		[11] = {40462, 40468, 40493},
+		[CLASS_DRUID] = {40462, 40468, 40493},
 	},
 
 	[40637] = { -- Mantle of the Lost Conqueror
@@ -939,7 +939,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {40502},
 		[CLASS_DEATHKNIGHT] = {40557, 40568},
 		[CLASS_MAGE] = {40419},
-		[11] = {40465, 40470, 40494},
+		[CLASS_DRUID] = {40465, 40470, 40494},
 	},
 
 	[45632] = { -- Breastplate of the Wayward Conqueror
@@ -961,7 +961,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {46123},
 		[CLASS_DEATHKNIGHT] = {46111, 46118},
 		[CLASS_MAGE] = {46130},
-		[11] = {46159, 46186, 46194},
+		[CLASS_DRUID] = {46159, 46186, 46194},
 	},
 
 	[45635] = { -- Chestguard of the Wayward Conqueror
@@ -983,7 +983,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {45396},
 		[CLASS_DEATHKNIGHT] = {45335, 45340},
 		[CLASS_MAGE] = {45368},
-		[11] = {45348, 45354, 45358},
+		[CLASS_DRUID] = {45348, 45354, 45358},
 	},
 
 	[45638] = { -- Crown of the Wayward Conqueror
@@ -1005,14 +1005,14 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {46125},
 		[CLASS_DEATHKNIGHT] = {46115, 46120},
 		[CLASS_MAGE] = {46129},
-		[11] = {46161, 46184, 46191},
+		[CLASS_DRUID] = {46161, 46184, 46191},
 	},
 
 	[45643] = { -- Gauntlets of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46124},
 		[CLASS_DEATHKNIGHT] = {46113, 46119},
-		[11] = {46158, 46183, 46189},
+		[CLASS_DRUID] = {46158, 46183, 46189},
 		[CLASS_MAGE] = {46132},
 	},
 
@@ -1049,7 +1049,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {45397},
 		[CLASS_DEATHKNIGHT] = {45337, 45341},
 		[CLASS_MAGE] = {46131},
-		[11] = {45345, 45351, 45355},
+		[CLASS_DRUID] = {45345, 45351, 45355},
 	},
 
 	[45647] = { -- Helm of the Wayward Conqueror
@@ -1071,7 +1071,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {45398},
 		[CLASS_DEATHKNIGHT] = {45336, 45342},
 		[CLASS_MAGE] = {45365},
-		[11] = {45346, 45356, 46313},
+		[CLASS_DRUID] = {45346, 45356, 46313},
 	},
 
 	[45650] = { -- Leggings of the Wayward Conqueror
@@ -1093,7 +1093,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {45399},
 		[CLASS_DEATHKNIGHT] = {45338, 45343},
 		[CLASS_MAGE] = {45367},
-		[11] = {45347, 45353, 45357},
+		[CLASS_DRUID] = {45347, 45353, 45357},
 	},
 
 	[45653] = { -- Legplates of the Wayward Conqueror
@@ -1115,7 +1115,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {46126},
 		[CLASS_DEATHKNIGHT] = {46116, 46121},
 		[CLASS_MAGE] = {46133},
-		[11] = {46160, 46185, 46192},
+		[CLASS_DRUID] = {46160, 46185, 46192},
 	},
 
 	[45656] = { -- Mantle of the Wayward Conqueror
@@ -1137,7 +1137,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {46127},
 		[CLASS_DEATHKNIGHT] = {46117, 46122},
 		[CLASS_MAGE] = {46134},
-		[11] = {46157, 46187, 46196},
+		[CLASS_DRUID] = {46157, 46187, 46196},
 	},
 
 	[45659] = { -- Spaulders of the Wayward Conqueror
@@ -1159,7 +1159,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {45400},
 		[CLASS_DEATHKNIGHT] = {45339, 45344},
 		[CLASS_MAGE] = {45369},
-		[11] = {45349, 45352, 45359},
+		[CLASS_DRUID] = {45349, 45352, 45359},
 	},
 
 	[52025] = { -- Vanquisher's Mark of Sanctification
@@ -1167,7 +1167,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {51185, 51186, 51187, 51188, 51189},
 		[CLASS_DEATHKNIGHT] = {51130, 51131, 51132, 51133, 51134, 51129, 51125, 51126, 51127, 51128},
 		[CLASS_MAGE] = {51159, 51155, 51156, 51157, 51158},
-		[11] = {51138, 51139, 51145, 51146, 51147, 51148, 51149, 51140, 51141, 51142, 51143, 51144, 51135, 51136, 51137},
+		[CLASS_DRUID] = {51138, 51139, 51145, 51146, 51147, 51148, 51149, 51140, 51141, 51142, 51143, 51144, 51135, 51136, 51137},
 	},
 
 	[52026] = { -- Protector's Mark of Sanctification
@@ -1189,7 +1189,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {51250, 51251, 51252, 51253, 51254},
 		[CLASS_DEATHKNIGHT] = {51312, 51310, 51311, 51313, 51314, 51305, 51306, 51307, 51308, 51309},
 		[CLASS_MAGE] = {51283, 51284, 51280, 51281, 51282},
-		[11] = {51295, 51296, 51297, 51298, 51299, 51300, 51301, 51294, 51302, 51303, 51304, 51290, 51291, 51292, 51293},
+		[CLASS_DRUID] = {51295, 51296, 51297, 51298, 51299, 51300, 51301, 51294, 51302, 51303, 51304, 51290, 51291, 51292, 51293},
 	},
 
 	[52029] = { -- Protector's Mark of Sanctification
@@ -1225,7 +1225,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {65241},
 		[CLASS_DEATHKNIGHT] = {65181, 65186},
 		[CLASS_MAGE] = {65210},
-		[11] = {65190, 65195, 65200},
+		[CLASS_DRUID] = {65190, 65195, 65200},
 	},
 
 	[65087] = { -- Shoulders of the Forlorn Protector
@@ -1247,7 +1247,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {65243},
 		[CLASS_DEATHKNIGHT] = {65183, 65188},
 		[CLASS_MAGE] = {65213},
-		[11] = {65193, 65198, 65203},
+		[CLASS_DRUID] = {65193, 65198, 65203},
 	},
 
 	[67423] = { -- Chest of the Forlorn Conqueror
@@ -1269,7 +1269,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {65239},
 		[CLASS_DEATHKNIGHT] = {65184, 65179},
 		[CLASS_MAGE] = {65212},
-		[11] = {65202, 65197, 65192},
+		[CLASS_DRUID] = {65202, 65197, 65192},
 	},
 
 	[67426] = { -- Leggings of the Forlorn Vanquisher
@@ -1277,7 +1277,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {65242},
 		[CLASS_DEATHKNIGHT] = {65187, 65182},
 		[CLASS_MAGE] = {65211},
-		[11] = {65201, 65196, 65191},
+		[CLASS_DRUID] = {65201, 65196, 65191},
 	},
 
 	[67427] = { -- Leggings of the Forlorn Protector
@@ -1313,7 +1313,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {65240},
 		[CLASS_DEATHKNIGHT] = {65180, 65185},
 		[CLASS_MAGE] = {65209},
-		[11] = {65194, 65199, 65189},
+		[CLASS_DRUID] = {65194, 65199, 65189},
 	},
 
 	[71669] = { -- Gauntlets of the Fiery Vanquisher
@@ -1321,7 +1321,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {71538},
 		[CLASS_DEATHKNIGHT] = {71477, 71482},
 		[CLASS_MAGE] = {71507},
-		[11] = {71487, 71491, 71496},
+		[CLASS_DRUID] = {71487, 71491, 71496},
 	},
 
 	[71670] = { -- Crown of the Fiery Vanquisher
@@ -1329,7 +1329,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {71539},
 		[CLASS_DEATHKNIGHT] = {71478, 71483},
 		[CLASS_MAGE] = {71508},
-		[11] = {71488, 71492, 71497},
+		[CLASS_DRUID] = {71488, 71492, 71497},
 	},
 
 	[71671] = { -- Leggings of the Fiery Vanquisher
@@ -1337,7 +1337,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {71540},
 		[CLASS_DEATHKNIGHT] = {71479, 71484},
 		[CLASS_MAGE] = {71509},
-		[11] = {71489, 71493, 71498},
+		[CLASS_DRUID] = {71489, 71493, 71498},
 	},
 
 	[71672] = { -- Chest of the Fiery Vanquisher
@@ -1345,7 +1345,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {71537},
 		[CLASS_DEATHKNIGHT] = {71476, 71481},
 		[CLASS_MAGE] = {71510},
-		[11] = {71486, 71494, 71499},
+		[CLASS_DRUID] = {71486, 71494, 71499},
 	},
 
 	[71673] = { -- Shoulders of the Fiery Vanquisher
@@ -1353,7 +1353,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {71541},
 		[CLASS_DEATHKNIGHT] = {71480, 71485},
 		[CLASS_MAGE] = {71511},
-		[11] = {71490, 71495, 71500},
+		[CLASS_DRUID] = {71490, 71495, 71500},
 	},
 
 	[71676] = { -- Gauntlets of the Fiery Conqueror
@@ -1431,7 +1431,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {77027},
 		[CLASS_DEATHKNIGHT] = {76978, 77012},
 		[CLASS_MAGE] = {76216},
-		[11] = {76753, 77017, 77022},
+		[CLASS_DRUID] = {76753, 77017, 77022},
 	},
 
 	[78171] = { -- Leggings of the Corrupted Vanquisher
@@ -1439,7 +1439,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {77026},
 		[CLASS_DEATHKNIGHT] = {76977, 77011},
 		[CLASS_MAGE] = {76214},
-		[11] = {77016, 77020, 76751},
+		[CLASS_DRUID] = {77016, 77020, 76751},
 	},
 
 	[78172] = { -- Crown of the Corrupted Vanquisher
@@ -1447,7 +1447,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {77025},
 		[CLASS_DEATHKNIGHT] = {76976, 77010},
 		[CLASS_MAGE] = {76213},
-		[11] = {76750, 77015, 77019},
+		[CLASS_DRUID] = {76750, 77015, 77019},
 	},
 
 	[78173] = { -- Gauntlets of the Corrupted Vanquisher
@@ -1455,7 +1455,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {77024},
 		[CLASS_DEATHKNIGHT] = {76975, 77009},
 		[CLASS_MAGE] = {76212},
-		[11] = {76749, 77014, 77018},
+		[CLASS_DRUID] = {76749, 77014, 77018},
 	},
 
 	[78174] = { -- Chest of the Corrupted Vanquisher
@@ -1463,7 +1463,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {77023},
 		[CLASS_DEATHKNIGHT] = {76974, 77008},
 		[CLASS_MAGE] = {76215},
-		[11] = {76752, 77013, 77021},
+		[CLASS_DRUID] = {76752, 77013, 77021},
 	},
 
 	[78175] = { -- Shoulders of the Corrupted Protector
@@ -1555,7 +1555,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78664},
 		[CLASS_DEATHKNIGHT] = {78659, 78663},
 		[CLASS_MAGE] = {78729},
-		[11] = {78660, 78662, 78665},
+		[CLASS_DRUID] = {78660, 78662, 78665},
 	},
 
 	[78850] = { -- Crown of the Corrupted Conqueror
@@ -1577,7 +1577,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78699},
 		[CLASS_DEATHKNIGHT] = {78687, 78697},
 		[CLASS_MAGE] = {78701},
-		[11] = {78690, 78694, 78696},
+		[CLASS_DRUID] = {78690, 78694, 78696},
 	},
 
 	[78853] = { -- Gauntlets of the Corrupted Conqueror
@@ -1599,7 +1599,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78679},
 		[CLASS_DEATHKNIGHT] = {78670, 78678},
 		[CLASS_MAGE] = {78671},
-		[11] = {78676, 78680, 78684},
+		[CLASS_DRUID] = {78676, 78680, 78684},
 	},
 
 	[78856] = { -- Leggings of the Corrupted Conqueror
@@ -1621,7 +1621,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78708},
 		[CLASS_DEATHKNIGHT] = {78716, 78707},
 		[CLASS_MAGE] = {78720},
-		[11] = {78710, 78713, 78714},
+		[CLASS_DRUID] = {78710, 78713, 78714},
 	},
 
 	[78859] = { -- Shoulders of the Corrupted Conqueror
@@ -1643,7 +1643,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78738},
 		[CLASS_DEATHKNIGHT] = {78736, 78751},
 		[CLASS_MAGE] = {78748},
-		[11] = {78740, 78743, 78744},
+		[CLASS_DRUID] = {78740, 78743, 78744},
 	},
 
 	[78862] = { -- Chest of the Corrupted Vanquisher
@@ -1651,7 +1651,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78759},
 		[CLASS_DEATHKNIGHT] = {78754, 78758},
 		[CLASS_MAGE] = {78824},
-		[11] = {78755, 78757, 78760},
+		[CLASS_DRUID] = {78755, 78757, 78760},
 	},
 
 	[78863] = { -- Chest of the Corrupted Conqueror
@@ -1673,7 +1673,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78774},
 		[CLASS_DEATHKNIGHT] = {78765, 78773},
 		[CLASS_MAGE] = {78766},
-		[11] = {78771, 78775, 78779},
+		[CLASS_DRUID] = {78771, 78775, 78779},
 	},
 
 	[78866] = { -- Gauntlets of the Corrupted Conqueror
@@ -1695,7 +1695,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78794},
 		[CLASS_DEATHKNIGHT] = {78782, 78792},
 		[CLASS_MAGE] = {78796},
-		[11] = {78785, 78789, 78791},
+		[CLASS_DRUID] = {78785, 78789, 78791},
 	},
 
 	[78869] = { -- Crown of the Corrupted Conqueror
@@ -1717,7 +1717,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78803},
 		[CLASS_DEATHKNIGHT] = {78802, 78811},
 		[CLASS_MAGE] = {78815},
-		[11] = {78805, 78808, 78809},
+		[CLASS_DRUID] = {78805, 78808, 78809},
 	},
 
 	[78872] = { -- Leggings of the Corrupted Conqueror
@@ -1739,7 +1739,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {78833},
 		[CLASS_DEATHKNIGHT] = {78846, 78831},
 		[CLASS_MAGE] = {78843},
-		[11] = {78838, 78839, 78835},
+		[CLASS_DRUID] = {78838, 78839, 78835},
 	},
 
 	[78875] = { -- Shoulders of the Corrupted Conqueror
@@ -1761,7 +1761,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {85301},
 		[CLASS_DEATHKNIGHT] = {85316, 85336},
 		[CLASS_MAGE] = {85377},
-		[11] = {85307, 85311, 85357, 85381},
+		[CLASS_DRUID] = {85307, 85311, 85357, 85381},
 	},
 
 	[89235] = { -- Helm of the Shadowy Conqueror
@@ -1799,7 +1799,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {85303},
 		[CLASS_DEATHKNIGHT] = {85318, 85338},
 		[CLASS_MAGE] = {85375},
-		[11] = {85305, 85313, 85355, 85379},
+		[CLASS_DRUID] = {85305, 85313, 85355, 85379},
 	},
 
 	[89240] = { -- Gauntlets of the Shadowy Conqueror
@@ -1822,7 +1822,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {85302},
 		[CLASS_DEATHKNIGHT] = {85317, 85337},
 		[CLASS_MAGE] = {85378},
-		[11] = {85308, 85312, 85358, 85380},
+		[CLASS_DRUID] = {85308, 85312, 85358, 85380},
 	},
 
 	[89243] = { -- Leggings of the Shadowy Conqueror
@@ -1845,7 +1845,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {85300},
 		[CLASS_DEATHKNIGHT] = {85315, 85335},
 		[CLASS_MAGE] = {85376},
-		[11] = {85306, 85310, 85356, 85382},
+		[CLASS_DRUID] = {85306, 85310, 85356, 85382},
 	},
 
 	[89246] = { -- Shoulders of the Shadowy Conqueror
@@ -1868,7 +1868,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {85299},
 		[CLASS_DEATHKNIGHT] = {85314, 85334},
 		[CLASS_MAGE] = {85374},
-		[11] = {85304, 85309, 85354, 85383},
+		[CLASS_DRUID] = {85304, 85309, 85354, 85383},
 	},
 
 	[89249] = { -- Chest of the Shadowy Vanquisher
@@ -1876,7 +1876,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {87124},
 		[CLASS_DEATHKNIGHT] = {86913, 86918},
 		[CLASS_MAGE] = {87010},
-		[11] = {86923, 86931, 86936, 86938},
+		[CLASS_DRUID] = {86923, 86931, 86936, 86938},
 	},
 
 	[89250] = { -- Chest of the Shadowy Conqueror
@@ -1899,7 +1899,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {87127},
 		[CLASS_DEATHKNIGHT] = {86916, 86921},
 		[CLASS_MAGE] = {87009},
-		[11] = {86926, 86930, 86935, 86941},
+		[CLASS_DRUID] = {86926, 86930, 86935, 86941},
 	},
 
 	[89253] = { -- Leggings of the Shadowy Conqueror
@@ -1922,7 +1922,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {87125},
 		[CLASS_DEATHKNIGHT] = {86914, 86919},
 		[CLASS_MAGE] = {87007},
-		[11] = {86924, 86928, 86933, 86939},
+		[CLASS_DRUID] = {86924, 86928, 86933, 86939},
 	},
 
 	[89256] = { -- Gauntlets of the Shadowy Conqueror
@@ -1945,7 +1945,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {87126},
 		[CLASS_DEATHKNIGHT] = {86915, 86920},
 		[CLASS_MAGE] = {87008},
-		[11] = {86934, 86940, 86925, 86929},
+		[CLASS_DRUID] = {86934, 86940, 86925, 86929},
 	},
 
 	[89259] = { -- Helm of the Shadowy Conqueror
@@ -1968,7 +1968,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {87128},
 		[CLASS_DEATHKNIGHT] = {86917, 86922},
 		[CLASS_MAGE] = {87011},
-		[11] = {86927, 86932, 86937, 86942},
+		[CLASS_DRUID] = {86927, 86932, 86937, 86942},
 	},
 
 	[89262] = { -- Shoulders of the Shadowy Conqueror
@@ -1991,7 +1991,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {86643},
 		[CLASS_DEATHKNIGHT] = {86658, 86678},
 		[CLASS_MAGE] = {86715},
-		[11] = {86719, 86645, 86653, 86695},
+		[CLASS_DRUID] = {86719, 86645, 86653, 86695},
 	},
 
 	[89265] = { -- Chest of the Shadowy Conqueror
@@ -2014,7 +2014,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {86640},
 		[CLASS_DEATHKNIGHT] = {86655, 86675},
 		[CLASS_MAGE] = {86716},
-		[11] = {86646, 86650, 86696, 86722},
+		[CLASS_DRUID] = {86646, 86650, 86696, 86722},
 	},
 
 	[89268] = { -- Leggings of the Shadowy Conqueror
@@ -2037,7 +2037,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {86642},
 		[CLASS_DEATHKNIGHT] = {86657, 86677},
 		[CLASS_MAGE] = {86718},
-		[11] = {86648, 86652, 86698, 86720},
+		[CLASS_DRUID] = {86648, 86652, 86698, 86720},
 	},
 
 	[89271] = { -- Gauntlets of the Shadowy Conqueror
@@ -2060,7 +2060,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {86641},
 		[CLASS_DEATHKNIGHT] = {86656, 86676},
 		[CLASS_MAGE] = {86717},
-		[11] = {86647, 86651, 86697, 86721},
+		[CLASS_DRUID] = {86647, 86651, 86697, 86721},
 	},
 
 	[89274] = { -- Helm of the Shadowy Conqueror
@@ -2083,7 +2083,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {86639},
 		[CLASS_DEATHKNIGHT] = {86654, 86674},
 		[CLASS_MAGE] = {86714},
-		[11] = {86644, 86649, 86694, 86723},
+		[CLASS_DRUID] = {86644, 86649, 86694, 86723},
 	},
 
 	[89277] = { -- Shoulders of the Shadowy Conqueror
@@ -2106,7 +2106,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95305},
 		[CLASS_DEATHKNIGHT] = {95225, 95230},
 		[CLASS_MAGE] = {95263},
-		[11] = {95235, 95243, 95248, 95250},
+		[CLASS_DRUID] = {95235, 95243, 95248, 95250},
 	},
 
 	[95570] = { -- Gauntlets of the Crackling Vanquisher
@@ -2114,7 +2114,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95306},
 		[CLASS_DEATHKNIGHT] = {95226, 95231},
 		[CLASS_MAGE] = {95260},
-		[11] = {95236, 95240, 95245, 95251},
+		[CLASS_DRUID] = {95236, 95240, 95245, 95251},
 	},
 
 	[95571] = { -- Helm of the Crackling Vanquisher
@@ -2122,7 +2122,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95307},
 		[CLASS_DEATHKNIGHT] = {95227, 95232},
 		[CLASS_MAGE] = {95261},
-		[11] = {95237, 95241, 95246, 95252},
+		[CLASS_DRUID] = {95237, 95241, 95246, 95252},
 	},
 
 	[95572] = { -- Leggings of the Crackling Vanquisher
@@ -2130,7 +2130,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95308},
 		[CLASS_DEATHKNIGHT] = {95228, 95233},
 		[CLASS_MAGE] = {95262},
-		[11] = {95238, 95242, 95247, 95253},
+		[CLASS_DRUID] = {95238, 95242, 95247, 95253},
 	},
 
 	[95573] = { -- Shoulders of the Crackling Vanquisher
@@ -2138,7 +2138,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95309},
 		[CLASS_DEATHKNIGHT] = {95229, 95234},
 		[CLASS_MAGE] = {95264},
-		[11] = {95239, 95244, 95249, 95254},
+		[CLASS_DRUID] = {95239, 95244, 95249, 95254},
 	},
 
 	[95574] = { -- Chest of the Crackling Conqueror
@@ -2221,7 +2221,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95935},
 		[CLASS_DEATHKNIGHT] = {95825, 95830},
 		[CLASS_MAGE] = {95893},
-		[11] = {95843, 95848, 95850, 95835},
+		[CLASS_DRUID] = {95843, 95848, 95850, 95835},
 	},
 
 	[95823] = { -- Chest of the Crackling Conqueror
@@ -2244,7 +2244,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95936},
 		[CLASS_DEATHKNIGHT] = {95826, 95831},
 		[CLASS_MAGE] = {95890},
-		[11] = {95836, 95840, 95845, 95851},
+		[CLASS_DRUID] = {95836, 95840, 95845, 95851},
 	},
 
 	[95856] = { -- Gauntlets of the Crackling Conqueror
@@ -2267,7 +2267,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95937},
 		[CLASS_DEATHKNIGHT] = {95827, 95832},
 		[CLASS_MAGE] = {95891},
-		[11] = {95837, 95841, 95846, 95852},
+		[CLASS_DRUID] = {95837, 95841, 95846, 95852},
 	},
 
 	[95880] = { -- Helm of the Crackling Conqueror
@@ -2290,7 +2290,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95938},
 		[CLASS_DEATHKNIGHT] = {95828, 95833},
 		[CLASS_MAGE] = {95892},
-		[11] = {95838, 95842, 95847, 95853},
+		[CLASS_DRUID] = {95838, 95842, 95847, 95853},
 	},
 
 	[95889] = { -- Leggings of the Crackling Protector
@@ -2306,7 +2306,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {95939},
 		[CLASS_DEATHKNIGHT] = {95834, 95829},
 		[CLASS_MAGE] = {95894},
-		[11] = {95839, 95844, 95849, 95854},
+		[CLASS_DRUID] = {95839, 95844, 95849, 95854},
 	},
 
 	[95956] = { -- Shoulders of the Crackling Conqueror
@@ -2329,7 +2329,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {96679},
 		[CLASS_DEATHKNIGHT] = {96569, 96574},
 		[CLASS_MAGE] = {96637},
-		[11] = {96579, 96587, 96592, 96594},
+		[CLASS_DRUID] = {96579, 96587, 96592, 96594},
 	},
 
 	[96567] = { -- Chest of the Crackling Conqueror
@@ -2352,7 +2352,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {96680},
 		[CLASS_DEATHKNIGHT] = {96570, 96575},
 		[CLASS_MAGE] = {96634},
-		[11] = {96580, 96584, 96589, 96595},
+		[CLASS_DRUID] = {96580, 96584, 96589, 96595},
 	},
 
 	[96601] = { -- Gauntlets of the Crackling Protector
@@ -2368,7 +2368,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {96681},
 		[CLASS_DEATHKNIGHT] = {96571, 96576},
 		[CLASS_MAGE] = {96635},
-		[11] = {96581, 96585, 96590, 96596},
+		[CLASS_DRUID] = {96581, 96585, 96590, 96596},
 	},
 
 	[96624] = { -- Helm of the Crackling Conqueror
@@ -2391,7 +2391,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {96682},
 		[CLASS_DEATHKNIGHT] = {96572, 96577},
 		[CLASS_MAGE] = {96636},
-		[11] = {96582, 96586, 96591, 96597},
+		[CLASS_DRUID] = {96582, 96586, 96591, 96597},
 	},
 
 	[96632] = { -- Leggings of the Crackling Conqueror
@@ -2414,7 +2414,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {96683},
 		[CLASS_DEATHKNIGHT] = {96573, 96578},
 		[CLASS_MAGE] = {96638},
-		[11] = {96583, 96588, 96593, 96598},
+		[CLASS_DRUID] = {96583, 96588, 96593, 96598},
 	},
 
 	[96700] = { -- Shoulders of the Crackling Conqueror
@@ -2445,7 +2445,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99010},
 		[CLASS_DEATHKNIGHT] = {99040, 99059},
 		[CLASS_MAGE] = {99079},
-		[11] = {98978, 98998, 99016, 99022},
+		[CLASS_DRUID] = {98978, 98998, 99016, 99022},
 	},
 
 	[99669] = { -- Shoulders of the Cursed Conqueror (Raid Finder)
@@ -2468,7 +2468,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99008},
 		[CLASS_DEATHKNIGHT] = {99049, 99057},
 		[CLASS_MAGE] = {99084},
-		[11] = {98995, 99001, 99013, 99043},
+		[CLASS_DRUID] = {98995, 99001, 99013, 99043},
 	},
 
 	[99672] = { -- Helm of the Cursed Conqueror (Raid Finder)
@@ -2491,7 +2491,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99009},
 		[CLASS_DEATHKNIGHT] = {99039, 99058},
 		[CLASS_MAGE] = {99077},
-		[11] = {98981, 98996, 99014, 99044},
+		[CLASS_DRUID] = {98981, 98996, 99014, 99044},
 	},
 
 	[99675] = { -- Leggings of the Cursed Conqueror (Raid Finder)
@@ -2514,7 +2514,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99006},
 		[CLASS_DEATHKNIGHT] = {99060, 99066},
 		[CLASS_MAGE] = {99078},
-		[11] = {98997, 98999, 99015, 99041},
+		[CLASS_DRUID] = {98997, 98999, 99015, 99041},
 	},
 
 	[99678] = { -- Chest of the Cursed Conqueror (Raid Finder)
@@ -2537,7 +2537,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99007},
 		[CLASS_DEATHKNIGHT] = {99048, 99067},
 		[CLASS_MAGE] = {99083},
-		[11] = {98994, 99000, 99012, 99042},
+		[CLASS_DRUID] = {98994, 99000, 99012, 99042},
 	},
 
 	[99681] = { -- Gauntlets of the Cursed Conqueror (Raid Finder)
@@ -2552,7 +2552,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99113},
 		[CLASS_DEATHKNIGHT] = {99189, 99193},
 		[CLASS_MAGE] = {99160},
-		[11] = {99163, 99174, 99181, 99185},
+		[CLASS_DRUID] = {99163, 99174, 99181, 99185},
 	},
 
 	[99683] = { -- Helm of the Cursed Vanquisher (Heroic)
@@ -2560,7 +2560,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99114},
 		[CLASS_DEATHKNIGHT] = {99190, 99194},
 		[CLASS_MAGE] = {99161},
-		[11] = {99164, 99175, 99178, 99182},
+		[CLASS_DRUID] = {99164, 99175, 99178, 99182},
 	},
 
 	[99684] = { -- Leggings of the Cursed Vanquisher (Heroic)
@@ -2568,7 +2568,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99115},
 		[CLASS_DEATHKNIGHT] = {99186, 99191},
 		[CLASS_MAGE] = {99162},
-		[11] = {99165, 99171, 99176, 99183},
+		[CLASS_DRUID] = {99165, 99171, 99176, 99183},
 	},
 
 	[99685] = { -- Shoulders of the Cursed Vanquisher (Heroic)
@@ -2576,7 +2576,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99116},
 		[CLASS_DEATHKNIGHT] = {99179, 99187},
 		[CLASS_MAGE] = {99153},
-		[11] = {99166, 99169, 99173, 99184},
+		[CLASS_DRUID] = {99166, 99169, 99173, 99184},
 	},
 
 	[99686] = { -- Chest of the Cursed Conqueror (Heroic)
@@ -2659,7 +2659,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99112},
 		[CLASS_DEATHKNIGHT] = {99188, 99192},
 		[CLASS_MAGE] = {99152},
-		[11] = {99170, 99172, 99177, 99180},
+		[CLASS_DRUID] = {99170, 99172, 99177, 99180},
 	},
 
 	[99712] = { -- Leggings of the Cursed Conqueror (Mythic)
@@ -2682,7 +2682,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99356},
 		[CLASS_DEATHKNIGHT] = {99330, 99335},
 		[CLASS_MAGE] = {99400},
-		[11] = {99326, 99419, 99427, 99430},
+		[CLASS_DRUID] = {99326, 99419, 99427, 99430},
 	},
 
 	[99715] = { -- Chest of the Cursed Conqueror (Mythic)
@@ -2705,7 +2705,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99350},
 		[CLASS_DEATHKNIGHT] = {99325, 99339},
 		[CLASS_MAGE] = {99401},
-		[11] = {99322, 99423, 99428, 99431},
+		[CLASS_DRUID] = {99322, 99423, 99428, 99431},
 	},
 
 	[99718] = { -- Shoulders of the Cursed Conqueror (Mythic)
@@ -2728,7 +2728,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99355},
 		[CLASS_DEATHKNIGHT] = {99331, 99336},
 		[CLASS_MAGE] = {99397},
-		[11] = {99327, 99420, 99432, 99435},
+		[CLASS_DRUID] = {99327, 99420, 99432, 99435},
 	},
 
 	[99721] = { -- Gauntlets of the Cursed Conqueror (Mythic)
@@ -2751,7 +2751,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99348},
 		[CLASS_DEATHKNIGHT] = {99323, 99337},
 		[CLASS_MAGE] = {99398},
-		[11] = {99328, 99421, 99433, 99436},
+		[CLASS_DRUID] = {99328, 99421, 99433, 99436},
 	},
 
 	[99724] = { -- Helm of the Cursed Conqueror (Mythic)
@@ -2774,7 +2774,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99349},
 		[CLASS_DEATHKNIGHT] = {99324, 99338},
 		[CLASS_MAGE] = {99399},
-		[11] = {99329, 99422, 99429, 99434},
+		[CLASS_DRUID] = {99329, 99422, 99429, 99434},
 	},
 
 	[99742] = { -- Chest of the Cursed Vanquisher
@@ -2782,7 +2782,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99629},
 		[CLASS_DEATHKNIGHT] = {99608, 99640},
 		[CLASS_MAGE] = {99658},
-		[11] = {99582, 99620, 99622, 99632},
+		[CLASS_DRUID] = {99582, 99620, 99622, 99632},
 	},
 
 	[99743] = { -- Chest of the Cursed Conqueror
@@ -2805,7 +2805,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99630},
 		[CLASS_DEATHKNIGHT] = {99604, 99609},
 		[CLASS_MAGE] = {99575},
-		[11] = {99623, 99633, 99637, 99617},
+		[CLASS_DRUID] = {99623, 99633, 99637, 99617},
 	},
 
 	[99746] = { -- Gauntlets of the Cursed Conqueror
@@ -2828,7 +2828,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99631},
 		[CLASS_DEATHKNIGHT] = {99571, 99605},
 		[CLASS_MAGE] = {99576},
-		[11] = {99599, 99618, 99624, 99638},
+		[CLASS_DRUID] = {99599, 99618, 99624, 99638},
 	},
 
 	[99749] = { -- Helm of the Cursed Conqueror
@@ -2851,7 +2851,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99634},
 		[CLASS_DEATHKNIGHT] = {99564, 99572},
 		[CLASS_MAGE] = {99657},
-		[11] = {99581, 99600, 99610, 99619},
+		[CLASS_DRUID] = {99581, 99600, 99610, 99619},
 	},
 
 	[99752] = { -- Leggings of the Cursed Conqueror
@@ -2874,7 +2874,7 @@ t.ITEM_DATA = {
 		[CLASS_ROGUE] = {99635},
 		[CLASS_DEATHKNIGHT] = {99639, 99652},
 		[CLASS_MAGE] = {99659},
-		[11] = {99664, 99583, 99589, 99621},
+		[CLASS_DRUID] = {99664, 99583, 99589, 99621},
 	},
 
 	[99755] = { -- Shoulders of the Cursed Conqueror
@@ -2902,7 +2902,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124563},
 		[CLASS_PRIEST] = {124563},
 		[CLASS_WARLOCK] = {124563},
-		[11] = {124564},
+		[CLASS_DRUID] = {124564},
 		[12] = {124564},
 		[CLASS_MONK] = {124564},
 		[CLASS_ROGUE] = {124564},
@@ -2918,7 +2918,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124570},
 		[CLASS_PRIEST] = {124570},
 		[CLASS_WARLOCK] = {124570},
-		[11] = {124567},
+		[CLASS_DRUID] = {124567},
 		[12] = {124567},
 		[CLASS_MONK] = {124567},
 		[CLASS_ROGUE] = {124567},
@@ -2934,7 +2934,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124571},
 		[CLASS_PRIEST] = {124571},
 		[CLASS_WARLOCK] = {124571},
-		[11] = {124572},
+		[CLASS_DRUID] = {124572},
 		[12] = {124572},
 		[CLASS_MONK] = {124572},
 		[CLASS_ROGUE] = {124572},
@@ -2950,7 +2950,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124575},
 		[CLASS_PRIEST] = {124575},
 		[CLASS_WARLOCK] = {124575},
-		[11] = {124576},
+		[CLASS_DRUID] = {124576},
 		[12] = {124576},
 		[CLASS_MONK] = {124576},
 		[CLASS_ROGUE] = {124576},
@@ -2966,7 +2966,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124579},
 		[CLASS_PRIEST] = {124579},
 		[CLASS_WARLOCK] = {124579},
-		[11] = {124580},
+		[CLASS_DRUID] = {124580},
 		[12] = {124580},
 		[CLASS_MONK] = {124580},
 		[CLASS_ROGUE] = {124580},
@@ -2982,7 +2982,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124583},
 		[CLASS_PRIEST] = {124583},
 		[CLASS_WARLOCK] = {124583},
-		[11] = {124584},
+		[CLASS_DRUID] = {124584},
 		[12] = {124584},
 		[CLASS_MONK] = {124584},
 		[CLASS_ROGUE] = {124584},
@@ -2998,7 +2998,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124587},
 		[CLASS_PRIEST] = {124587},
 		[CLASS_WARLOCK] = {124587},
-		[11] = {124588},
+		[CLASS_DRUID] = {124588},
 		[12] = {124588},
 		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
@@ -3014,7 +3014,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124591},
 		[CLASS_PRIEST] = {124591},
 		[CLASS_WARLOCK] = {124591},
-		[11] = {124592},
+		[CLASS_DRUID] = {124592},
 		[12] = {124592},
 		[CLASS_MONK] = {124592},
 		[CLASS_ROGUE] = {124592},
@@ -3078,7 +3078,7 @@ t.ITEM_DATA = {
 
 	[127790] = { -- Baleful Leather Bracers
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124564},
+		[CLASS_DRUID] = {124564},
 		[12] = {124564},
 		[CLASS_MONK] = {124564},
 		[CLASS_ROGUE] = {124564},
@@ -3086,7 +3086,7 @@ t.ITEM_DATA = {
 
 	[127791] = { -- Baleful Leather Tunic
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124567},
+		[CLASS_DRUID] = {124567},
 		[12] = {124567},
 		[CLASS_MONK] = {124567},
 		[CLASS_ROGUE] = {124567},
@@ -3094,7 +3094,7 @@ t.ITEM_DATA = {
 
 	[127792] = { -- Baleful Leather Treads
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124572},
+		[CLASS_DRUID] = {124572},
 		[12] = {124572},
 		[CLASS_MONK] = {124572},
 		[CLASS_ROGUE] = {124572},
@@ -3102,7 +3102,7 @@ t.ITEM_DATA = {
 
 	[127793] = { -- Baleful Leather Gauntlets
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124576},
+		[CLASS_DRUID] = {124576},
 		[12] = {124576},
 		[CLASS_MONK] = {124576},
 		[CLASS_ROGUE] = {124576},
@@ -3110,7 +3110,7 @@ t.ITEM_DATA = {
 
 	[127794] = { -- Baleful Leather Hood
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124580},
+		[CLASS_DRUID] = {124580},
 		[12] = {124580},
 		[CLASS_MONK] = {124580},
 		[CLASS_ROGUE] = {124580},
@@ -3118,7 +3118,7 @@ t.ITEM_DATA = {
 
 	[127795] = { -- Baleful Leather Leggings
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124584},
+		[CLASS_DRUID] = {124584},
 		[12] = {124584},
 		[CLASS_MONK] = {124584},
 		[CLASS_ROGUE] = {124584},
@@ -3126,7 +3126,7 @@ t.ITEM_DATA = {
 
 	[127796] = { -- Baleful Leather Spaulders
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124588},
+		[CLASS_DRUID] = {124588},
 		[12] = {124588},
 		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
@@ -3134,7 +3134,7 @@ t.ITEM_DATA = {
 
 	[127797] = { -- Baleful Leather Girdle
 		["DEPENDANT_WARNING"] = true,
-		[11] = {124592},
+		[CLASS_DRUID] = {124592},
 		[12] = {124592},
 		[CLASS_MONK] = {124592},
 		[CLASS_ROGUE] = {124592},
@@ -3254,7 +3254,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124587},
 		[CLASS_PRIEST] = {124587},
 		[CLASS_WARLOCK] = {124587},
-		[11] = {124588},
+		[CLASS_DRUID] = {124588},
 		[12] = {124588},
 		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
@@ -3270,7 +3270,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_PRIEST] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_WARLOCK] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[11] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_DRUID] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[12] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_MONK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_ROGUE] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3286,7 +3286,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_PRIEST] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_WARLOCK] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[11] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_DRUID] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[12] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_MONK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_ROGUE] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3302,7 +3302,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_DAGGER},
 		[CLASS_PRIEST] = {BALEFUL_WEP_1H_MACE, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER},
 		[CLASS_WARLOCK] = {BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER},
-		[11] = {BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER}, -- Druid
+		[CLASS_DRUID] = {BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER},
 		[12] = {BALEFUL_WEP_DAGGER, BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_1H_SWORD}, -- Demon Hunter?
 		[CLASS_MONK] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF},
 		[CLASS_ROGUE] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_DAGGER, BALEFUL_WEP_GUN},
@@ -3401,7 +3401,7 @@ t.ITEM_DATA = {
 
 	[102277] = { -- Timeless Leather Chestpiece
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101867, 101786},
+		[CLASS_DRUID] = {101867, 101786},
 		[12] = {101867, 101786},
 		[CLASS_MONK] = {101867, 101786},
 		[CLASS_ROGUE] = {101867, 101786},
@@ -3409,7 +3409,7 @@ t.ITEM_DATA = {
 
 	[102278] = { -- Timeless Leather Boots
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101863, 101782},
+		[CLASS_DRUID] = {101863, 101782},
 		[12] = {101863, 101782},
 		[CLASS_MONK] = {101863, 101782},
 		[CLASS_ROGUE] = {101863, 101782},
@@ -3417,7 +3417,7 @@ t.ITEM_DATA = {
 
 	[102279] = { -- Timeless Leather Gloves
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101865, 101784},
+		[CLASS_DRUID] = {101865, 101784},
 		[12] = {101865, 101784},
 		[CLASS_MONK] = {101865, 101784},
 		[CLASS_ROGUE] = {101865, 101784},
@@ -3425,7 +3425,7 @@ t.ITEM_DATA = {
 
 	[102280] = { -- Timeless Leather Helm
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101866, 101785},
+		[CLASS_DRUID] = {101866, 101785},
 		[12] = {101866, 101785},
 		[CLASS_MONK] = {101866, 101785},
 		[CLASS_ROGUE] = {101866, 101785},
@@ -3433,7 +3433,7 @@ t.ITEM_DATA = {
 
 	[102281] = { -- Timeless Leather Leggings
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101864, 101783},
+		[CLASS_DRUID] = {101864, 101783},
 		[12] = {101864, 101783},
 		[CLASS_MONK] = {101864, 101783},
 		[CLASS_ROGUE] = {101864, 101783},
@@ -3441,7 +3441,7 @@ t.ITEM_DATA = {
 
 	[102282] = { -- Timeless Leather Spaulders
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101868, 101787},
+		[CLASS_DRUID] = {101868, 101787},
 		[12] = {101868, 101787},
 		[CLASS_MONK] = {101868, 101787},
 		[CLASS_ROGUE] = {101868, 101787},
@@ -3449,7 +3449,7 @@ t.ITEM_DATA = {
 
 	[102283] = { -- Timeless Leather Belt
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101869, 101788},
+		[CLASS_DRUID] = {101869, 101788},
 		[12] = {101869, 101788},
 		[CLASS_MONK] = {101869, 101788},
 		[CLASS_ROGUE] = {101869, 101788},
@@ -3520,7 +3520,7 @@ t.ITEM_DATA = {
 
 	[102322] = { -- Timeless Leather Bracers
 		["DEPENDANT_WARNING"] = true,
-		[11] = {101862, 101781},
+		[CLASS_DRUID] = {101862, 101781},
 		[12] = {101862, 101781},
 		[CLASS_MONK] = {101862, 101781},
 		[CLASS_ROGUE] = {101862, 101781},
@@ -3542,7 +3542,7 @@ t.ITEM_DATA = {
 		[CLASS_MAGE] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_PRIEST] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_WARLOCK] = {101800, 101790, 101852, 101848, 101828},
-		[11] = {101800, 101790, 101852, 101848, 101828},
+		[CLASS_DRUID] = {101800, 101790, 101852, 101848, 101828},
 		[12] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_MONK] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_ROGUE] = {101800, 101790, 101852, 101848, 101828},
@@ -3561,7 +3561,7 @@ t.HORDE_ONLY_DATA = {
 		[CLASS_SHAMAN] = {48363, 48334, 48364, 48304, 48332, 48365, 48335, 48331, 48300, 48361, 48301, 48333, 48302, 48362, 48303},
 		[CLASS_MAGE] = {47771, 47770, 47769, 47772, 47768},
 		[CLASS_WARLOCK] = {47807, 47803, 47804, 47805, 47806},
-		[11] = {48196, 48178, 48149, 48179, 48180, 48150, 48181, 48197, 48182, 48151, 48193, 48148, 48194, 48152, 48195},
+		[CLASS_DRUID] = {48196, 48178, 48149, 48179, 48180, 48150, 48181, 48197, 48182, 48151, 48193, 48148, 48194, 48152, 48195},
 	},
 };
 
@@ -3577,6 +3577,6 @@ t.ALLIANCE_ONLY_DATA = {
 		[CLASS_SHAMAN] = {48288, 48289, 48316, 48317, 48318, 48319, 48320, 48346, 48347, 48348, 48349, 48350, 48285, 48286, 48287},
 		[CLASS_MAGE] = {47753, 47754, 47755, 47756, 47757},
 		[CLASS_WARLOCK] = {47778, 47779, 47780, 47781, 47782},
-		[11] = {48211, 48212, 48133, 48134, 48135, 48136, 48210, 48137, 48163, 48164, 48165, 48166, 48167, 48208, 48209},
+		[CLASS_DRUID] = {48211, 48212, 48133, 48134, 48135, 48136, 48210, 48137, 48163, 48164, 48165, 48166, 48167, 48208, 48209},
 	},
 };

@@ -185,6 +185,10 @@ TransmogTokens.updateTierFrame = function(selectedID)
 	end
 
 	local set = t.SET_DATA[selectedID];
+
+	-- Prevent iteration over a nil set.
+	if set == nil then return; end
+
 	frameIndex = 1;
 	for tokenID, obtainString in pairs(set) do
 		local iconName = frame:GetName() .. "Icon" .. frameIndex;

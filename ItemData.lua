@@ -44,6 +44,7 @@ t.CLASS_ITEM_TYPE = {
 };
 
 local REDEEM_TBC_SUNMOTE = 0;
+local REDEEM_TOC = 1;
 local REDEEM_TBC_TIER_6 = 2;
 local REDEEM_TBC_HYAL = 3;
 local REDEEM_MOP_OXHEART = 6;

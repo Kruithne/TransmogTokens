@@ -233,7 +233,7 @@ t.ITEM_DATA = {
 		[CLASS_HUNTER] = {71562, 71557, 71559, 71560, 71558, 71561},
 		[CLASS_ROGUE] = {71562, 71560, 71558, 71641},
 		[CLASS_PRIEST] = {71559, 71560, 71579, 71575},
-		[6] = {71562, 71557}, -- Death Knight
+		[CLASS_DEATHKNIGHT] = {71562, 71557},
 		[7] = {71562, 71559, 71560, 71561}, -- Shaman
 		[8] = {71559, 71560, 71579, 71575}, -- Mage
 		[9] = {71559, 71560, 71579, 71575}, -- Warlock
@@ -712,7 +712,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Gluth (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {39558},
-		[6] = {39617, 39623},
+		[CLASS_DEATHKNIGHT] = {39617, 39623},
 		[8] = {39492},
 		[11] = {39538, 39547, 39554},
 	},
@@ -737,7 +737,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [10-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {39560},
-		[6] = {39618, 39624},
+		[CLASS_DEATHKNIGHT] = {39618, 39624},
 		[8] = {39495},
 		[11] = {39543, 39544, 39557},
 	},
@@ -762,7 +762,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {39561},
-		[6] = {39619, 39625},
+		[CLASS_DEATHKNIGHT] = {39619, 39625},
 		[8] = {39491},
 		[11] = {39531, 39545, 39553},
 	},
@@ -787,7 +787,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {39564},
-		[6] = {39620, 39626},
+		[CLASS_DEATHKNIGHT] = {39620, 39626},
 		[8] = {39493},
 		[11] = {39539, 39546, 39555},
 	},
@@ -812,7 +812,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [10-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {39565},
-		[6] = {39621, 39627},
+		[CLASS_DEATHKNIGHT] = {39621, 39627},
 		[8] = {39494},
 		[11] = {39542, 39548, 39556},
 	},
@@ -837,7 +837,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Four Horsemen (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {40495},
-		[6] = {40550, 40559},
+		[CLASS_DEATHKNIGHT] = {40550, 40559},
 		[8] = {40418},
 		[11] = {40463, 40469, 40471},
 	},
@@ -862,7 +862,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [25-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {40496},
-		[6] = {40552, 40563},
+		[CLASS_DEATHKNIGHT] = {40552, 40563},
 		[8] = {40415},
 		[11] = {40460, 40466, 40472},
 	},
@@ -887,7 +887,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {40499},
-		[6] = {40554, 40565},
+		[CLASS_DEATHKNIGHT] = {40554, 40565},
 		[8] = {40416},
 		[11] = {40461, 40467, 40473},
 	},
@@ -912,7 +912,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {40500},
-		[6] = {40556, 40567},
+		[CLASS_DEATHKNIGHT] = {40556, 40567},
 		[8] = {40417},
 		[11] = {40462, 40468, 40493},
 	},
@@ -937,7 +937,7 @@ t.ITEM_DATA = {
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [25-Man])"},
 		[0] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = {40502},
-		[6] = {40557, 40568},
+		[CLASS_DEATHKNIGHT] = {40557, 40568},
 		[8] = {40419},
 		[11] = {40465, 40470, 40494},
 	},
@@ -959,7 +959,7 @@ t.ITEM_DATA = {
 	[45634] = { -- Breastplate of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46123},
-		[6] = {46111, 46118},
+		[CLASS_DEATHKNIGHT] = {46111, 46118},
 		[8] = {46130},
 		[11] = {46159, 46186, 46194},
 	},
@@ -981,7 +981,7 @@ t.ITEM_DATA = {
 	[45637] = { -- Chestguard of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {45396},
-		[6] = {45335, 45340},
+		[CLASS_DEATHKNIGHT] = {45335, 45340},
 		[8] = {45368},
 		[11] = {45348, 45354, 45358},
 	},
@@ -1003,7 +1003,7 @@ t.ITEM_DATA = {
 	[45640] = { -- Crown of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46125},
-		[6] = {46115, 46120},
+		[CLASS_DEATHKNIGHT] = {46115, 46120},
 		[8] = {46129},
 		[11] = {46161, 46184, 46191},
 	},
@@ -1011,7 +1011,7 @@ t.ITEM_DATA = {
 	[45643] = { -- Gauntlets of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46124},
-		[6] = {46113, 46119},
+		[CLASS_DEATHKNIGHT] = {46113, 46119},
 		[11] = {46158, 46183, 46189},
 		[8] = {46132},
 	},
@@ -1047,7 +1047,7 @@ t.ITEM_DATA = {
 	[45646] = { -- Gloves of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {45397},
-		[6] = {45337, 45341},
+		[CLASS_DEATHKNIGHT] = {45337, 45341},
 		[8] = {46131},
 		[11] = {45345, 45351, 45355},
 	},
@@ -1069,7 +1069,7 @@ t.ITEM_DATA = {
 	[45649] = { -- Helm of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {45398},
-		[6] = {45336, 45342},
+		[CLASS_DEATHKNIGHT] = {45336, 45342},
 		[8] = {45365},
 		[11] = {45346, 45356, 46313},
 	},
@@ -1091,7 +1091,7 @@ t.ITEM_DATA = {
 	[45652] = { -- Leggings of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {45399},
-		[6] = {45338, 45343},
+		[CLASS_DEATHKNIGHT] = {45338, 45343},
 		[8] = {45367},
 		[11] = {45347, 45353, 45357},
 	},
@@ -1113,7 +1113,7 @@ t.ITEM_DATA = {
 	[45655] = { -- Legplates of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46126},
-		[6] = {46116, 46121},
+		[CLASS_DEATHKNIGHT] = {46116, 46121},
 		[8] = {46133},
 		[11] = {46160, 46185, 46192},
 	},
@@ -1135,7 +1135,7 @@ t.ITEM_DATA = {
 	[45658] = { -- Mantle of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {46127},
-		[6] = {46117, 46122},
+		[CLASS_DEATHKNIGHT] = {46117, 46122},
 		[8] = {46134},
 		[11] = {46157, 46187, 46196},
 	},
@@ -1157,7 +1157,7 @@ t.ITEM_DATA = {
 	[45661] = { -- Spaulders of the Wayward Vanquisher
 		[0] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = {45400},
-		[6] = {45339, 45344},
+		[CLASS_DEATHKNIGHT] = {45339, 45344},
 		[8] = {45369},
 		[11] = {45349, 45352, 45359},
 	},
@@ -1165,7 +1165,7 @@ t.ITEM_DATA = {
 	[52025] = { -- Vanquisher's Mark of Sanctification
 		[0] = REDEEM_TIER_10,
 		[CLASS_ROGUE] = {51185, 51186, 51187, 51188, 51189},
-		[6] = {51130, 51131, 51132, 51133, 51134, 51129, 51125, 51126, 51127, 51128},
+		[CLASS_DEATHKNIGHT] = {51130, 51131, 51132, 51133, 51134, 51129, 51125, 51126, 51127, 51128},
 		[8] = {51159, 51155, 51156, 51157, 51158},
 		[11] = {51138, 51139, 51145, 51146, 51147, 51148, 51149, 51140, 51141, 51142, 51143, 51144, 51135, 51136, 51137},
 	},
@@ -1187,7 +1187,7 @@ t.ITEM_DATA = {
 	[52028] = { -- Vanquisher's Mark of Sanctification
 		[0] = REDEEM_TIER_10,
 		[CLASS_ROGUE] = {51250, 51251, 51252, 51253, 51254},
-		[6] = {51312, 51310, 51311, 51313, 51314, 51305, 51306, 51307, 51308, 51309},
+		[CLASS_DEATHKNIGHT] = {51312, 51310, 51311, 51313, 51314, 51305, 51306, 51307, 51308, 51309},
 		[8] = {51283, 51284, 51280, 51281, 51282},
 		[11] = {51295, 51296, 51297, 51298, 51299, 51300, 51301, 51294, 51302, 51303, 51304, 51290, 51291, 51292, 51293},
 	},
@@ -1223,7 +1223,7 @@ t.ITEM_DATA = {
 	[65002] = { -- Crown of the Forlorn Vanquisher
 		[0] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = {65241},
-		[6] = {65181, 65186},
+		[CLASS_DEATHKNIGHT] = {65181, 65186},
 		[8] = {65210},
 		[11] = {65190, 65195, 65200},
 	},
@@ -1245,7 +1245,7 @@ t.ITEM_DATA = {
 	[65089] = { -- Shoulders of the Forlorn Vanquisher
 		[0] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = {65243},
-		[6] = {65183, 65188},
+		[CLASS_DEATHKNIGHT] = {65183, 65188},
 		[8] = {65213},
 		[11] = {65193, 65198, 65203},
 	},
@@ -1267,7 +1267,7 @@ t.ITEM_DATA = {
 	[67425] = { -- Chest of the Forlorn Vanquisher
 		[0] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = {65239},
-		[6] = {65184, 65179},
+		[CLASS_DEATHKNIGHT] = {65184, 65179},
 		[8] = {65212},
 		[11] = {65202, 65197, 65192},
 	},
@@ -1275,7 +1275,7 @@ t.ITEM_DATA = {
 	[67426] = { -- Leggings of the Forlorn Vanquisher
 		[0] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = {65242},
-		[6] = {65187, 65182},
+		[CLASS_DEATHKNIGHT] = {65187, 65182},
 		[8] = {65211},
 		[11] = {65201, 65196, 65191},
 	},
@@ -1311,7 +1311,7 @@ t.ITEM_DATA = {
 	[67431] = { -- Gauntlets of the Forlorn Vanquisher
 		[0] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = {65240},
-		[6] = {65180, 65185},
+		[CLASS_DEATHKNIGHT] = {65180, 65185},
 		[8] = {65209},
 		[11] = {65194, 65199, 65189},
 	},
@@ -1319,7 +1319,7 @@ t.ITEM_DATA = {
 	[71669] = { -- Gauntlets of the Fiery Vanquisher
 		[0] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = {71538},
-		[6] = {71477, 71482},
+		[CLASS_DEATHKNIGHT] = {71477, 71482},
 		[8] = {71507},
 		[11] = {71487, 71491, 71496},
 	},
@@ -1327,7 +1327,7 @@ t.ITEM_DATA = {
 	[71670] = { -- Crown of the Fiery Vanquisher
 		[0] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = {71539},
-		[6] = {71478, 71483},
+		[CLASS_DEATHKNIGHT] = {71478, 71483},
 		[8] = {71508},
 		[11] = {71488, 71492, 71497},
 	},
@@ -1335,7 +1335,7 @@ t.ITEM_DATA = {
 	[71671] = { -- Leggings of the Fiery Vanquisher
 		[0] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = {71540},
-		[6] = {71479, 71484},
+		[CLASS_DEATHKNIGHT] = {71479, 71484},
 		[8] = {71509},
 		[11] = {71489, 71493, 71498},
 	},
@@ -1343,7 +1343,7 @@ t.ITEM_DATA = {
 	[71672] = { -- Chest of the Fiery Vanquisher
 		[0] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = {71537},
-		[6] = {71476, 71481},
+		[CLASS_DEATHKNIGHT] = {71476, 71481},
 		[8] = {71510},
 		[11] = {71486, 71494, 71499},
 	},
@@ -1351,7 +1351,7 @@ t.ITEM_DATA = {
 	[71673] = { -- Shoulders of the Fiery Vanquisher
 		[0] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = {71541},
-		[6] = {71480, 71485},
+		[CLASS_DEATHKNIGHT] = {71480, 71485},
 		[8] = {71511},
 		[11] = {71490, 71495, 71500},
 	},
@@ -1429,7 +1429,7 @@ t.ITEM_DATA = {
 	[78170] = { -- Shoulders of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {77027},
-		[6] = {76978, 77012},
+		[CLASS_DEATHKNIGHT] = {76978, 77012},
 		[8] = {76216},
 		[11] = {76753, 77017, 77022},
 	},
@@ -1437,7 +1437,7 @@ t.ITEM_DATA = {
 	[78171] = { -- Leggings of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {77026},
-		[6] = {76977, 77011},
+		[CLASS_DEATHKNIGHT] = {76977, 77011},
 		[8] = {76214},
 		[11] = {77016, 77020, 76751},
 	},
@@ -1445,7 +1445,7 @@ t.ITEM_DATA = {
 	[78172] = { -- Crown of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {77025},
-		[6] = {76976, 77010},
+		[CLASS_DEATHKNIGHT] = {76976, 77010},
 		[8] = {76213},
 		[11] = {76750, 77015, 77019},
 	},
@@ -1453,7 +1453,7 @@ t.ITEM_DATA = {
 	[78173] = { -- Gauntlets of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {77024},
-		[6] = {76975, 77009},
+		[CLASS_DEATHKNIGHT] = {76975, 77009},
 		[8] = {76212},
 		[11] = {76749, 77014, 77018},
 	},
@@ -1461,7 +1461,7 @@ t.ITEM_DATA = {
 	[78174] = { -- Chest of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {77023},
-		[6] = {76974, 77008},
+		[CLASS_DEATHKNIGHT] = {76974, 77008},
 		[8] = {76215},
 		[11] = {76752, 77013, 77021},
 	},
@@ -1553,7 +1553,7 @@ t.ITEM_DATA = {
 	[78849] = { -- Chest of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78664},
-		[6] = {78659, 78663},
+		[CLASS_DEATHKNIGHT] = {78659, 78663},
 		[8] = {78729},
 		[11] = {78660, 78662, 78665},
 	},
@@ -1575,7 +1575,7 @@ t.ITEM_DATA = {
 	[78852] = { -- Crown of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78699},
-		[6] = {78687, 78697},
+		[CLASS_DEATHKNIGHT] = {78687, 78697},
 		[8] = {78701},
 		[11] = {78690, 78694, 78696},
 	},
@@ -1597,7 +1597,7 @@ t.ITEM_DATA = {
 	[78855] = { -- Gauntlets of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78679},
-		[6] = {78670, 78678},
+		[CLASS_DEATHKNIGHT] = {78670, 78678},
 		[8] = {78671},
 		[11] = {78676, 78680, 78684},
 	},
@@ -1619,7 +1619,7 @@ t.ITEM_DATA = {
 	[78858] = { -- Leggings of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78708},
-		[6] = {78716, 78707},
+		[CLASS_DEATHKNIGHT] = {78716, 78707},
 		[8] = {78720},
 		[11] = {78710, 78713, 78714},
 	},
@@ -1641,7 +1641,7 @@ t.ITEM_DATA = {
 	[78861] = { -- Shoulders of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78738},
-		[6] = {78736, 78751},
+		[CLASS_DEATHKNIGHT] = {78736, 78751},
 		[8] = {78748},
 		[11] = {78740, 78743, 78744},
 	},
@@ -1649,7 +1649,7 @@ t.ITEM_DATA = {
 	[78862] = { -- Chest of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78759},
-		[6] = {78754, 78758},
+		[CLASS_DEATHKNIGHT] = {78754, 78758},
 		[8] = {78824},
 		[11] = {78755, 78757, 78760},
 	},
@@ -1671,7 +1671,7 @@ t.ITEM_DATA = {
 	[78865] = { -- Gauntlets of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78774},
-		[6] = {78765, 78773},
+		[CLASS_DEATHKNIGHT] = {78765, 78773},
 		[8] = {78766},
 		[11] = {78771, 78775, 78779},
 	},
@@ -1693,7 +1693,7 @@ t.ITEM_DATA = {
 	[78868] = { -- Crown of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78794},
-		[6] = {78782, 78792},
+		[CLASS_DEATHKNIGHT] = {78782, 78792},
 		[8] = {78796},
 		[11] = {78785, 78789, 78791},
 	},
@@ -1715,7 +1715,7 @@ t.ITEM_DATA = {
 	[78871] = { -- Leggings of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78803},
-		[6] = {78802, 78811},
+		[CLASS_DEATHKNIGHT] = {78802, 78811},
 		[8] = {78815},
 		[11] = {78805, 78808, 78809},
 	},
@@ -1737,7 +1737,7 @@ t.ITEM_DATA = {
 	[78874] = { -- Shoulders of the Corrupted Vanquisher
 		[0] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = {78833},
-		[6] = {78846, 78831},
+		[CLASS_DEATHKNIGHT] = {78846, 78831},
 		[8] = {78843},
 		[11] = {78838, 78839, 78835},
 	},
@@ -1759,7 +1759,7 @@ t.ITEM_DATA = {
 	[89234] = { -- Helm of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {85301},
-		[6] = {85316, 85336},
+		[CLASS_DEATHKNIGHT] = {85316, 85336},
 		[8] = {85377},
 		[11] = {85307, 85311, 85357, 85381},
 	},
@@ -1797,7 +1797,7 @@ t.ITEM_DATA = {
 	[89239] = { -- Chest of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {85303},
-		[6] = {85318, 85338},
+		[CLASS_DEATHKNIGHT] = {85318, 85338},
 		[8] = {85375},
 		[11] = {85305, 85313, 85355, 85379},
 	},
@@ -1820,7 +1820,7 @@ t.ITEM_DATA = {
 	[89242] = { -- Gauntlets of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {85302},
-		[6] = {85317, 85337},
+		[CLASS_DEATHKNIGHT] = {85317, 85337},
 		[8] = {85378},
 		[11] = {85308, 85312, 85358, 85380},
 	},
@@ -1843,7 +1843,7 @@ t.ITEM_DATA = {
 	[89245] = { -- Leggings of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {85300},
-		[6] = {85315, 85335},
+		[CLASS_DEATHKNIGHT] = {85315, 85335},
 		[8] = {85376},
 		[11] = {85306, 85310, 85356, 85382},
 	},
@@ -1866,7 +1866,7 @@ t.ITEM_DATA = {
 	[89248] = { -- Shoulders of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {85299},
-		[6] = {85314, 85334},
+		[CLASS_DEATHKNIGHT] = {85314, 85334},
 		[8] = {85374},
 		[11] = {85304, 85309, 85354, 85383},
 	},
@@ -1874,7 +1874,7 @@ t.ITEM_DATA = {
 	[89249] = { -- Chest of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {87124},
-		[6] = {86913, 86918},
+		[CLASS_DEATHKNIGHT] = {86913, 86918},
 		[8] = {87010},
 		[11] = {86923, 86931, 86936, 86938},
 	},
@@ -1897,7 +1897,7 @@ t.ITEM_DATA = {
 	[89252] = { -- Leggings of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {87127},
-		[6] = {86916, 86921},
+		[CLASS_DEATHKNIGHT] = {86916, 86921},
 		[8] = {87009},
 		[11] = {86926, 86930, 86935, 86941},
 	},
@@ -1920,7 +1920,7 @@ t.ITEM_DATA = {
 	[89255] = { -- Gauntlets of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {87125},
-		[6] = {86914, 86919},
+		[CLASS_DEATHKNIGHT] = {86914, 86919},
 		[8] = {87007},
 		[11] = {86924, 86928, 86933, 86939},
 	},
@@ -1943,7 +1943,7 @@ t.ITEM_DATA = {
 	[89258] = { -- Helm of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {87126},
-		[6] = {86915, 86920},
+		[CLASS_DEATHKNIGHT] = {86915, 86920},
 		[8] = {87008},
 		[11] = {86934, 86940, 86925, 86929},
 	},
@@ -1966,7 +1966,7 @@ t.ITEM_DATA = {
 	[89261] = { -- Shoulders of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {87128},
-		[6] = {86917, 86922},
+		[CLASS_DEATHKNIGHT] = {86917, 86922},
 		[8] = {87011},
 		[11] = {86927, 86932, 86937, 86942},
 	},
@@ -1989,7 +1989,7 @@ t.ITEM_DATA = {
 	[89264] = { -- Chest of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {86643},
-		[6] = {86658, 86678},
+		[CLASS_DEATHKNIGHT] = {86658, 86678},
 		[8] = {86715},
 		[11] = {86719, 86645, 86653, 86695},
 	},
@@ -2012,7 +2012,7 @@ t.ITEM_DATA = {
 	[89267] = { -- Leggings of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {86640},
-		[6] = {86655, 86675},
+		[CLASS_DEATHKNIGHT] = {86655, 86675},
 		[8] = {86716},
 		[11] = {86646, 86650, 86696, 86722},
 	},
@@ -2035,7 +2035,7 @@ t.ITEM_DATA = {
 	[89270] = { -- Gauntlets of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {86642},
-		[6] = {86657, 86677},
+		[CLASS_DEATHKNIGHT] = {86657, 86677},
 		[8] = {86718},
 		[11] = {86648, 86652, 86698, 86720},
 	},
@@ -2058,7 +2058,7 @@ t.ITEM_DATA = {
 	[89273] = { -- Helm of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {86641},
-		[6] = {86656, 86676},
+		[CLASS_DEATHKNIGHT] = {86656, 86676},
 		[8] = {86717},
 		[11] = {86647, 86651, 86697, 86721},
 	},
@@ -2081,7 +2081,7 @@ t.ITEM_DATA = {
 	[89276] = { -- Shoulders of the Shadowy Vanquisher
 		[0] = REDEEM_MOP_OXHEART,
 		[CLASS_ROGUE] = {86639},
-		[6] = {86654, 86674},
+		[CLASS_DEATHKNIGHT] = {86654, 86674},
 		[8] = {86714},
 		[11] = {86644, 86649, 86694, 86723},
 	},
@@ -2104,7 +2104,7 @@ t.ITEM_DATA = {
 	[95569] = { -- Chest of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95305},
-		[6] = {95225, 95230},
+		[CLASS_DEATHKNIGHT] = {95225, 95230},
 		[8] = {95263},
 		[11] = {95235, 95243, 95248, 95250},
 	},
@@ -2112,7 +2112,7 @@ t.ITEM_DATA = {
 	[95570] = { -- Gauntlets of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95306},
-		[6] = {95226, 95231},
+		[CLASS_DEATHKNIGHT] = {95226, 95231},
 		[8] = {95260},
 		[11] = {95236, 95240, 95245, 95251},
 	},
@@ -2120,7 +2120,7 @@ t.ITEM_DATA = {
 	[95571] = { -- Helm of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95307},
-		[6] = {95227, 95232},
+		[CLASS_DEATHKNIGHT] = {95227, 95232},
 		[8] = {95261},
 		[11] = {95237, 95241, 95246, 95252},
 	},
@@ -2128,7 +2128,7 @@ t.ITEM_DATA = {
 	[95572] = { -- Leggings of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95308},
-		[6] = {95228, 95233},
+		[CLASS_DEATHKNIGHT] = {95228, 95233},
 		[8] = {95262},
 		[11] = {95238, 95242, 95247, 95253},
 	},
@@ -2136,7 +2136,7 @@ t.ITEM_DATA = {
 	[95573] = { -- Shoulders of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95309},
-		[6] = {95229, 95234},
+		[CLASS_DEATHKNIGHT] = {95229, 95234},
 		[8] = {95264},
 		[11] = {95239, 95244, 95249, 95254},
 	},
@@ -2219,7 +2219,7 @@ t.ITEM_DATA = {
 	[95822] = { -- Chest of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95935},
-		[6] = {95825, 95830},
+		[CLASS_DEATHKNIGHT] = {95825, 95830},
 		[8] = {95893},
 		[11] = {95843, 95848, 95850, 95835},
 	},
@@ -2242,7 +2242,7 @@ t.ITEM_DATA = {
 	[95855] = { -- Gauntlets of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95936},
-		[6] = {95826, 95831},
+		[CLASS_DEATHKNIGHT] = {95826, 95831},
 		[8] = {95890},
 		[11] = {95836, 95840, 95845, 95851},
 	},
@@ -2265,7 +2265,7 @@ t.ITEM_DATA = {
 	[95879] = { -- Helm of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95937},
-		[6] = {95827, 95832},
+		[CLASS_DEATHKNIGHT] = {95827, 95832},
 		[8] = {95891},
 		[11] = {95837, 95841, 95846, 95852},
 	},
@@ -2288,7 +2288,7 @@ t.ITEM_DATA = {
 	[95887] = { -- Leggings of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95938},
-		[6] = {95828, 95833},
+		[CLASS_DEATHKNIGHT] = {95828, 95833},
 		[8] = {95892},
 		[11] = {95838, 95842, 95847, 95853},
 	},
@@ -2304,7 +2304,7 @@ t.ITEM_DATA = {
 	[95955] = { -- Shoulders of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {95939},
-		[6] = {95834, 95829},
+		[CLASS_DEATHKNIGHT] = {95834, 95829},
 		[8] = {95894},
 		[11] = {95839, 95844, 95849, 95854},
 	},
@@ -2327,7 +2327,7 @@ t.ITEM_DATA = {
 	[96566] = { -- Chest of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {96679},
-		[6] = {96569, 96574},
+		[CLASS_DEATHKNIGHT] = {96569, 96574},
 		[8] = {96637},
 		[11] = {96579, 96587, 96592, 96594},
 	},
@@ -2350,7 +2350,7 @@ t.ITEM_DATA = {
 	[96599] = { -- Gauntlets of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {96680},
-		[6] = {96570, 96575},
+		[CLASS_DEATHKNIGHT] = {96570, 96575},
 		[8] = {96634},
 		[11] = {96580, 96584, 96589, 96595},
 	},
@@ -2366,7 +2366,7 @@ t.ITEM_DATA = {
 	[96623] = { -- Helm of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {96681},
-		[6] = {96571, 96576},
+		[CLASS_DEATHKNIGHT] = {96571, 96576},
 		[8] = {96635},
 		[11] = {96581, 96585, 96590, 96596},
 	},
@@ -2389,7 +2389,7 @@ t.ITEM_DATA = {
 	[96631] = { -- Leggings of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {96682},
-		[6] = {96572, 96577},
+		[CLASS_DEATHKNIGHT] = {96572, 96577},
 		[8] = {96636},
 		[11] = {96582, 96586, 96591, 96597},
 	},
@@ -2412,7 +2412,7 @@ t.ITEM_DATA = {
 	[96699] = { -- Shoulders of the Crackling Vanquisher
 		[0] = REDEEM_TIER_15,
 		[CLASS_ROGUE] = {96683},
-		[6] = {96573, 96578},
+		[CLASS_DEATHKNIGHT] = {96573, 96578},
 		[8] = {96638},
 		[11] = {96583, 96588, 96593, 96598},
 	},
@@ -2443,7 +2443,7 @@ t.ITEM_DATA = {
 	[99668] = { -- Shoulders of the Cursed Vanquisher (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = {99010},
-		[6] = {99040, 99059},
+		[CLASS_DEATHKNIGHT] = {99040, 99059},
 		[8] = {99079},
 		[11] = {98978, 98998, 99016, 99022},
 	},
@@ -2466,7 +2466,7 @@ t.ITEM_DATA = {
 	[99671] = { -- Helm of the Cursed Vanquisher (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = {99008},
-		[6] = {99049, 99057},
+		[CLASS_DEATHKNIGHT] = {99049, 99057},
 		[8] = {99084},
 		[11] = {98995, 99001, 99013, 99043},
 	},
@@ -2489,7 +2489,7 @@ t.ITEM_DATA = {
 	[99674] = { -- Leggings of the Cursed Vanquisher (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = {99009},
-		[6] = {99039, 99058},
+		[CLASS_DEATHKNIGHT] = {99039, 99058},
 		[8] = {99077},
 		[11] = {98981, 98996, 99014, 99044},
 	},
@@ -2512,7 +2512,7 @@ t.ITEM_DATA = {
 	[99677] = { -- Chest of the Cursed Vanquisher (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = {99006},
-		[6] = {99060, 99066},
+		[CLASS_DEATHKNIGHT] = {99060, 99066},
 		[8] = {99078},
 		[11] = {98997, 98999, 99015, 99041},
 	},
@@ -2535,7 +2535,7 @@ t.ITEM_DATA = {
 	[99680] = { -- Gauntlets of the Cursed Vanquisher (Raid Finder)
 		[0] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = {99007},
-		[6] = {99048, 99067},
+		[CLASS_DEATHKNIGHT] = {99048, 99067},
 		[8] = {99083},
 		[11] = {98994, 99000, 99012, 99042},
 	},
@@ -2550,7 +2550,7 @@ t.ITEM_DATA = {
 	[99682] = { -- Gauntlets of the Cursed Vanquisher (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = {99113},
-		[6] = {99189, 99193},
+		[CLASS_DEATHKNIGHT] = {99189, 99193},
 		[8] = {99160},
 		[11] = {99163, 99174, 99181, 99185},
 	},
@@ -2558,7 +2558,7 @@ t.ITEM_DATA = {
 	[99683] = { -- Helm of the Cursed Vanquisher (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = {99114},
-		[6] = {99190, 99194},
+		[CLASS_DEATHKNIGHT] = {99190, 99194},
 		[8] = {99161},
 		[11] = {99164, 99175, 99178, 99182},
 	},
@@ -2566,7 +2566,7 @@ t.ITEM_DATA = {
 	[99684] = { -- Leggings of the Cursed Vanquisher (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = {99115},
-		[6] = {99186, 99191},
+		[CLASS_DEATHKNIGHT] = {99186, 99191},
 		[8] = {99162},
 		[11] = {99165, 99171, 99176, 99183},
 	},
@@ -2574,7 +2574,7 @@ t.ITEM_DATA = {
 	[99685] = { -- Shoulders of the Cursed Vanquisher (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = {99116},
-		[6] = {99179, 99187},
+		[CLASS_DEATHKNIGHT] = {99179, 99187},
 		[8] = {99153},
 		[11] = {99166, 99169, 99173, 99184},
 	},
@@ -2657,7 +2657,7 @@ t.ITEM_DATA = {
 	[99696] = { -- Chest of the Cursed Vanquisher (Heroic)
 		[0] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = {99112},
-		[6] = {99188, 99192},
+		[CLASS_DEATHKNIGHT] = {99188, 99192},
 		[8] = {99152},
 		[11] = {99170, 99172, 99177, 99180},
 	},
@@ -2680,7 +2680,7 @@ t.ITEM_DATA = {
 	[99714] = { -- Chest of the Cursed Vanquisher (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = {99356},
-		[6] = {99330, 99335},
+		[CLASS_DEATHKNIGHT] = {99330, 99335},
 		[8] = {99400},
 		[11] = {99326, 99419, 99427, 99430},
 	},
@@ -2703,7 +2703,7 @@ t.ITEM_DATA = {
 	[99717] = { -- Shoulders of the Cursed Vanquisher (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = {99350},
-		[6] = {99325, 99339},
+		[CLASS_DEATHKNIGHT] = {99325, 99339},
 		[8] = {99401},
 		[11] = {99322, 99423, 99428, 99431},
 	},
@@ -2726,7 +2726,7 @@ t.ITEM_DATA = {
 	[99720] = { -- Gauntlets of the Cursed Vanquisher (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = {99355},
-		[6] = {99331, 99336},
+		[CLASS_DEATHKNIGHT] = {99331, 99336},
 		[8] = {99397},
 		[11] = {99327, 99420, 99432, 99435},
 	},
@@ -2749,7 +2749,7 @@ t.ITEM_DATA = {
 	[99723] = { -- Helm of the Cursed Vanquisher (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = {99348},
-		[6] = {99323, 99337},
+		[CLASS_DEATHKNIGHT] = {99323, 99337},
 		[8] = {99398},
 		[11] = {99328, 99421, 99433, 99436},
 	},
@@ -2772,7 +2772,7 @@ t.ITEM_DATA = {
 	[99726] = { -- Leggings of the Cursed Vanquisher (Mythic)
 		[0] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = {99349},
-		[6] = {99324, 99338},
+		[CLASS_DEATHKNIGHT] = {99324, 99338},
 		[8] = {99399},
 		[11] = {99329, 99422, 99429, 99434},
 	},
@@ -2780,7 +2780,7 @@ t.ITEM_DATA = {
 	[99742] = { -- Chest of the Cursed Vanquisher
 		[0] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = {99629},
-		[6] = {99608, 99640},
+		[CLASS_DEATHKNIGHT] = {99608, 99640},
 		[8] = {99658},
 		[11] = {99582, 99620, 99622, 99632},
 	},
@@ -2803,7 +2803,7 @@ t.ITEM_DATA = {
 	[99745] = { -- Gauntlets of the Cursed Vanquisher
 		[0] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = {99630},
-		[6] = {99604, 99609},
+		[CLASS_DEATHKNIGHT] = {99604, 99609},
 		[8] = {99575},
 		[11] = {99623, 99633, 99637, 99617},
 	},
@@ -2826,7 +2826,7 @@ t.ITEM_DATA = {
 	[99748] = { -- Helm of the Cursed Vanquisher
 		[0] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = {99631},
-		[6] = {99571, 99605},
+		[CLASS_DEATHKNIGHT] = {99571, 99605},
 		[8] = {99576},
 		[11] = {99599, 99618, 99624, 99638},
 	},
@@ -2849,7 +2849,7 @@ t.ITEM_DATA = {
 	[99751] = { -- Leggings of the Cursed Vanquisher
 		[0] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = {99634},
-		[6] = {99564, 99572},
+		[CLASS_DEATHKNIGHT] = {99564, 99572},
 		[8] = {99657},
 		[11] = {99581, 99600, 99610, 99619},
 	},
@@ -2872,7 +2872,7 @@ t.ITEM_DATA = {
 	[99754] = { -- Shoulders of the Cursed Vanquisher
 		[0] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = {99635},
-		[6] = {99639, 99652},
+		[CLASS_DEATHKNIGHT] = {99639, 99652},
 		[8] = {99659},
 		[11] = {99664, 99583, 99589, 99621},
 	},
@@ -2896,7 +2896,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124566},
 		[CLASS_PALADIN] = {124566},
-		[6] = {124566},
+		[CLASS_DEATHKNIGHT] = {124566},
 		[CLASS_HUNTER] = {124565},
 		[7] = {124565},
 		[8] = {124563},
@@ -2912,7 +2912,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124569},
 		[CLASS_PALADIN] = {124569},
-		[6] = {124569},
+		[CLASS_DEATHKNIGHT] = {124569},
 		[CLASS_HUNTER] = {124568},
 		[7] = {124568},
 		[8] = {124570},
@@ -2928,7 +2928,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124574},
 		[CLASS_PALADIN] = {124574},
-		[6] = {124574},
+		[CLASS_DEATHKNIGHT] = {124574},
 		[CLASS_HUNTER] = {124573},
 		[7] = {124573},
 		[8] = {124571},
@@ -2944,7 +2944,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124578},
 		[CLASS_PALADIN] = {124578},
-		[6] = {124578},
+		[CLASS_DEATHKNIGHT] = {124578},
 		[CLASS_HUNTER] = {124577},
 		[7] = {124577},
 		[8] = {124575},
@@ -2960,7 +2960,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124582},
 		[CLASS_PALADIN] = {124582},
-		[6] = {124582},
+		[CLASS_DEATHKNIGHT] = {124582},
 		[CLASS_HUNTER] = {124581},
 		[7] = {124581},
 		[8] = {124579},
@@ -2976,7 +2976,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124586},
 		[CLASS_PALADIN] = {124586},
-		[6] = {124586},
+		[CLASS_DEATHKNIGHT] = {124586},
 		[CLASS_HUNTER] = {124585},
 		[7] = {124585},
 		[8] = {124583},
@@ -2992,7 +2992,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
 		[CLASS_PALADIN] = {124590},
-		[6] = {124590},
+		[CLASS_DEATHKNIGHT] = {124590},
 		[CLASS_HUNTER] = {124589},
 		[7] = {124589},
 		[8] = {124587},
@@ -3008,7 +3008,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124594},
 		[CLASS_PALADIN] = {124594},
-		[6] = {124594},
+		[CLASS_DEATHKNIGHT] = {124594},
 		[CLASS_HUNTER] = {124593},
 		[7] = {124593},
 		[8] = {124591},
@@ -3192,63 +3192,63 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124566},
 		[CLASS_PALADIN] = {124566},
-		[6] = {124566},
+		[CLASS_DEATHKNIGHT] = {124566},
 	},
 
 	[127817] = { -- Baleful Plate Chest
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124569},
 		[CLASS_PALADIN] = {124569},
-		[6] = {124569},
+		[CLASS_DEATHKNIGHT] = {124569},
 	},
 
 	[127818] = { -- Baleful Plate Treads
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124574},
 		[CLASS_PALADIN] = {124574},
-		[6] = {124574},
+		[CLASS_DEATHKNIGHT] = {124574},
 	},
 
 	[127819] = { -- Baleful Plate Gauntlets
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124578},
 		[CLASS_PALADIN] = {124578},
-		[6] = {124578},
+		[CLASS_DEATHKNIGHT] = {124578},
 	},
 
 	[127820] = { -- Baleful Plate Hood
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124582},
 		[CLASS_PALADIN] = {124582},
-		[6] = {124582},
+		[CLASS_DEATHKNIGHT] = {124582},
 	},
 
 	[127821] = { -- Baleful Plate Leggings
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124586},
 		[CLASS_PALADIN] = {124586},
-		[6] = {124586},
+		[CLASS_DEATHKNIGHT] = {124586},
 	},
 
 	[127822] = { -- Baleful Plate Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
 		[CLASS_PALADIN] = {124590},
-		[6] = {124590},
+		[CLASS_DEATHKNIGHT] = {124590},
 	},
 
 	[127823] = { -- Baleful Plate Girdle
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124594},
 		[CLASS_PALADIN] = {124594},
-		[6] = {124594},
+		[CLASS_DEATHKNIGHT] = {124594},
 	},
 
 	[128348] = { -- Baleful Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124590},
 		[CLASS_PALADIN] = {124590},
-		[6] = {124590},
+		[CLASS_DEATHKNIGHT] = {124590},
 		[CLASS_HUNTER] = {124589},
 		[7] = {124589},
 		[8] = {124587},
@@ -3264,7 +3264,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_PALADIN] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[6] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_DEATHKNIGHT] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_HUNTER] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[7] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[8] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3280,7 +3280,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_PALADIN] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[6] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_DEATHKNIGHT] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_HUNTER] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[7] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[8] = {124613, 124616, 124614, 124615, 124618, 124617},
@@ -3296,7 +3296,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {BALEFUL_WEP_STAFF, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_GUN, BALEFUL_WEP_DAGGER, BALEFUL_WEP_POLEARM, BALEFUL_WEP_1H_AXE},
 		[CLASS_PALADIN] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM},
-		[6] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM}, -- Death Knight
+		[CLASS_DEATHKNIGHT] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM},
 		[CLASS_HUNTER] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_2H_SWORD, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER, BALEFUL_WEP_GUN},
 		[7] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER}, -- Shaman
 		[8] = {BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_DAGGER}, -- Mage
@@ -3312,49 +3312,49 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101789, 101851, 101819},
 		[CLASS_PALADIN] = {101789, 101851, 101819},
-		[6] = {101789, 101851, 101819},
+		[CLASS_DEATHKNIGHT] = {101789, 101851, 101819},
 	},
 
 	[102264] = { -- Timeless Plate Boots
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101797, 101859, 101825},
 		[CLASS_PALADIN] = {101797, 101859, 101825},
-		[6] = {101797, 101859, 101825},
+		[CLASS_DEATHKNIGHT] = {101797, 101859, 101825},
 	},
 
 	[102265] = { -- Timeless Plate Gloves
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101791, 101853, 101820},
 		[CLASS_PALADIN] = {101791, 101853, 101820},
-		[6] = {101791, 101853, 101820},
+		[CLASS_DEATHKNIGHT] = {101791, 101853, 101820},
 	},
 
 	[102266] = { -- Timeless Plate Helm
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101793, 101855, 101822},
 		[CLASS_PALADIN] = {101793, 101855, 101822},
-		[6] = {101793, 101855, 101822},
+		[CLASS_DEATHKNIGHT] = {101793, 101855, 101822},
 	},
 
 	[102267] = { -- Timeless Plate Leggings
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101794, 101856, 101823},
 		[CLASS_PALADIN] = {101794, 101856, 101823},
-		[6] = {101794, 101856, 101823},
+		[CLASS_DEATHKNIGHT] = {101794, 101856, 101823},
 	},
 
 	[102268] = { -- Timeless Plate Spaulders
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101796, 101858, 101824},
 		[CLASS_PALADIN] = {101796, 101858, 101824},
-		[6] = {101796, 101858, 101824},
+		[CLASS_DEATHKNIGHT] = {101796, 101858, 101824},
 	},
 
 	[102269] = { -- Timeless Plate Belt
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101792, 101854, 101821},
 		[CLASS_PALADIN] = {101792, 101854, 101821},
-		[6] = {101792, 101854, 101821},
+		[CLASS_DEATHKNIGHT] = {101792, 101854, 101821},
 	},
 
 	[102270] = { -- Timeless Mail Chestpiece
@@ -3508,7 +3508,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101799, 101861, 101826},
 		[CLASS_PALADIN] = {101799, 101861, 101826},
-		[6] = {101799, 101861, 101826},
+		[CLASS_DEATHKNIGHT] = {101799, 101861, 101826},
 	},
 
 	[102321] = { -- Timeless Cloth Bracers
@@ -3536,7 +3536,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_PALADIN] = {101800, 101790, 101852, 101848, 101828},
-		[6] = {101800, 101790, 101852, 101848, 101828},
+		[CLASS_DEATHKNIGHT] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_HUNTER] = {101800, 101790, 101852, 101848, 101828},
 		[7] = {101800, 101790, 101852, 101848, 101828},
 		[8] = {101800, 101790, 101852, 101848, 101828},
@@ -3557,7 +3557,7 @@ t.HORDE_ONLY_DATA = {
 		[CLASS_HUNTER] = {48271, 48272, 48273, 48274, 48270},
 		[CLASS_ROGUE] = {48240, 48238, 48241, 48242, 48239},
 		[CLASS_PRIEST] = {48094, 48062, 48096, 48063, 48064, 48095, 48065, 48066, 48092, 48093},
-		[6] = {48499, 48500, 48553, 48496, 48554, 48555, 48497, 48556, 48557, 48498},
+		[CLASS_DEATHKNIGHT] = {48499, 48500, 48553, 48496, 48554, 48555, 48497, 48556, 48557, 48498},
 		[7] = {48363, 48334, 48364, 48304, 48332, 48365, 48335, 48331, 48300, 48361, 48301, 48333, 48302, 48362, 48303},
 		[8] = {47771, 47770, 47769, 47772, 47768},
 		[9] = {47807, 47803, 47804, 47805, 47806},
@@ -3573,7 +3573,7 @@ t.ALLIANCE_ONLY_DATA = {
 		[CLASS_HUNTER] = {48255, 48256, 48257, 48258, 48259},
 		[CLASS_ROGUE] = {48223, 48224, 48225, 48226, 48227},
 		[CLASS_PRIEST] = {48078, 48079, 48080, 48081, 47983, 47984, 47985, 47986, 47987, 48077},
-		[6] = {48481, 48482, 48483, 48484, 48485, 48538, 48539, 48540, 48541, 48542},
+		[CLASS_DEATHKNIGHT] = {48481, 48482, 48483, 48484, 48485, 48538, 48539, 48540, 48541, 48542},
 		[7] = {48288, 48289, 48316, 48317, 48318, 48319, 48320, 48346, 48347, 48348, 48349, 48350, 48285, 48286, 48287},
 		[8] = {47753, 47754, 47755, 47756, 47757},
 		[9] = {47778, 47779, 47780, 47781, 47782},

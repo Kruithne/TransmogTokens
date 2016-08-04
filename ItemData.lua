@@ -237,7 +237,7 @@ t.ITEM_DATA = {
 		[CLASS_SHAMAN] = {71562, 71559, 71560, 71561},
 		[CLASS_MAGE] = {71559, 71560, 71579, 71575},
 		[CLASS_WARLOCK] = {71559, 71560, 71579, 71575},
-		[10] = {71562, 71557, 71559, 71641}, -- Monk
+		[CLASS_MONK] = {71562, 71557, 71559, 71641},
 		[11] = {71557, 71559, 71560, 71579, 71575, 71641}, -- Druid
 		[12] = {71562, 71560, 71641}, -- Demon Hunter
 	},
@@ -628,7 +628,7 @@ t.ITEM_DATA = {
 		[CLASS_PRIEST] = {33913},
 		[CLASS_MAGE] = {34447, 33913},
 		[CLASS_WARLOCK] = {33913},
-		[10] = {33917, 33881, 33887, 33893},
+		[CLASS_MONK] = {33917, 33881, 33887, 33893},
 		[11] = {34444, 34445, 34446, 33917, 33881, 33887, 33893},
 	},
 
@@ -658,7 +658,7 @@ t.ITEM_DATA = {
 		[CLASS_PRIEST] = {33912},
 		[CLASS_MAGE] = {34557, 33912},
 		[CLASS_WARLOCK] = {33912},
-		[10] = {33879, 33885, 33891, 33915},
+		[CLASS_MONK] = {33879, 33885, 33891, 33915},
 		[11] = {34554, 34555, 34556, 33879, 33885, 33891, 33915},
 	},
 
@@ -688,7 +688,7 @@ t.ITEM_DATA = {
 		[CLASS_PRIEST] = {33914},
 		[CLASS_MAGE] = {34574, 33914},
 		[CLASS_WARLOCK] = {33914},
-		[10] = {33880, 33886, 33892, 33916},
+		[CLASS_MONK] = {33880, 33886, 33892, 33916},
 		[11] = {34571, 34572, 34573, 33880, 33886, 33892, 33916},
 	},
 
@@ -1776,7 +1776,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {85326, 85333},
 		[CLASS_HUNTER] = {85296},
 		[CLASS_SHAMAN] = {85286, 85291, 85351},
-		[10] = {85386, 85390, 85396},
+		[CLASS_MONK] = {85386, 85390, 85396},
 	},
 
 	[89237] = { -- Chest of the Shadowy Conqueror
@@ -1791,7 +1791,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {85328, 85332},
 		[CLASS_HUNTER] = {85298},
 		[CLASS_SHAMAN] = {85288, 85289, 85353},
-		[10] = {85394, 85388, 85392},
+		[CLASS_MONK] = {85394, 85388, 85392},
 	},
 
 	[89239] = { -- Chest of the Shadowy Vanquisher
@@ -1814,7 +1814,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {85327, 85331},
 		[CLASS_HUNTER] = {85297},
 		[CLASS_SHAMAN] = {85287, 85290, 85352},
-		[10] = {85387, 85389, 85395},
+		[CLASS_MONK] = {85387, 85389, 85395},
 	},
 
 	[89242] = { -- Gauntlets of the Shadowy Vanquisher
@@ -1837,7 +1837,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {85325, 85330},
 		[CLASS_HUNTER] = {85295},
 		[CLASS_SHAMAN] = {85285, 85292, 85350},
-		[10] = {85385, 85391, 85397},
+		[CLASS_MONK] = {85385, 85391, 85397},
 	},
 
 	[89245] = { -- Leggings of the Shadowy Vanquisher
@@ -1860,7 +1860,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {85324, 85329},
 		[CLASS_HUNTER] = {85294},
 		[CLASS_SHAMAN] = {85284, 85293, 85349},
-		[10] = {85384, 85393, 85398},
+		[CLASS_MONK] = {85384, 85393, 85398},
 	},
 
 	[89248] = { -- Shoulders of the Shadowy Vanquisher
@@ -1891,7 +1891,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {87193, 87197},
 		[CLASS_HUNTER] = {87002},
 		[CLASS_SHAMAN] = {87129, 87134, 87139},
-		[10] = {87084, 87092, 87094},
+		[CLASS_MONK] = {87084, 87092, 87094},
 	},
 
 	[89252] = { -- Leggings of the Shadowy Vanquisher
@@ -1914,7 +1914,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {87195, 87200},
 		[CLASS_HUNTER] = {87005},
 		[CLASS_SHAMAN] = {87132, 87137, 87142},
-		[10] = {87087, 87091, 87097},
+		[CLASS_MONK] = {87087, 87091, 87097},
 	},
 
 	[89255] = { -- Gauntlets of the Shadowy Vanquisher
@@ -1937,7 +1937,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {87194, 87198},
 		[CLASS_HUNTER] = {87003},
 		[CLASS_SHAMAN] = {87130, 87135, 87140},
-		[10] = {87085, 87089, 87095},
+		[CLASS_MONK] = {87085, 87089, 87095},
 	},
 
 	[89258] = { -- Helm of the Shadowy Vanquisher
@@ -1960,7 +1960,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {87192, 87199},
 		[CLASS_HUNTER] = {87004},
 		[CLASS_SHAMAN] = {87131, 87136, 87141},
-		[10] = {87086, 87090, 87096},
+		[CLASS_MONK] = {87086, 87090, 87096},
 	},
 
 	[89261] = { -- Shoulders of the Shadowy Vanquisher
@@ -1983,7 +1983,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {87196, 87201},
 		[CLASS_HUNTER] = {87006},
 		[CLASS_SHAMAN] = {87133, 87138, 87143},
-		[10] = {87088, 87093, 87098},
+		[CLASS_MONK] = {87088, 87093, 87098},
 	},
 
 	[89264] = { -- Chest of the Shadowy Vanquisher
@@ -2006,7 +2006,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {86668, 86672},
 		[CLASS_HUNTER] = {86638},
 		[CLASS_SHAMAN] = {86693, 86628, 86629},
-		[10] = {86728, 86732, 86734},
+		[CLASS_MONK] = {86728, 86732, 86734},
 	},
 
 	[89267] = { -- Leggings of the Shadowy Vanquisher
@@ -2029,7 +2029,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {86665, 86670},
 		[CLASS_HUNTER] = {86635},
 		[CLASS_SHAMAN] = {86632, 86690, 86625},
-		[10] = {86725, 86731, 86737},
+		[CLASS_MONK] = {86725, 86731, 86737},
 	},
 
 	[89270] = { -- Gauntlets of the Shadowy Vanquisher
@@ -2052,7 +2052,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {86667, 86671},
 		[CLASS_HUNTER] = {86637},
 		[CLASS_SHAMAN] = {86627, 86630, 86692},
-		[10] = {86727, 86729, 86735},
+		[CLASS_MONK] = {86727, 86729, 86735},
 	},
 
 	[89273] = { -- Helm of the Shadowy Vanquisher
@@ -2075,7 +2075,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {86666, 86673},
 		[CLASS_HUNTER] = {86636},
 		[CLASS_SHAMAN] = {86626, 86631, 86691},
-		[10] = {86726, 86730, 86736},
+		[CLASS_MONK] = {86726, 86730, 86736},
 	},
 
 	[89276] = { -- Shoulders of the Shadowy Vanquisher
@@ -2098,7 +2098,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {86664, 86669},
 		[CLASS_HUNTER] = {86634},
 		[CLASS_SHAMAN] = {86624, 86633, 86689},
-		[10] = {86724, 86733, 86738},
+		[CLASS_MONK] = {86724, 86733, 86738},
 	},
 
 	[95569] = { -- Chest of the Crackling Vanquisher
@@ -2181,7 +2181,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95331, 95335},
 		[CLASS_HUNTER] = {95255},
 		[CLASS_SHAMAN] = {95310, 95315, 95320},
-		[10] = {95265, 95273, 95275},
+		[CLASS_MONK] = {95265, 95273, 95275},
 	},
 
 	[95580] = { -- Gauntlets of the Crackling Protector
@@ -2189,7 +2189,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95332, 95336},
 		[CLASS_HUNTER] = {95256},
 		[CLASS_SHAMAN] = {95311, 95316, 95321},
-		[10] = {95266, 95270, 95276},
+		[CLASS_MONK] = {95266, 95270, 95276},
 	},
 
 	[95581] = { -- Leggings of the Crackling Protector
@@ -2197,7 +2197,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95333, 95338},
 		[CLASS_HUNTER] = {95258},
 		[CLASS_SHAMAN] = {95313, 95318, 95323},
-		[10] = {95268, 95272, 95278},
+		[CLASS_MONK] = {95268, 95272, 95278},
 	},
 
 	[95582] = { -- Helm of the Crackling Protector
@@ -2205,7 +2205,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95330, 95337},
 		[CLASS_HUNTER] = {95257},
 		[CLASS_SHAMAN] = {95312, 95317, 95322},
-		[10] = {95267, 95271, 95277},
+		[CLASS_MONK] = {95267, 95271, 95277},
 	},
 
 	[95583] = { -- Shoulders of the Crackling Protector
@@ -2213,7 +2213,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95334, 95339},
 		[CLASS_HUNTER] = {95259},
 		[CLASS_SHAMAN] = {95314, 95319, 95324},
-		[10] = {95269, 95274, 95279},
+		[CLASS_MONK] = {95269, 95274, 95279},
 	},
 
 	[95822] = { -- Chest of the Crackling Vanquisher
@@ -2236,7 +2236,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95987, 95991},
 		[CLASS_HUNTER] = {95882},
 		[CLASS_SHAMAN] = {95940, 95945, 95950},
-		[10] = {95895, 95903, 95905},
+		[CLASS_MONK] = {95895, 95903, 95905},
 	},
 
 	[95855] = { -- Gauntlets of the Crackling Vanquisher
@@ -2259,7 +2259,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95988, 95992},
 		[CLASS_HUNTER] = {95883},
 		[CLASS_SHAMAN] = {95941, 95946, 95951},
-		[10] = {95896, 95900, 95906},
+		[CLASS_MONK] = {95896, 95900, 95906},
 	},
 
 	[95879] = { -- Helm of the Crackling Vanquisher
@@ -2282,7 +2282,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95986, 95993},
 		[CLASS_HUNTER] = {95884},
 		[CLASS_SHAMAN] = {95942, 95947, 95952},
-		[10] = {95897, 95901, 95907},
+		[CLASS_MONK] = {95897, 95901, 95907},
 	},
 
 	[95887] = { -- Leggings of the Crackling Vanquisher
@@ -2298,7 +2298,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95989, 95994},
 		[CLASS_HUNTER] = {95885},
 		[CLASS_SHAMAN] = {95943, 95948, 95953},
-		[10] = {95898, 95902, 95908},
+		[CLASS_MONK] = {95898, 95902, 95908},
 	},
 
 	[95955] = { -- Shoulders of the Crackling Vanquisher
@@ -2321,7 +2321,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {95990, 95995},
 		[CLASS_HUNTER] = {95886},
 		[CLASS_SHAMAN] = {95944, 95949, 95954},
-		[10] = {95899, 95904, 95909},
+		[CLASS_MONK] = {95899, 95904, 95909},
 	},
 
 	[96566] = { -- Chest of the Crackling Vanquisher
@@ -2344,7 +2344,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {96731, 96735},
 		[CLASS_HUNTER] = {96626},
 		[CLASS_SHAMAN] = {96694, 96684, 96689},
-		[10] = {96639, 96647, 96649},
+		[CLASS_MONK] = {96639, 96647, 96649},
 	},
 
 	[96599] = { -- Gauntlets of the Crackling Vanquisher
@@ -2360,7 +2360,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {96732, 96736},
 		[CLASS_HUNTER] = {96627},
 		[CLASS_SHAMAN] = {96695, 96685, 96690},
-		[10] = {96640, 96644, 96650},
+		[CLASS_MONK] = {96640, 96644, 96650},
 	},
 
 	[96623] = { -- Helm of the Crackling Vanquisher
@@ -2383,7 +2383,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {96730, 96737},
 		[CLASS_HUNTER] = {96628},
 		[CLASS_SHAMAN] = {96686, 96691, 96696},
-		[10] = {96641, 96645, 96651},
+		[CLASS_MONK] = {96641, 96645, 96651},
 	},
 
 	[96631] = { -- Leggings of the Crackling Vanquisher
@@ -2406,7 +2406,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {96733, 96738},
 		[CLASS_HUNTER] = {96629},
 		[CLASS_SHAMAN] = {96687, 96692, 96697},
-		[10] = {96642, 96646, 96652},
+		[CLASS_MONK] = {96642, 96646, 96652},
 	},
 
 	[96699] = { -- Shoulders of the Crackling Vanquisher
@@ -2429,7 +2429,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {96734, 96739},
 		[CLASS_HUNTER] = {96630},
 		[CLASS_SHAMAN] = {96688, 96693, 96698},
-		[10] = {96643, 96648, 96653},
+		[CLASS_MONK] = {96643, 96648, 96653},
 	},
 
 	[99667] = { -- Gauntlets of the Cursed Protector (Raid Finder)
@@ -2437,7 +2437,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99034, 99038},
 		[CLASS_HUNTER] = {99086},
 		[CLASS_SHAMAN] = {98993, 99088, 98988},
-		[10] = {99064, 99068, 99072},
+		[CLASS_MONK] = {99064, 99068, 99072},
 	},
 
 	[99668] = { -- Shoulders of the Cursed Vanquisher (Raid Finder)
@@ -2460,7 +2460,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99030, 99036},
 		[CLASS_HUNTER] = {99082},
 		[CLASS_SHAMAN] = {99091, 98977, 98991},
-		[10] = {99051, 99062, 99075},
+		[CLASS_MONK] = {99051, 99062, 99075},
 	},
 
 	[99671] = { -- Helm of the Cursed Vanquisher (Raid Finder)
@@ -2483,7 +2483,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99032, 99046},
 		[CLASS_HUNTER] = {99080},
 		[CLASS_SHAMAN] = {99089, 98983, 98989},
-		[10] = {99065, 99069, 99073},
+		[CLASS_MONK] = {99065, 99069, 99073},
 	},
 
 	[99674] = { -- Leggings of the Cursed Vanquisher (Raid Finder)
@@ -2506,7 +2506,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99033, 99035},
 		[CLASS_HUNTER] = {99081},
 		[CLASS_SHAMAN] = {98984, 98990, 99090},
-		[10] = {99050, 99070, 99074},
+		[CLASS_MONK] = {99050, 99070, 99074},
 	},
 
 	[99677] = { -- Chest of the Cursed Vanquisher (Raid Finder)
@@ -2529,7 +2529,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99037, 99047},
 		[CLASS_HUNTER] = {99085},
 		[CLASS_SHAMAN] = {98992, 99011, 99087},
-		[10] = {99061, 99063, 99071},
+		[CLASS_MONK] = {99061, 99063, 99071},
 	},
 
 	[99680] = { -- Gauntlets of the Cursed Vanquisher (Raid Finder)
@@ -2619,7 +2619,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99197, 99201},
 		[CLASS_HUNTER] = {99167},
 		[CLASS_SHAMAN] = {99101, 99106, 99107},
-		[10] = {99140, 99150, 99154},
+		[CLASS_MONK] = {99140, 99150, 99154},
 	},
 
 	[99692] = { -- Gauntlets of the Cursed Protector (Heroic)
@@ -2627,7 +2627,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99198, 99202},
 		[CLASS_HUNTER] = {99168},
 		[CLASS_SHAMAN] = {99092, 99102, 99108},
-		[10] = {99141, 99147, 99155},
+		[CLASS_MONK] = {99141, 99147, 99155},
 	},
 
 	[99693] = { -- Leggings of the Cursed Protector (Heroic)
@@ -2635,7 +2635,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99195, 99199},
 		[CLASS_HUNTER] = {99158},
 		[CLASS_SHAMAN] = {99094, 99099, 99104},
-		[10] = {99143, 99145, 99149},
+		[CLASS_MONK] = {99143, 99145, 99149},
 	},
 
 	[99694] = { -- Helm of the Cursed Protector (Heroic)
@@ -2643,7 +2643,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99203, 99206},
 		[CLASS_HUNTER] = {99157},
 		[CLASS_SHAMAN] = {99093, 99103, 99109},
-		[10] = {99142, 99148, 99156},
+		[CLASS_MONK] = {99142, 99148, 99156},
 	},
 
 	[99695] = { -- Shoulders of the Cursed Protector (Heroic)
@@ -2651,7 +2651,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99196, 99200},
 		[CLASS_HUNTER] = {99159},
 		[CLASS_SHAMAN] = {99095, 99100, 99105},
-		[10] = {99144, 99146, 99151},
+		[CLASS_MONK] = {99144, 99146, 99151},
 	},
 
 	[99696] = { -- Chest of the Cursed Vanquisher (Heroic)
@@ -2674,7 +2674,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99410, 99413},
 		[CLASS_HUNTER] = {99403},
 		[CLASS_SHAMAN] = {99333, 99342, 99354},
-		[10] = {99385, 99390, 99394},
+		[CLASS_MONK] = {99385, 99390, 99394},
 	},
 
 	[99714] = { -- Chest of the Cursed Vanquisher (Mythic)
@@ -2697,7 +2697,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99411, 99415},
 		[CLASS_HUNTER] = {99405},
 		[CLASS_SHAMAN] = {99344, 99347, 99351},
-		[10] = {99382, 99391, 99396},
+		[CLASS_MONK] = {99382, 99391, 99396},
 	},
 
 	[99717] = { -- Shoulders of the Cursed Vanquisher (Mythic)
@@ -2720,7 +2720,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99407, 99414},
 		[CLASS_HUNTER] = {99404},
 		[CLASS_SHAMAN] = {99334, 99343, 99346},
-		[10] = {99381, 99386, 99395},
+		[CLASS_MONK] = {99381, 99386, 99395},
 	},
 
 	[99720] = { -- Gauntlets of the Cursed Vanquisher (Mythic)
@@ -2743,7 +2743,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99408, 99412},
 		[CLASS_HUNTER] = {99406},
 		[CLASS_SHAMAN] = {99340, 99345, 99352},
-		[10] = {99383, 99388, 99392},
+		[CLASS_MONK] = {99383, 99388, 99392},
 	},
 
 	[99723] = { -- Helm of the Cursed Vanquisher (Mythic)
@@ -2766,7 +2766,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99409, 99418},
 		[CLASS_HUNTER] = {99402},
 		[CLASS_SHAMAN] = {99332, 99341, 99353},
-		[10] = {99393, 99384, 99389},
+		[CLASS_MONK] = {99393, 99384, 99389},
 	},
 
 	[99726] = { -- Leggings of the Cursed Vanquisher (Mythic)
@@ -2797,7 +2797,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99562, 99603},
 		[CLASS_HUNTER] = {99577},
 		[CLASS_SHAMAN] = {99636, 99579, 99615},
-		[10] = {99641, 99643, 99555},
+		[CLASS_MONK] = {99641, 99643, 99555},
 	},
 
 	[99745] = { -- Gauntlets of the Cursed Vanquisher
@@ -2820,7 +2820,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99559, 99563},
 		[CLASS_HUNTER] = {99578},
 		[CLASS_SHAMAN] = {99616, 99580, 99611},
-		[10] = {99644, 99552, 99556},
+		[CLASS_MONK] = {99644, 99552, 99556},
 	},
 
 	[99748] = { -- Helm of the Cursed Vanquisher
@@ -2843,7 +2843,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99557, 99602},
 		[CLASS_HUNTER] = {99660},
 		[CLASS_SHAMAN] = {99612, 99645, 99649},
-		[10] = {99553, 99607, 99653},
+		[CLASS_MONK] = {99553, 99607, 99653},
 	},
 
 	[99751] = { -- Leggings of the Cursed Vanquisher
@@ -2866,7 +2866,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99558, 99560},
 		[CLASS_HUNTER] = {99573},
 		[CLASS_SHAMAN] = {99613, 99646, 99650},
-		[10] = {99554, 99606, 99654},
+		[CLASS_MONK] = {99554, 99606, 99654},
 	},
 
 	[99754] = { -- Shoulders of the Cursed Vanquisher
@@ -2889,7 +2889,7 @@ t.ITEM_DATA = {
 		[CLASS_WARRIOR] = {99561, 99597},
 		[CLASS_HUNTER] = {99574},
 		[CLASS_SHAMAN] = {99614, 99647, 99663},
-		[10] = {99565, 99642, 99655},
+		[CLASS_MONK] = {99565, 99642, 99655},
 	},
 
 	[124550] = { -- Baleful Bracers
@@ -2904,7 +2904,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124563},
 		[11] = {124564},
 		[12] = {124564},
-		[10] = {124564},
+		[CLASS_MONK] = {124564},
 		[CLASS_ROGUE] = {124564},
 	},
 
@@ -2920,7 +2920,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124570},
 		[11] = {124567},
 		[12] = {124567},
-		[10] = {124567},
+		[CLASS_MONK] = {124567},
 		[CLASS_ROGUE] = {124567},
 	},
 
@@ -2936,7 +2936,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124571},
 		[11] = {124572},
 		[12] = {124572},
-		[10] = {124572},
+		[CLASS_MONK] = {124572},
 		[CLASS_ROGUE] = {124572},
 	},
 
@@ -2952,7 +2952,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124575},
 		[11] = {124576},
 		[12] = {124576},
-		[10] = {124576},
+		[CLASS_MONK] = {124576},
 		[CLASS_ROGUE] = {124576},
 	},
 
@@ -2968,7 +2968,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124579},
 		[11] = {124580},
 		[12] = {124580},
-		[10] = {124580},
+		[CLASS_MONK] = {124580},
 		[CLASS_ROGUE] = {124580},
 	},
 
@@ -2984,7 +2984,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124583},
 		[11] = {124584},
 		[12] = {124584},
-		[10] = {124584},
+		[CLASS_MONK] = {124584},
 		[CLASS_ROGUE] = {124584},
 	},
 
@@ -3000,7 +3000,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124587},
 		[11] = {124588},
 		[12] = {124588},
-		[10] = {124588},
+		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
 	},
 
@@ -3016,7 +3016,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124591},
 		[11] = {124592},
 		[12] = {124592},
-		[10] = {124592},
+		[CLASS_MONK] = {124592},
 		[CLASS_ROGUE] = {124592},
 	},
 
@@ -3080,7 +3080,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124564},
 		[12] = {124564},
-		[10] = {124564},
+		[CLASS_MONK] = {124564},
 		[CLASS_ROGUE] = {124564},
 	},
 
@@ -3088,7 +3088,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124567},
 		[12] = {124567},
-		[10] = {124567},
+		[CLASS_MONK] = {124567},
 		[CLASS_ROGUE] = {124567},
 	},
 
@@ -3096,7 +3096,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124572},
 		[12] = {124572},
-		[10] = {124572},
+		[CLASS_MONK] = {124572},
 		[CLASS_ROGUE] = {124572},
 	},
 
@@ -3104,7 +3104,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124576},
 		[12] = {124576},
-		[10] = {124576},
+		[CLASS_MONK] = {124576},
 		[CLASS_ROGUE] = {124576},
 	},
 
@@ -3112,7 +3112,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124580},
 		[12] = {124580},
-		[10] = {124580},
+		[CLASS_MONK] = {124580},
 		[CLASS_ROGUE] = {124580},
 	},
 
@@ -3120,7 +3120,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124584},
 		[12] = {124584},
-		[10] = {124584},
+		[CLASS_MONK] = {124584},
 		[CLASS_ROGUE] = {124584},
 	},
 
@@ -3128,7 +3128,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124588},
 		[12] = {124588},
-		[10] = {124588},
+		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
 	},
 
@@ -3136,7 +3136,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {124592},
 		[12] = {124592},
-		[10] = {124592},
+		[CLASS_MONK] = {124592},
 		[CLASS_ROGUE] = {124592},
 	},
 
@@ -3256,7 +3256,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124587},
 		[11] = {124588},
 		[12] = {124588},
-		[10] = {124588},
+		[CLASS_MONK] = {124588},
 		[CLASS_ROGUE] = {124588},
 	},
 
@@ -3272,7 +3272,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[11] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[12] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[10] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_MONK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_ROGUE] = {124613, 124616, 124614, 124615, 124618, 124617},
 	},
 
@@ -3288,7 +3288,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[11] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[12] = {124613, 124616, 124614, 124615, 124618, 124617},
-		[10] = {124613, 124616, 124614, 124615, 124618, 124617},
+		[CLASS_MONK] = {124613, 124616, 124614, 124615, 124618, 124617},
 		[CLASS_ROGUE] = {124613, 124616, 124614, 124615, 124618, 124617},
 	},
 
@@ -3304,7 +3304,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER},
 		[11] = {BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF, BALEFUL_WEP_DAGGER}, -- Druid
 		[12] = {BALEFUL_WEP_DAGGER, BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_1H_SWORD}, -- Demon Hunter?
-		[10] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF}, -- Monk
+		[CLASS_MONK] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_POLEARM, BALEFUL_WEP_STAFF},
 		[CLASS_ROGUE] = {BALEFUL_WEP_1H_AXE, BALEFUL_WEP_1H_SWORD, BALEFUL_WEP_1H_MACE, BALEFUL_WEP_DAGGER, BALEFUL_WEP_GUN},
 	},
 
@@ -3403,7 +3403,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101867, 101786},
 		[12] = {101867, 101786},
-		[10] = {101867, 101786},
+		[CLASS_MONK] = {101867, 101786},
 		[CLASS_ROGUE] = {101867, 101786},
 	},
 
@@ -3411,7 +3411,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101863, 101782},
 		[12] = {101863, 101782},
-		[10] = {101863, 101782},
+		[CLASS_MONK] = {101863, 101782},
 		[CLASS_ROGUE] = {101863, 101782},
 	},
 
@@ -3419,7 +3419,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101865, 101784},
 		[12] = {101865, 101784},
-		[10] = {101865, 101784},
+		[CLASS_MONK] = {101865, 101784},
 		[CLASS_ROGUE] = {101865, 101784},
 	},
 
@@ -3427,7 +3427,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101866, 101785},
 		[12] = {101866, 101785},
-		[10] = {101866, 101785},
+		[CLASS_MONK] = {101866, 101785},
 		[CLASS_ROGUE] = {101866, 101785},
 	},
 
@@ -3435,7 +3435,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101864, 101783},
 		[12] = {101864, 101783},
-		[10] = {101864, 101783},
+		[CLASS_MONK] = {101864, 101783},
 		[CLASS_ROGUE] = {101864, 101783},
 	},
 
@@ -3443,7 +3443,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101868, 101787},
 		[12] = {101868, 101787},
-		[10] = {101868, 101787},
+		[CLASS_MONK] = {101868, 101787},
 		[CLASS_ROGUE] = {101868, 101787},
 	},
 
@@ -3451,7 +3451,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101869, 101788},
 		[12] = {101869, 101788},
-		[10] = {101869, 101788},
+		[CLASS_MONK] = {101869, 101788},
 		[CLASS_ROGUE] = {101869, 101788},
 	},
 
@@ -3522,7 +3522,7 @@ t.ITEM_DATA = {
 		["DEPENDANT_WARNING"] = true,
 		[11] = {101862, 101781},
 		[12] = {101862, 101781},
-		[10] = {101862, 101781},
+		[CLASS_MONK] = {101862, 101781},
 		[CLASS_ROGUE] = {101862, 101781},
 	},
 
@@ -3544,7 +3544,7 @@ t.ITEM_DATA = {
 		[CLASS_WARLOCK] = {101800, 101790, 101852, 101848, 101828},
 		[11] = {101800, 101790, 101852, 101848, 101828},
 		[12] = {101800, 101790, 101852, 101848, 101828},
-		[10] = {101800, 101790, 101852, 101848, 101828},
+		[CLASS_MONK] = {101800, 101790, 101852, 101848, 101828},
 		[CLASS_ROGUE] = {101800, 101790, 101852, 101848, 101828},
 	},
 };

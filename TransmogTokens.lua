@@ -508,7 +508,7 @@ TransmogTokens.calculateNeededText = function(relatedItems, itemID)
 		if #needed > 1 then
 			message = message .. string.format (L["You need %d appearances from this token."], #needed);
 		else
-			message = message .. L["You need one appearance from this token."];
+			message = message .. L["You need 1 appearance from this token."];
 		end
 
 

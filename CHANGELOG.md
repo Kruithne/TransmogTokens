@@ -1,4 +1,6 @@
 ** Version 1.4.2 **
+* Added support for Timeless Isle Armor Caches.
+* Added localization support for deDE.
 * Source for Chestguard of the Lost Conqueror has been corrected.
 
 ** Version 1.4.1 **

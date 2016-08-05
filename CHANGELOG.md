@@ -1,6 +1,8 @@
+** Version 1.4.2 **
+* Source for Chestguard of the Lost Conqueror has been corrected.
+
 ** Version 1.4.1 **
 * Fixed Baleful Armament showing the wrong appearance counts.
-* Source for Chestguard of the Lost Conqueror has been corrected.
 * Note added to Helm of the Forlorn Protector to indicate that it's useless.
 
 ** Version 1.4.0 **

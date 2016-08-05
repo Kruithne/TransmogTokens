@@ -2,6 +2,6 @@
 ## Title: TransmogTokens
 ## Notes: Adds tooltips to tier tokens.
 ## Author: Kruithne
-## Version: 1.4.1
+## Version: 1.4.2
 TransmogTokens.lua
 ItemData.lua

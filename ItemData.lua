@@ -209,9 +209,12 @@ local BALEFUL_WEP_1H_MACE = 124631;
 t.ITEM_DATA = {
 	[71682] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [CLASS_HUNTER] = {}, [CLASS_SHAMAN] = {}, }, -- Helm of the Fiery Protector
 	[71688] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [CLASS_HUNTER] = {}, [CLASS_SHAMAN] = {}, }, -- Mantle of the Fiery Protector
-	[64316] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [CLASS_HUNTER] = {}, [CLASS_SHAMAN] = {}, }, -- Mantle of the Forlorn Protector
-	[71681] = { ["NOTE"] = NO_USE, [CLASS_PALADIN] = {}, [CLASS_PRIEST] = {}, [CLASS_WARLOCK] = {}, }, -- Mantle of the Fiery Conqueror
 	[63684] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [CLASS_HUNTER] = {}, [CLASS_SHAMAN] = {}, }, -- Helm of the Forlorn Protector
+	[64316] = { ["NOTE"] = NO_USE, [CLASS_WARRIOR] = {}, [CLASS_HUNTER] = {}, [CLASS_SHAMAN] = {}, }, -- Mantle of the Forlorn Protector
+	[71675] = { ["NOTE"] = NO_USE, [CLASS_PALADIN] = {}, [CLASS_PRIEST] = {}, [CLASS_WARLOCK] = {}, }, -- Helm of the Fiery Conqueror
+	[71681] = { ["NOTE"] = NO_USE, [CLASS_PALADIN] = {}, [CLASS_PRIEST] = {}, [CLASS_WARLOCK] = {}, }, -- Mantle of the Fiery Conqueror
+	[71668] = { ["NOTE"] = NO_USE, [CLASS_ROGUE] = {}, [CLASS_DEATHKNIGHT] = {}, [CLASS_MAGE] = {}, [CLASS_DRUID] = {}, }, -- Helm of the Fiery Vanquisher
+	[71674] = { ["NOTE"] = NO_USE, [CLASS_ROGUE] = {}, [CLASS_DEATHKNIGHT] = {}, [CLASS_MAGE] = {}, [CLASS_DRUID] = {}, }, -- Mantle of the Fiery Vanquisher
 
 	[34664] = { -- Sunmote
 		["REDEEM"] = REDEEM_TBC_SUNMOTE,

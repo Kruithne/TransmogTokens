@@ -5,6 +5,7 @@
 ## Version: 1.4.2
 
 ## X-Curse-Project-ID: transmogtokens
+## X-Contributors: bloerwald
 
 TransmogTokens.lua
 ItemData.lua

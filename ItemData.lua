@@ -696,7 +696,7 @@ t.ITEM_DATA = {
 	},
 
 	[40610] = { -- Chestguard of the Lost Conqueror
-		["OBTAIN"] = {SET_TIER_7, "Gluth (Naxxramas [10-Man])"},
+		["OBTAIN"] = {SET_TIER_7, "The Four Horsemen (Naxxramas [10-Man])"},
 		["REDEEM"] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39629, 39633, 39638},
 		[CLASS_PRIEST] = {39515, 39523},

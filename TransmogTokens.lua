@@ -378,8 +378,8 @@ TransmogTokens.sortData = function(pool, classIndex)
 			end
 		end
 
-		if data[0] ~= nil then
-			t.REDEEM_DATA[tokenID] = data[0];
+		if data["REDEEM"] ~= nil then
+			t.REDEEM_DATA[tokenID] = data["REDEEM"];
 		end
 
 		if data[classIndex] ~= nil then

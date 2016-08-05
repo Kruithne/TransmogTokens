@@ -6,6 +6,7 @@
 
 ## X-Curse-Project-ID: transmogtokens
 ## X-Contributors: bloerwald
+## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/TransmogTokens
 
 TransmogTokens.lua
 ItemData.lua

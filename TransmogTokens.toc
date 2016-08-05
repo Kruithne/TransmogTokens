@@ -3,5 +3,8 @@
 ## Notes: Adds tooltips to tier tokens.
 ## Author: Kruithne
 ## Version: 1.4.2
+
+## X-Curse-Project-ID: transmogtokens
+
 TransmogTokens.lua
 ItemData.lua

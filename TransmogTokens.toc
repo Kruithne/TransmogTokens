@@ -9,4 +9,5 @@
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/TransmogTokens
 
 TransmogTokens.lua
+localization/deDE.lua
 ItemData.lua

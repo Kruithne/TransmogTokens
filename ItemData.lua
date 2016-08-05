@@ -195,7 +195,7 @@ local SET_TIER_8 = 5;
 local SET_TIER_9 = 6;
 local SET_TIER_10 = 7;
 
-local NO_USE = "This token cannot be redeemed for anything.";
+local NO_USE = t.L["This token cannot be redeemed for anything."];
 
 local BALEFUL_WEP_STAFF = 124630;
 local BALEFUL_WEP_2H_SWORD = 124625;

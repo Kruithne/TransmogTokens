@@ -3926,17 +3926,17 @@ t.HORDE_ONLY_DATA = {
 	},
 
 	[120209] = { -- Essence of the Iron Conqueror (Mythic) (Horde)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
 	},
 
 	[120206] = { -- Essence of the Iron Conqueror (Heroic) (Horde)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
 	},
 
 	[119310] = { -- Essence of the Iron Conqueror (Normal) (Horde)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
 	},
 
@@ -3987,17 +3987,17 @@ t.ALLIANCE_ONLY_DATA = {
 	},
 
 	[120283] = { -- Essence of the Iron Conqueror (Mythic) (Alliance)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
 	},
 
 	[120280] = { -- Essence of the Iron Conqueror (Heroic) (Alliance)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
 	},
 
 	[120277] = { -- Essence of the Iron Conqueror (Normal) (Alliance)
-		["LINK"] = {119305,119306,119308,119307,119309},
+		["LINK"] = {119305, 119306, 119308, 119307, 119309},
 		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
 	},
 

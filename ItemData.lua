@@ -215,31 +215,31 @@ local TIER_17_BONUS_LOOKUP = {
 
 t.ITEM_DATA = {
 	-- Tier 17
-	[119320] = { -- Leggings of the Iron Protector (Dynamic)
+	[119320] = { -- Leggings of the Iron Protector
 		["BONUS"] = TIER_17_BONUS_LOOKUP,
 		["DUPLICATE_BONUS"] = {[120254] = TIER_17_MYTHIC, [120239] = TIER_17_HEROIC, [120224] = 0},
 		[CLASS_WARRIOR] = 115580, [CLASS_MONK] = 115557, [CLASS_HUNTER] = 115546, [CLASS_SHAMAN] = 115575
 	},
 
-	[119321] = { -- Helm of the Iron Protector (Dynmaic)
+	[119321] = { -- Helm of the Iron Protector
 		["BONUS"] = TIER_17_BONUS_LOOKUP,
 		["DUPLICATE_BONUS"] = {[120255] = TIER_17_MYTHIC, [120225] = 0, [120240] = TIER_17_HEROIC},
 		[CLASS_WARRIOR] = 115584, [CLASS_MONK] = 115556, [CLASS_HUNTER] = 115545, [CLASS_SHAMAN] = 115579
 	},
 
-	[119322] = { -- Shoulders of the Iron Protector (Dynamic)
+	[119322] = { -- Shoulders of the Iron Protector
 		["BONUS"] = TIER_17_BONUS_LOOKUP,
 		["DUPLICATE_BONUS"] = {[120256] = TIER_17_MYTHIC, [120226] = TIER_17_HEROIC, [120241] = 0},
 		[CLASS_WARRIOR] = 115581, [CLASS_MONK] = 115559, [CLASS_HUNTER] = 115547, [CLASS_SHAMAN] = 115576
 	},
 
-	[119319] = { -- Gauntlets of the Iron Protector (Dynamic)
+	[119319] = { -- Gauntlets of the Iron Protector
 		["BONUS"] = TIER_17_BONUS_LOOKUP,
 		["DUPLICATE_BONUS"] = {[120253] = TIER_17_MYTHIC, [120238] = TIER_17_HEROIC, [120223] = 0},
 		[CLASS_WARRIOR] = 115583, [CLASS_MONK] = 115555, [CLASS_HUNTER] = 115549, [CLASS_SHAMAN] = 115578
 	},
 
-	[119318] = { -- Chest of the Iron Protector (Dynamic)
+	[119318] = { -- Chest of the Iron Protector
 		["BONUS"] = TIER_17_BONUS_LOOKUP,
 		["DUPLICATE_BONUS"] = {[120252] = TIER_17_MYTHIC, [120237] = TIER_17_HEROIC, [120222] = 0},
 		[CLASS_WARRIOR] = 115582, [CLASS_MONK] = 115548, [CLASS_HUNTER] = 115558, [CLASS_SHAMAN] = 115577

@@ -362,6 +362,17 @@ TransmogTokens.sortData = function(pool, classIndex)
 		t.pushDataNode(t.SORTED_DATA, tokenID, data, classIndex);
 		t.pushDataNode(t.SORTED_DATA, tokenID, data, itemType);
 
+		local dupBonus = data["DUPLICATE_BONUS"];
+		if dupBonus then
+			for bonusToken, bonusID in pairs(dupBonus) do
+				-- Share data with this token.
+				t.SORTED_DATA[bonusToken] = t.SORTED_DATA[tokenID];
+
+				-- Unlike linking, we need to enforce a static bonus.
+				t.BONUS_LOOKUP[bonusToken] = bonusID;
+			end
+		end
+
 		if data["OBTAIN"] and data[classIndex] then
 			local node = data["OBTAIN"];
 			local setIndex = node[1];
@@ -542,10 +553,16 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 	t.tooltipCache["active"] = false;
 
 	if relatedItems then
-		local bonus = t.getItemBonus(itemLink);
+		local bonusLookup = t.BONUS_LOOKUP[itemID];
+		local bonus = 0;
 
-		if bonus > 0 then
-			bonus = t.BONUS_LOOKUP[itemID][bonus] or 0;
+		if type(bonusLookup) == "number" then
+			bonus = bonusLookup;
+		else
+			bonus = t.getItemBonus(itemLink);
+			if bonus > 0 then
+				bonus = t.BONUS_LOOKUP[itemID][bonus] or 0;
+			end
 		end
 
 		t.addTooltipLine(tooltip, t.calculateNeededText(relatedItems, itemID, bonus));

@@ -224,6 +224,35 @@ t.ITEM_DATA = {
 		[t.ARMOR_TYPE_MAIL] = {34396, 34390, 34402, 34383, 34409},
 	},
 
+	[34339] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_CLOTH] = {34405} }, -- Helm of Arcane Purity
+	[34342] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_CLOTH] = {34406} }, -- Gloves of Tyri's Power
+	[34233] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_CLOTH] = {34399} }, -- Robes of Ghostly Hatred
+	[34170] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_CLOTH] = {34386} }, -- Pantaloons of Growing Strife
+	[34202] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_CLOTH] = {34393} }, -- Shoulderpads of Knowledge's Pursuit
+	[34211] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34397} }, -- Bladed Chaos Tunic
+	[34212] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34398} }, -- Utopian Tunic of Elune
+	[34169] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34384} }, -- Breeches of Natural Splendor
+	[34188] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34385} }, -- Leggings of the Immortal Beast
+	[34245] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34403} }, -- Cover of Ursoc the Mighty
+	[34244] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34404} }, -- Mask of the Fury Hunter
+	[34209] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34391} }, -- Spaulders of Devastation
+	[34195] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34392} }, -- Demontooth Shoulderpads
+	[34234] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34408} }, -- Gloves of the Forest Drifter
+	[34351] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_LEATHER] = {34407} }, -- Tranquil Moonlight Wraps
+	[34229] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_MAIL] = {34396} }, -- Garments of Crashing Shores
+	[34186] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_MAIL] = {34383} }, -- Kilt of Spiritual Reconstruction
+	[34332] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_MAIL] = {34402} }, -- Shroud of Chieftain Ner'zhul
+	[34208] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_MAIL] = {34390} }, -- Erupting Epaulets
+	[34350] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_MAIL] = {34409} }, -- Gauntlets of the Ancient Frostwolf
+	[34180] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34381} }, -- Felstrength Legplates
+	[34167] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34382} }, -- Judicator's Legguards
+	[34345] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34400} }, -- Crown of Dath'Remar
+	[34243] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34401} }, -- Helm of Uther's Resolve
+	[34192] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34388} }, -- Pauldrons of Berserking
+	[34193] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34389} }, -- Spaulders of the Thalassian Defender
+	[34215] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34394} }, -- Breastplate of Agony's Aversion
+	[34216] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = {34395} }, -- Noble Judicator's Chestguard
+
 	[66998] = { -- Essence of the Forlorn
 		["REDEEM"] = REDEEM_TIER_11,
 		["LINK"] = {67428, 65088, 67423, 67424, 67425, 67426, 67427, 65089, 67429, 67430, 67431, 65000, 65001, 65002, 65087},

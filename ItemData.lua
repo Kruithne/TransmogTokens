@@ -28,19 +28,18 @@ t.ARMOR_TYPE_MAIL = "MAIL";
 t.ARMOR_TYPE_CLOTH = "CLOTH";
 t.ARMOR_TYPE_LEATHER = "LEATHER";
 
--- todo: is there some global enum for this already?
-local CLASS_WARRIOR = 1
-local CLASS_PALADIN = 2
-local CLASS_DEATHKNIGHT = 6
-local CLASS_MAGE = 8
-local CLASS_PRIEST = 5
-local CLASS_WARLOCK = 9
-local CLASS_DRUID = 11
-local CLASS_ROGUE = 4
-local CLASS_MONK = 10
-local CLASS_DEMONHUNTER = 12
-local CLASS_HUNTER = 3
-local CLASS_SHAMAN = 7
+local CLASS_WARRIOR = 1;
+local CLASS_PALADIN = 2;
+local CLASS_HUNTER = 3;
+local CLASS_ROGUE = 4;
+local CLASS_PRIEST = 5;
+local CLASS_DEATHKNIGHT = 6;
+local CLASS_SHAMAN = 7;
+local CLASS_MAGE = 8;
+local CLASS_WARLOCK = 9;
+local CLASS_MONK = 10;
+local CLASS_DRUID = 11;
+local CLASS_DEMONHUNTER = 12;
 
 t.CLASS_ITEM_TYPE = {
 	[CLASS_WARRIOR] = t.ARMOR_TYPE_PLATE,

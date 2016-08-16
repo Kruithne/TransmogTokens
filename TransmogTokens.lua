@@ -371,6 +371,22 @@ TransmogTokens.sortData = function(pool, classIndex)
 			set[tokenID] = obtainIndex;
 		end
 
+		if data["REDEEM"] ~= nil then
+			t.REDEEM_DATA[tokenID] = data["REDEEM"];
+		end
+
+		if data["BONUS"] then
+			t.BONUS_LOOKUP[tokenID] = data["BONUS"];
+		end
+
+		if data[classIndex] ~= nil then
+			t.SORTED_DATA[tokenID] = data[classIndex];
+		end
+
+		if data[itemType] ~= nil then
+			t.SORTED_DATA[tokenID] = data[itemType];
+		end
+
 		if data["LINK"] ~= nil then
 			for linkIndex, linkValue in pairs(data["LINK"]) do
 				local node = pool[linkValue];
@@ -390,22 +406,6 @@ TransmogTokens.sortData = function(pool, classIndex)
 					end
 				end
 			end
-		end
-
-		if data["REDEEM"] ~= nil then
-			t.REDEEM_DATA[tokenID] = data["REDEEM"];
-		end
-
-		if data["BONUS"] then
-			t.BONUS_LOOKUP[tokenID] = data["BONUS"];
-		end
-
-		if data[classIndex] ~= nil then
-			t.SORTED_DATA[tokenID] = data[classIndex];
-		end
-
-		if data[itemType] ~= nil then
-			t.SORTED_DATA[tokenID] = data[itemType];
 		end
 	end
 end

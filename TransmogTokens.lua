@@ -345,19 +345,24 @@ TransmogTokens.updateTierFrame = function(selectedID)
 	end
 end
 
+TransmogTokens.pushDataNode = function(target, targetKey, data, dataKey)
+	local node = data[dataKey];
+	if node then
+		target[targetKey] = node;
+	end
+end
+
 TransmogTokens.sortData = function(pool, classIndex)
 	local itemType = t.CLASS_ITEM_TYPE[classIndex];
 	for tokenID, data in pairs(pool) do
-		if data["DEPENDANT_WARNING"] ~= nil then
-			t.SPEC_CLASS_TOKENS[tokenID] = true;
-		end
+		t.pushDataNode(t.SPEC_CLASS_TOKENS, tokenID, data, "DEPENDANT_WARNING");
+		t.pushDataNode(t.NOTES, tokenID, data, "NOTE");
+		t.pushDataNode(t.REDEEM_DATA, tokenID, data, "REDEEM");
+		t.pushDataNode(t.BONUS_LOOKUP, tokenID, data, "BONUS");
+		t.pushDataNode(t.SORTED_DATA, tokenID, data, classIndex);
+		t.pushDataNode(t.SORTED_DATA, tokenID, data, itemType);
 
-		local note = data["NOTE"];
-		if note ~= nil then
-			t.NOTES[tokenID] = note;
-		end
-
-		if data["OBTAIN"] ~= nil and data[classIndex] ~= nil then
+		if data["OBTAIN"] and data[classIndex] then
 			local node = data["OBTAIN"];
 			local setIndex = node[1];
 			local obtainIndex = node[2];
@@ -371,26 +376,10 @@ TransmogTokens.sortData = function(pool, classIndex)
 			set[tokenID] = obtainIndex;
 		end
 
-		if data["REDEEM"] ~= nil then
-			t.REDEEM_DATA[tokenID] = data["REDEEM"];
-		end
-
-		if data["BONUS"] then
-			t.BONUS_LOOKUP[tokenID] = data["BONUS"];
-		end
-
-		if data[classIndex] ~= nil then
-			t.SORTED_DATA[tokenID] = data[classIndex];
-		end
-
-		if data[itemType] ~= nil then
-			t.SORTED_DATA[tokenID] = data[itemType];
-		end
-
-		if data["LINK"] ~= nil then
+		if data["LINK"] then
 			for linkIndex, linkValue in pairs(data["LINK"]) do
 				local node = pool[linkValue];
-				if node ~= nil and node[classIndex] ~= nil then
+				if node and node[classIndex] then
 					if not t.SORTED_DATA[tokenID] then
 						t.SORTED_DATA[tokenID] = node[classIndex];
 					else

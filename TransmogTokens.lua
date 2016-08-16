@@ -400,8 +400,15 @@ TransmogTokens.sortData = function(pool, classIndex)
 							sorted = {sorted};
 						end
 
-						for nodeKey, nodeValue in pairs(node[classIndex]) do
-							table.insert(sorted, nodeValue);
+						local pull = node[classIndex];
+						if type(pull) == "number" then
+							-- Linked data is just a single number, insert.
+							table.insert(sorted, pull);
+						else
+							-- Linked data is a table, loop.
+							for nodeKey, nodeValue in pairs(pull) do
+								table.insert(sorted, nodeValue);
+							end
 						end
 					end
 				end

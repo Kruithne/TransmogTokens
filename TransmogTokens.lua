@@ -379,6 +379,11 @@ TransmogTokens.sortData = function(pool, classIndex)
 						t.SORTED_DATA[tokenID] = node[classIndex];
 					else
 						local sorted = t.SORTED_DATA[tokenID];
+
+						if type(sorted) == "number" then
+							sorted = {sorted};
+						end
+
 						for nodeKey, nodeValue in pairs(node[classIndex]) do
 							table.insert(sorted, nodeValue);
 						end
@@ -483,30 +488,38 @@ TransmogTokens.calculateNeeded = function(relatedItems, bonus)
 		return needed;
 	end
 
-	for key, value in pairs(relatedItems) do
-		local itemName, link = GetItemInfo("item:" .. value .. ":0:0:0:0:0:0:0:0:0:0:0:1:" .. bonus);
-
-		if link ~= nil then
-			local appearanceID = t.getAppearanceID(link);
-
-			if appearanceID ~= nil and not t.hasApperance(appearanceID) then
-				local hasAlready = false;
-
-				for i, v in pairs(needed) do
-					if v == appearanceID then
-						hasAlready = true;
-						break;
-					end
-				end
-
-				if not hasAlready then
-					table.insert(needed, appearanceID);
-				end
-			end
+	if type(relatedItems) == "table" then
+		for key, value in pairs(relatedItems) do
+			t.calculateNeededSingle(value, bonus, needed);
 		end
+	else
+		t.calculateNeededSingle(relatedItems, bonus, needed);
 	end
 
 	return needed;
+end
+
+TransmogTokens.calculateNeededSingle = function(itemID, bonus, stash)
+	local itemName, link = GetItemInfo("item:" .. itemID .. ":0:0:0:0:0:0:0:0:0:0:0:1:" .. bonus);
+
+	if link ~= nil then
+		local appearanceID = t.getAppearanceID(link);
+
+		if appearanceID ~= nil and not t.hasApperance(appearanceID) then
+			local hasAlready = false;
+
+			for i, v in pairs(stash) do
+				if v == appearanceID then
+					hasAlready = true;
+					break;
+				end
+			end
+
+			if not hasAlready then
+				table.insert(stash, appearanceID);
+			end
+		end
+	end
 end
 
 TransmogTokens.calculateNeededText = function(relatedItems, itemID, bonus)

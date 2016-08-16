@@ -1,5 +1,6 @@
 TransmogTokens = {
 	["REDEEM_DATA"] = {},
+	["BONUS_LOOKUP"] = {},
 	["SPEC_CLASS_TOKENS"] = {},
 	["NOTES"] = {},
 	["SORTED_DATA"] = {},
@@ -19,6 +20,7 @@ t.tooltipCache = {
 	["active"] = false,
 	["lastTooltip"] = nil,
 	["lastItemID"] = 0,	
+	["lastItemBonus"] = 0,
 	["textLineID"] = 0
 };
 
@@ -83,13 +85,14 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 
 		if eventFrame.UpdateTime >= 0.5 then
 			local itemID = t.tooltipCache["lastItemID"];
+			local itemBonus = t.tooltipCache["lastItemBonus"];
 			local tooltip = t.tooltipCache["lastTooltip"];
 
 			if tooltip ~= nil and tooltip:IsShown() then
 				local relatedItems = t.SORTED_DATA[itemID];
 				local line = _G[tooltip:GetName() .. "TextLeft" .. t.tooltipCache["textLineID"]];
 
-				line:SetText(t.calculateNeededText(relatedItems, itemID));
+				line:SetText(t.calculateNeededText(relatedItems, itemID, itemBonus));
 				tooltip:Show();
 			end
 
@@ -299,7 +302,7 @@ TransmogTokens.updateTierFrame = function(selectedID)
 									self.updatedInfo = true;
 								end
 
-								local needed = t.calculateNeeded(t.SORTED_DATA[self.pendingItemID]);
+								local needed = t.calculateNeeded(t.SORTED_DATA[self.pendingItemID], 0);
 
 								if #needed == 0 then
 									self.tick:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready");
@@ -323,7 +326,7 @@ TransmogTokens.updateTierFrame = function(selectedID)
 			icon:SetScript("OnEvent", nil);
 			icon:UnregisterEvent("GET_ITEM_INFO_RECEIVED");
 
-			local needed = t.calculateNeeded(t.SORTED_DATA[tokenID]);
+			local needed = t.calculateNeeded(t.SORTED_DATA[tokenID], 0);
 
 			if #needed == 0 then
 				icon.tick:SetTexture("Interface\\RAIDFRAME\\ReadyCheck-Ready");
@@ -388,6 +391,10 @@ TransmogTokens.sortData = function(pool, classIndex)
 			t.REDEEM_DATA[tokenID] = data["REDEEM"];
 		end
 
+		if data["BONUS"] then
+			t.BONUS_LOOKUP[tokenID] = data["BONUS"];
+		end
+
 		if data[classIndex] ~= nil then
 			t.SORTED_DATA[tokenID] = data[classIndex];
 		end
@@ -416,6 +423,10 @@ end
 
 TransmogTokens.getItemID = function(itemLink)
 	return tonumber(itemLink:match("item:(%d+)"));
+end
+
+TransmogTokens.getItemBonus = function(itemLink)
+	return tonumber(itemLink:match("item:%d+:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:[%d]*:(%d+)") or 0);
 end
 
 TransmogTokens.getSource = function(itemLink)
@@ -465,7 +476,7 @@ TransmogTokens.hasApperance = function(appearanceID)
     return false;
 end
 
-TransmogTokens.calculateNeeded = function(relatedItems)
+TransmogTokens.calculateNeeded = function(relatedItems, bonus)
 	local needed = {};
 
 	if relatedItems == nil then
@@ -473,7 +484,7 @@ TransmogTokens.calculateNeeded = function(relatedItems)
 	end
 
 	for key, value in pairs(relatedItems) do
-		local itemName, link = GetItemInfo(value);
+		local itemName, link = GetItemInfo("item:" .. value .. ":0:0:0:0:0:0:0:0:0:0:0:1:" .. bonus);
 
 		if link ~= nil then
 			local appearanceID = t.getAppearanceID(link);
@@ -498,8 +509,8 @@ TransmogTokens.calculateNeeded = function(relatedItems)
 	return needed;
 end
 
-TransmogTokens.calculateNeededText = function(relatedItems, itemID)
-	local needed = TransmogTokens.calculateNeeded(relatedItems);
+TransmogTokens.calculateNeededText = function(relatedItems, itemID, bonus)
+	local needed = TransmogTokens.calculateNeeded(relatedItems, bonus);
 	local message = "";
 
 	if #needed > 0 then
@@ -529,11 +540,18 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 	t.tooltipCache["active"] = false;
 
 	if relatedItems then
-		t.addTooltipLine(tooltip, t.calculateNeededText(relatedItems, itemID));
+		local bonus = t.getItemBonus(itemLink);
+
+		if bonus > 0 then
+			bonus = t.BONUS_LOOKUP[itemID][bonus] or 0;
+		end
+
+		t.addTooltipLine(tooltip, t.calculateNeededText(relatedItems, itemID, bonus));
 
 		t.tooltipCache["active"] = true;
 		t.tooltipCache["lastTooltip"] = tooltip;
 		t.tooltipCache["lastItemID"] = itemID;
+		t.tooltipCache["lastItemBonus"] = bonus;
 		t.tooltipCache["textLineID"] = tooltip:NumLines();
 
 		local redeem = t.REDEEM_DATA[itemID];

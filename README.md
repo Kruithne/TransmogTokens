@@ -23,7 +23,7 @@ Below you will find information on what this addon supports and does not support
 * Support for Tier 15 tokens (Raid Finder, Normal, Heroic).
 * Support for Tier 16 tokens (Raid Finder, Normal, Heroic, Mythic).
 * DOES NOT support Tier 17 or above, currently.
-* Supports Timeless Isle gear tokens.
+* Supports Timeless Isle gear tokens and armor caches.
 * Supports Baleful gear tokens from Tanaan Jungle.
 * Supports Crystallized Firestones from Firelands.
 * Supports Sunmotes redeemed on Isle of Quel'Danas.

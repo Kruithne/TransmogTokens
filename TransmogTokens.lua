@@ -398,6 +398,7 @@ TransmogTokens.sortData = function(pool, classIndex)
 
 						if type(sorted) == "number" then
 							sorted = {sorted};
+							t.SORTED_DATA[tokenID] = sorted;
 						end
 
 						local pull = node[classIndex];

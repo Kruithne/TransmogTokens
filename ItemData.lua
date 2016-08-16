@@ -1194,6 +1194,204 @@ t.ITEM_DATA = {
 		[CLASS_DRUID] = {45349, 45352, 45359},
 	},
 
+	-- Tier 10 Plate Exchange
+	[50098] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51125} }, -- Sanctified Scourgelord Shoulderplates
+	[50097] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51126} }, -- Sanctified Scourgelord Legplates
+	[50096] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51127} }, -- Sanctified Scourgelord Helmet
+	[50095] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51128} }, -- Sanctified Scourgelord Gauntlets
+	[50094] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51129} }, -- Sanctified Scourgelord Battleplate
+	[50853] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51130} }, -- Sanctified Scourgelord Pauldrons
+	[50854] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51131} }, -- Sanctified Scourgelord Legguards
+	[50856] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51132} }, -- Sanctified Scourgelord Handguards
+	[50855] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51133} }, -- Sanctified Scourgelord Faceguard
+	[50857] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51134} }, -- Sanctified Scourgelord Chestguard
+	[51134] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51305} }, -- Sanctified Scourgelord Chestguard
+	[51133] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51306} }, -- Sanctified Scourgelord Faceguard
+	[51132] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51307} }, -- Sanctified Scourgelord Handguards
+	[51131] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51308} }, -- Sanctified Scourgelord Legguards
+	[51130] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51309} }, -- Sanctified Scourgelord Pauldrons
+	[51129] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51310} }, -- Sanctified Scourgelord Battleplate
+	[51128] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51311} }, -- Sanctified Scourgelord Gauntlets
+	[51127] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51312} }, -- Sanctified Scourgelord Helmet
+	[51126] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51313} }, -- Sanctified Scourgelord Legplates
+	[51125] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DEATHKNIGHT] = {51314} }, -- Sanctified Scourgelord Shoulderplates
+	[50324] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51160} }, -- Sanctified Lightsworn Shoulderplates
+	[50325] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51161} }, -- Sanctified Lightsworn Legplates
+	[50326] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51162} }, -- Sanctified Lightsworn Helmet
+	[50327] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51163} }, -- Sanctified Lightsworn Gauntlets
+	[50328] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51164} }, -- Sanctified Lightsworn Battleplate
+	[50869] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51165} }, -- Sanctified Lightsworn Tunic
+	[50865] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51166} }, -- Sanctified Lightsworn Spaulders
+	[50867] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51167} }, -- Sanctified Lightsworn Headpiece
+	[50866] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51168} }, -- Sanctified Lightsworn Greaves
+	[50868] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51169} }, -- Sanctified Lightsworn Gloves
+	[50860] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51170} }, -- Sanctified Lightsworn Shoulderguards
+	[50861] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51171} }, -- Sanctified Lightsworn Legguards
+	[50863] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51172} }, -- Sanctified Lightsworn Handguards
+	[50862] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51173} }, -- Sanctified Lightsworn Faceguard
+	[50864] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51174} }, -- Sanctified Lightsworn Chestguard
+	[51174] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51265} }, -- Sanctified Lightsworn Chestguard
+	[51173] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51266} }, -- Sanctified Lightsworn Faceguard
+	[51172] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51267} }, -- Sanctified Lightsworn Handguards
+	[51171] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51268} }, -- Sanctified Lightsworn Legguards
+	[51170] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51269} }, -- Sanctified Lightsworn Shoulderguards
+	[51169] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51270} }, -- Sanctified Lightsworn Gloves
+	[51168] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51271} }, -- Sanctified Lightsworn Greaves
+	[51167] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51272} }, -- Sanctified Lightsworn Headpiece
+	[51166] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51273} }, -- Sanctified Lightsworn Spaulders
+	[51165] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51274} }, -- Sanctified Lightsworn Tunic
+	[51164] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51275} }, -- Sanctified Lightsworn Battleplate
+	[51163] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51276} }, -- Sanctified Lightsworn Gauntlets
+	[51162] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51277} }, -- Sanctified Lightsworn Helmet
+	[51161] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51278} }, -- Sanctified Lightsworn Legplates
+	[51160] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PALADIN] = {51279} }, -- Sanctified Lightsworn Shoulderplates
+	[50082] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51210} }, -- Sanctified Ymirjar Lord's Shoulderplates
+	[50081] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51211} }, -- Sanctified Ymirjar Lord's Legplates
+	[50080] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51212} }, -- Sanctified Ymirjar Lord's Helmet
+	[50079] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51213} }, -- Sanctified Ymirjar Lord's Gauntlets
+	[50078] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51214} }, -- Sanctified Ymirjar Lord's Battleplate
+	[50846] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51215} }, -- Sanctified Ymirjar Lord's Pauldrons
+	[50847] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51216} }, -- Sanctified Ymirjar Lord's Legguards
+	[50849] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51217} }, -- Sanctified Ymirjar Lord's Handguards
+	[50848] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51218} }, -- Sanctified Ymirjar Lord's Greathelm
+	[50850] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51219} }, -- Sanctified Ymirjar Lord's Breastplate
+	[51219] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51220} }, -- Sanctified Ymirjar Lord's Breastplate
+	[51218] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51221} }, -- Sanctified Ymirjar Lord's Greathelm
+	[51217] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51222} }, -- Sanctified Ymirjar Lord's Handguards
+	[51216] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51223} }, -- Sanctified Ymirjar Lord's Legguards
+	[51215] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51224} }, -- Sanctified Ymirjar Lord's Pauldrons
+	[51214] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51225} }, -- Sanctified Ymirjar Lord's Battleplate
+	[51213] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51226} }, -- Sanctified Ymirjar Lord's Gauntlets
+	[51212] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51227} }, -- Sanctified Ymirjar Lord's Helmet
+	[51211] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51228} }, -- Sanctified Ymirjar Lord's Legplates
+	[51210] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARRIOR] = {51229} }, -- Sanctified Ymirjar Lord's Shoulderplates
+
+	-- Tier 10 Cloth Exchange
+	[50767] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51175} }, -- Sanctified Crimson Acolyte Shoulderpads
+	[50768] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51176} }, -- Sanctified Crimson Acolyte Robe
+	[50769] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51177} }, -- Sanctified Crimson Acolyte Leggings
+	[50765] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51178} }, -- Sanctified Crimson Acolyte Hood
+	[50766] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51179} }, -- Sanctified Crimson Acolyte Gloves
+	[50394] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51180} }, -- Sanctified Crimson Acolyte Raiments
+	[50393] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51181} }, -- Sanctified Crimson Acolyte Pants
+	[50396] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51182} }, -- Sanctified Crimson Acolyte Mantle
+	[50391] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51183} }, -- Sanctified Crimson Acolyte Handwraps
+	[50392] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51184} }, -- Sanctified Crimson Acolyte Cowl
+	[51184] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51255} }, -- Sanctified Crimson Acolyte Cowl
+	[51183] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51256} }, -- Sanctified Crimson Acolyte Handwraps
+	[51182] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51257} }, -- Sanctified Crimson Acolyte Mantle
+	[51181] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51258} }, -- Sanctified Crimson Acolyte Pants
+	[51180] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51259} }, -- Sanctified Crimson Acolyte Raiments
+	[51179] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51260} }, -- Sanctified Crimson Acolyte Gloves
+	[51178] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51261} }, -- Sanctified Crimson Acolyte Hood
+	[51177] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51262} }, -- Sanctified Crimson Acolyte Leggings
+	[51176] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51263} }, -- Sanctified Crimson Acolyte Robe
+	[51175] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_PRIEST] = {51264} }, -- Sanctified Crimson Acolyte Shoulderpads
+	[50244] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51205} }, -- Sanctified Dark Coven Shoulderpads
+	[50243] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51206} }, -- Sanctified Dark Coven Robe
+	[50242] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51207} }, -- Sanctified Dark Coven Leggings
+	[50241] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51208} }, -- Sanctified Dark Coven Hood
+	[50240] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51209} }, -- Sanctified Dark Coven Gloves
+	[51209] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51230} }, -- Sanctified Dark Coven Gloves
+	[51208] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51231} }, -- Sanctified Dark Coven Hood
+	[51207] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51232} }, -- Sanctified Dark Coven Leggings
+	[51206] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51233} }, -- Sanctified Dark Coven Robe
+	[51205] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_WARLOCK] = {51234} }, -- Sanctified Dark Coven Shoulderpads
+	[51159] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51280} }, -- Sanctified Bloodmage Gloves
+	[51158] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51281} }, -- Sanctified Bloodmage Hood
+	[51157] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51282} }, -- Sanctified Bloodmage Leggings
+	[51156] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51283} }, -- Sanctified Bloodmage Robe
+	[51155] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51284} }, -- Sanctified Bloodmage Shoulderpads
+	[50279] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51155} }, -- Sanctified Bloodmage Shoulderpads
+	[50278] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51156} }, -- Sanctified Bloodmage Robe
+	[50277] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51157} }, -- Sanctified Bloodmage Leggings
+	[50276] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51158} }, -- Sanctified Bloodmage Hood
+	[50275] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_MAGE] = {51159} }, -- Sanctified Bloodmage Gloves
+
+	-- Tier 10 Leather Exchange
+	[50113] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51135} }, -- Sanctified Lasherweave Pauldrons
+	[50109] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51136} }, -- Sanctified Lasherweave Legplates
+	[50108] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51137} }, -- Sanctified Lasherweave Helmet
+	[50107] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51138} }, -- Sanctified Lasherweave Gauntlets
+	[50106] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51139} }, -- Sanctified Lasherweave Robes
+	[50824] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51140} }, -- Sanctified Lasherweave Shoulderpads
+	[50828] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51141} }, -- Sanctified Lasherweave Raiment
+	[50825] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51142} }, -- Sanctified Lasherweave Legguards
+	[50826] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51143} }, -- Sanctified Lasherweave Headguard
+	[50827] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51144} }, -- Sanctified Lasherweave Handgrips
+	[50823] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51145} }, -- Sanctified Lasherweave Vestment
+	[50820] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51146} }, -- Sanctified Lasherweave Trousers
+	[50819] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51147} }, -- Sanctified Lasherweave Mantle
+	[50822] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51148} }, -- Sanctified Lasherweave Gloves
+	[50821] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51149} }, -- Sanctified Lasherweave Cover
+	[51149] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51290} }, -- Sanctified Lasherweave Cover
+	[51148] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51291} }, -- Sanctified Lasherweave Gloves
+	[51147] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51292} }, -- Sanctified Lasherweave Mantle
+	[51146] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51293} }, -- Sanctified Lasherweave Trousers
+	[51145] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51294} }, -- Sanctified Lasherweave Vestment
+	[51144] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51295} }, -- Sanctified Lasherweave Handgrips
+	[51143] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51296} }, -- Sanctified Lasherweave Headguard
+	[51142] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51297} }, -- Sanctified Lasherweave Legguards
+	[51141] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51298} }, -- Sanctified Lasherweave Raiment
+	[51140] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51299} }, -- Sanctified Lasherweave Shoulderpads
+	[51139] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51300} }, -- Sanctified Lasherweave Robes
+	[51138] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51301} }, -- Sanctified Lasherweave Gauntlets
+	[51137] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51302} }, -- Sanctified Lasherweave Helmet
+	[51136] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51303} }, -- Sanctified Lasherweave Legplates
+	[51135] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_DRUID] = {51304} }, -- Sanctified Lasherweave Pauldrons
+	[50105] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51185} }, -- Sanctified Shadowblade Pauldrons
+	[50090] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51186} }, -- Sanctified Shadowblade Legplates
+	[50089] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51187} }, -- Sanctified Shadowblade Helmet
+	[50088] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51188} }, -- Sanctified Shadowblade Gauntlets
+	[50087] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51189} }, -- Sanctified Shadowblade Breastplate
+	[51189] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51250} }, -- Sanctified Shadowblade Breastplate
+	[51188] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51251} }, -- Sanctified Shadowblade Gauntlets
+	[51187] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51252} }, -- Sanctified Shadowblade Helmet
+	[51186] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51253} }, -- Sanctified Shadowblade Legplates
+	[51185] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_ROGUE] = {51254} }, -- Sanctified Shadowblade Pauldrons
+
+	-- Tier 10 Mail Exchange
+	[50118] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51150} }, -- Sanctified Ahn'Kahar Blood Hunter's Tunic
+	[50117] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51151} }, -- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+	[50116] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51152} }, -- Sanctified Ahn'Kahar Blood Hunter's Legguards
+	[50115] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51153} }, -- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+	[50114] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51154} }, -- Sanctified Ahn'Kahar Blood Hunter's Handguards
+	[51154] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51285} }, -- Sanctified Ahn'Kahar Blood Hunter's Handguards
+	[51153] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51286} }, -- Sanctified Ahn'Kahar Blood Hunter's Headpiece
+	[51152] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51287} }, -- Sanctified Ahn'Kahar Blood Hunter's Legguards
+	[51151] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51288} }, -- Sanctified Ahn'Kahar Blood Hunter's Spaulders
+	[51150] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_HUNTER] = {51289} }, -- Sanctified Ahn'Kahar Blood Hunter's Tunic
+	[50835] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51190} }, -- Sanctified Frost Witch's Tunic
+	[50836] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51191} }, -- Sanctified Frost Witch's Handguards
+	[50837] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51192} }, -- Sanctified Frost Witch's Headpiece
+	[50838] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51193} }, -- Sanctified Frost Witch's Legguards
+	[50839] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51194} }, -- Sanctified Frost Witch's Spaulders
+	[50830] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51195} }, -- Sanctified Frost Witch's Chestguard
+	[50831] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51196} }, -- Sanctified Frost Witch's Grips
+	[50832] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51197} }, -- Sanctified Frost Witch's Faceguard
+	[50833] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51198} }, -- Sanctified Frost Witch's War-Kilt
+	[50834] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51199} }, -- Sanctified Frost Witch's Shoulderguards
+	[50841] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51200} }, -- Sanctified Frost Witch's Hauberk
+	[50842] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51201} }, -- Sanctified Frost Witch's Gloves
+	[50843] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51202} }, -- Sanctified Frost Witch's Helm
+	[50844] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51203} }, -- Sanctified Frost Witch's Kilt
+	[50845] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51204} }, -- Sanctified Frost Witch's Shoulderpads
+	[51204] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51235} }, -- Sanctified Frost Witch's Shoulderpads
+	[51203] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51236} }, -- Sanctified Frost Witch's Kilt
+	[51202] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51237} }, -- Sanctified Frost Witch's Helm
+	[51201] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51238} }, -- Sanctified Frost Witch's Gloves
+	[51200] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51239} }, -- Sanctified Frost Witch's Hauberk
+	[51199] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51240} }, -- Sanctified Frost Witch's Shoulderguards
+	[51198] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51241} }, -- Sanctified Frost Witch's War-Kilt
+	[51197] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51242} }, -- Sanctified Frost Witch's Faceguard
+	[51196] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51243} }, -- Sanctified Frost Witch's Grips
+	[51195] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51244} }, -- Sanctified Frost Witch's Chestguard
+	[51194] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51245} }, -- Sanctified Frost Witch's Spaulders
+	[51193] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51246} }, -- Sanctified Frost Witch's Legguards
+	[51192] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51247} }, -- Sanctified Frost Witch's Headpiece
+	[51191] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51248} }, -- Sanctified Frost Witch's Handguards
+	[51190] = { ["REDEEM"] = REDEEM_TIER_10, [CLASS_SHAMAN] = {51249} }, -- Sanctified Frost Witch's Tunic
+
 	[52025] = { -- Vanquisher's Mark of Sanctification
 		["REDEEM"] = REDEEM_TIER_10,
 		[CLASS_ROGUE] = {51185, 51186, 51187, 51188, 51189},

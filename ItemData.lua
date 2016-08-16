@@ -75,6 +75,7 @@ local REDEEM_TIER_8 = 16;
 local REDEEM_TIER_4 = 17;
 local REDEEM_TIER_5 = 18;
 local REDEEM_FIRELANDS_BOE = 4;
+local REDEEM_TIER_17 = 19;
 
 t.REDEEM_LOOKUP = {
 	[REDEEM_TBC_SUNMOTE] = "Redeem: Yrma @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)",
@@ -99,6 +100,8 @@ t.ALLIANCE_REDEEM_LOOKUP = {
 	[REDEEM_TIER_16_NORMAL] = "Redeem: Thelett Shaleheart @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Normal] (Alliance)
 	[REDEEM_TIER_16_HEROIC] = "Redeem: Clarice Chapmann @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Heroic] (Alliance)
 	[REDEEM_TIER_16_MYTHIC] = "Redeem: Lorry Warmheart @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Mythic] (Alliance)
+
+	[REDEEM_TIER_17] = "Redeem: Exarch Maladaar @ Draenor\nLocated in Talador (49.8, 48.6)", -- T17 Quest Hand-in (Alliance)
 };
 
 t.HORDE_REDEEM_LOOKUP = {
@@ -112,6 +115,8 @@ t.HORDE_REDEEM_LOOKUP = {
 	[REDEEM_TIER_16_NORMAL] = "Redeem: Nadina Stargem @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Normal] (Horde)
 	[REDEEM_TIER_16_HEROIC] = "Redeem: Ki'agnuu @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Heroic] (Horde)
 	[REDEEM_TIER_16_MYTHIC] = "Redeem: Tu'aho Pathcutter @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Mythic] (Horde)
+
+	[REDEEM_TIER_17] = "Redeem:Lady Liandrin @ Draenor\nLocated in Talador (50.0. 48.6)", -- T17 Quest Hand-in (Alliance)
 };
 
 t.CLASS_REDEEM_LOOKUP = {
@@ -3919,6 +3924,51 @@ t.HORDE_ONLY_DATA = {
 		[CLASS_WARLOCK] = {47807, 47803, 47804, 47805, 47806},
 		[CLASS_DRUID] = {48196, 48178, 48149, 48179, 48180, 48150, 48181, 48197, 48182, 48151, 48193, 48148, 48194, 48152, 48195},
 	},
+
+	[120209] = { -- Essence of the Iron Conqueror (Mythic) (Horde)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120206] = { -- Essence of the Iron Conqueror (Heroic) (Horde)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[119310] = { -- Essence of the Iron Conqueror (Normal) (Horde)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
+	},
+
+	[120210] = { -- Essence of the Iron Protector (Mythic) (Horde)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120207] = { -- Essence of the Iron Protector (Heroic) (Horde)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[119323] = { -- Essence of the Iron Protector (Normal) (Horde)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
+	},
+
+	[120211] = { -- Essence of the Iron Vanquisher (Mythic) (Horde)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120208] = { -- Essence of the Iron Vanquisher (Heroic) (Horde)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[119316] = { -- Essence of the Iron Vanquisher (Normal) (Horde)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
+	},
 };
 
 t.ALLIANCE_ONLY_DATA = {
@@ -3934,5 +3984,50 @@ t.ALLIANCE_ONLY_DATA = {
 		[CLASS_MAGE] = {47753, 47754, 47755, 47756, 47757},
 		[CLASS_WARLOCK] = {47778, 47779, 47780, 47781, 47782},
 		[CLASS_DRUID] = {48211, 48212, 48133, 48134, 48135, 48136, 48210, 48137, 48163, 48164, 48165, 48166, 48167, 48208, 48209},
+	},
+
+	[120283] = { -- Essence of the Iron Conqueror (Mythic) (Alliance)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120280] = { -- Essence of the Iron Conqueror (Heroic) (Alliance)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[120277] = { -- Essence of the Iron Conqueror (Normal) (Alliance)
+		["LINK"] = {119305,119306,119308,119307,119309},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
+	},
+
+	[120284] = { -- Essence of the Iron Protector (Mythic) (Alliance)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120281] = { -- Essence of the Iron Protector (Heroic) (Alliance)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[120279] = { -- Essence of the Iron Protector (Normal) (Alliance)
+		["LINK"] = {119320, 119321, 119322, 119319, 119318},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
+	},
+
+	[120285] = { -- Essence of the Iron Vanquisher (Mythic) (Alliance)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_MYTHIC,
+	},
+
+	[120282] = { -- Essence of the Iron Vanquisher (Heroic) (Alliance)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = TIER_17_HEROIC,
+	},
+
+	[120278] = { -- Essence of the Iron Vanquisher (Normal) (Alliance)
+		["LINK"] = {119315, 119311, 119312, 119313, 119314},
+		["REDEEM"] = REDEEM_TIER_17, ["BONUS"] = 0,
 	},
 };

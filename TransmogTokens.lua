@@ -506,9 +506,9 @@ TransmogTokens.calculateNeededText = function(relatedItems, itemID)
 		message = message .. ORANGE;
 
 		if #needed > 1 then
-			message = message .. string.format (L["You need %d appearances from this token."], #needed);
+			message = message .. string.format (L["Can be exchanged for %d appearances you need."], #needed);
 		else
-			message = message .. L["You need 1 appearance from this token."];
+			message = message .. L["Can be exchanged for 1 appearance you need."];
 		end
 
 
@@ -516,7 +516,7 @@ TransmogTokens.calculateNeededText = function(relatedItems, itemID)
 			message = message .. "\n" .. L["Appearances from this are class and/or spec dependant."];
 		end
 	else
-		message = GRAY .. L["You do not need any appearances from this token."];
+		message = GRAY .. L["Can be exchanged for appearances you don't need."];
 	end
 
 	return message;

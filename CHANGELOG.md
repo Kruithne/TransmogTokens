@@ -1,3 +1,7 @@
+** Version 1.4.3 **
+* Added information to Tier 10 set pieces that are exchanged in Dalaran for higher versions.
+* Added information to Sunwell items that are exchanged with Sunmotes for different versions.
+
 ** Version 1.4.2 **
 * Added support for Timeless Isle Armor Caches.
 * Added localization support for deDE.

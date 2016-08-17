@@ -1,6 +1,8 @@
 ** Version 1.4.3 **
+* Added full support for Tier 17 tokens, including exchangeable tokens from Blackhand.
 * Added information to Tier 10 set pieces that are exchanged in Dalaran for higher versions.
 * Added information to Sunwell items that are exchanged with Sunmotes for different versions.
+* Technical optimizations and reduced memory usage.
 
 ** Version 1.4.2 **
 * Added support for Timeless Isle Armor Caches.

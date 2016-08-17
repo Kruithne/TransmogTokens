@@ -356,11 +356,6 @@ t.ITEM_DATA = {
 	[34215] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = 34394 }, -- Breastplate of Agony's Aversion
 	[34216] = { ["REDEEM"] = REDEEM_TBC_SUNMOTE, [t.ARMOR_TYPE_PLATE] = 34395 }, -- Noble Judicator's Chestguard
 
-	[66998] = { -- Essence of the Forlorn
-		["REDEEM"] = REDEEM_TIER_11,
-		["LINK"] = {67428, 65088, 67423, 67424, 67425, 67426, 67427, 65089, 67429, 67430, 67431, 65000, 65001, 65002, 65087},
-	},
-
 	[71617] = { -- Crystallized Firestone
 		["REDEEM"] = REDEEM_FIRELANDS_BOE,
 		[CLASS_WARRIOR] = {71562, 71557, 71559, 71560, 71558},
@@ -1647,6 +1642,11 @@ t.ITEM_DATA = {
 		[CLASS_DEATHKNIGHT] = {65180, 65185},
 		[CLASS_MAGE] = 65209,
 		[CLASS_DRUID] = {65194, 65199, 65189},
+	},
+
+	[66998] = { -- Essence of the Forlorn
+		["REDEEM"] = REDEEM_TIER_11,
+		["LINK"] = {67428, 65088, 67423, 67424, 67425, 67426, 67427, 65089, 67429, 67430, 67431, 65000, 65001, 65002, 65087},
 	},
 
 	[71669] = { -- Gauntlets of the Fiery Vanquisher

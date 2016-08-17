@@ -389,10 +389,10 @@ TransmogTokens.sortData = function(pool, classIndex)
 
 		if data["LINK"] then
 			for linkIndex, linkValue in pairs(data["LINK"]) do
-				local node = pool[linkValue];
-				if node and node[classIndex] then
+				local node = t.SORTED_DATA[linkValue];
+				if node then
 					if not t.SORTED_DATA[tokenID] then
-						t.SORTED_DATA[tokenID] = node[classIndex];
+						t.SORTED_DATA[tokenID] = node;
 					else
 						local sorted = t.SORTED_DATA[tokenID];
 
@@ -401,7 +401,7 @@ TransmogTokens.sortData = function(pool, classIndex)
 							t.SORTED_DATA[tokenID] = sorted;
 						end
 
-						local pull = node[classIndex];
+						local pull = node;
 						if type(pull) == "number" then
 							-- Linked data is just a single number, insert.
 							table.insert(sorted, pull);

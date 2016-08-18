@@ -79,13 +79,12 @@ eventFrame:SetScript("OnEvent", function(self, event, ...)
 			local lookup = t.AQ_DATA[classIndex];
 			if lookup then
 				for itemID, itemData in pairs(lookup) do
-					local subItems = itemData["ITEMS"];
 					-- Copy the data for use when rendering tool-tips.
-					t.AQ_ENTRIES[itemID] = subItems;
+					t.AQ_ENTRIES[itemID] = itemData;
 					t.REDEEM_LOOKUP[itemID] = itemData["REDEEM"];
 
 					-- Loop items needed for the item, create a look-up entry.
-					for subItemID, subItemCount in pairs(subItems) do
+					for subItemID, subItemCount in pairs(itemData["ITEMS"]) do
 						if t.AQ_LOOKUP[subItemID] then
 							table.insert(t.AQ_LOOKUP[subItemID], itemID);
 						else
@@ -643,16 +642,16 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 end
 
 TransmogTokens.addItemInfo = function(tooltip, itemID)
-	local subItemData = t.AQ_ENTRIES[itemID];
+	local subItemNode = t.AQ_ENTRIES[itemID];
 	local pendingItems = t.tooltipCache["pendingItems"];
 
 	t.tooltipCache["infoItems"][itemID] = true;
 
-	if subItemData then
+	if subItemNode then
 		local mainItemName = GetItemInfo(itemID);
-		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n");
+		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n" .. "Redeem: " .. subItemNode["REDEEM"]);
 
-		for componentID, componentAmount in pairs(subItemData) do
+		for componentID, componentAmount in pairs(subItemNode["ITEMS"]) do
 			local itemName = GetItemInfo(componentID);
 
 			if not itemName then

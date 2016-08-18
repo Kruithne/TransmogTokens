@@ -124,8 +124,10 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 				for pendingItemID, lineIndex in pairs(pendingItems) do
 					local itemName = GetItemInfo(pendingItemID);
 					if itemName then
-						line = _G[tooltipName .. lineIndex];
-						line:SetText(string.gsub(line:GetText(), "{" .. pendingItemID .. "}", itemName));
+						for i = 1, #lineIndex do
+							line = _G[tooltipName .. lineIndex[i]];
+							line:SetText(string.gsub(line:GetText(), "{" .. pendingItemID .. "}", itemName));
+						end
 						table.remove(pendingItems, pendingItemID);
 					end
 				end
@@ -642,7 +644,12 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 
 					if not itemName then
 						itemName = "{" .. componentID .. "}";
-						pendingItems[componentID] = tooltip:NumLines() + 1;
+
+						if not pendingItems[componentID] then
+							pendingItems[componentID] = {};
+						end
+
+						table.insert(pendingItems[componentID], tooltip:NumLines() + 1);
 					end
 					t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
 				end

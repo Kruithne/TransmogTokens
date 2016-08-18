@@ -649,7 +649,7 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 
 	if subItemNode then
 		local mainItemName = GetItemInfo(itemID);
-		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n" .. "Redeem: " .. subItemNode["REDEEM"]);
+		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n" .. "Redeem: " .. subItemNode["REDEEM"] .. "\n");
 
 		for componentID, componentAmount in pairs(subItemNode["ITEMS"]) do
 			local itemName = GetItemInfo(componentID);

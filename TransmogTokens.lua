@@ -26,7 +26,6 @@ t.tooltipCache = {
 	["textLineID"] = 0,
 	["pendingItems"] = {},
 	["infoItems"] = {},
-	["textIndex"] = 1,
 };
 
 local BLUE = "|cff15abff";
@@ -599,7 +598,6 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 
 	wipe(t.tooltipCache["pendingItems"]);
 	wipe(t.tooltipCache["infoItems"]);
-	t.tooltipCache["textIndex"] = 1;
 
 	t.tooltipCache["active"] = false;
 
@@ -651,7 +649,8 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 	t.tooltipCache["infoItems"][itemID] = true;
 
 	if subItemData then
-		t.addTooltipLine(tooltip, BLUE .. "Appearance " .. t.tooltipCache["textIndex"] .. " Requires:\n");
+		local mainItemName = GetItemInfo(itemID);
+		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n");
 
 		for componentID, componentAmount in pairs(subItemData) do
 			local itemName = GetItemInfo(componentID);
@@ -667,7 +666,6 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 			end
 			t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
 		end
-		t.tooltipCache["textIndex"] = t.tooltipCache["textIndex"] + 1;
 	end
 end
 

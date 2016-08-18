@@ -106,7 +106,6 @@ end);
 
 eventFrame:SetScript("OnUpdate", function(self, elapsed)
 	if eventFrame.DoTooltipUpdate then
-
 		if eventFrame.UpdateTime >= 0.5 then
 			local itemID = t.tooltipCache["lastItemID"];
 			local itemBonus = t.tooltipCache["lastItemBonus"];

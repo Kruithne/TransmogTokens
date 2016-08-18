@@ -598,12 +598,14 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 		local bonusLookup = t.BONUS_LOOKUP[itemID];
 		local bonus = 0;
 
-		if type(bonusLookup) == "number" then
-			bonus = bonusLookup;
-		else
-			bonus = t.getItemBonus(itemLink);
-			if bonus > 0 then
-				bonus = t.BONUS_LOOKUP[itemID][bonus] or 0;
+		if bonusLookup then
+			if type(bonusLookup) == "number" then
+				bonus = bonusLookup;
+			else
+				bonus = t.getItemBonus(itemLink);
+				if bonus > 0 then
+					bonus = t.BONUS_LOOKUP[itemID][bonus] or 0;
+				end
 			end
 		end
 

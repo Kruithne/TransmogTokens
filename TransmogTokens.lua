@@ -24,7 +24,9 @@ t.tooltipCache = {
 	["lastItemID"] = 0,	
 	["lastItemBonus"] = 0,
 	["textLineID"] = 0,
-	["pendingItems"] = {}
+	["pendingItems"] = {},
+	["infoItems"] = {},
+	["textIndex"] = 1,
 };
 
 local BLUE = "|cff15abff";
@@ -114,7 +116,15 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 				local tooltipName = tooltip:GetName() .. "TextLeft";
 				local line = _G[tooltipName .. t.tooltipCache["textLineID"]];
 
-				line:SetText(t.calculateNeededText(relatedItems, itemID, itemBonus));
+				local neededText, neededReturn = t.calculateNeededText(relatedItems, itemID, itemBonus);
+				line:SetText(neededText);
+
+				for i = 1, #neededReturn do
+					local neededID = neededReturn[i];
+					if not t.tooltipCache["infoItems"][neededID] then
+						t.addItemInfo(tooltip, neededID);
+					end
+				end
 
 				-- AQ stuff.
 				local pendingItems = t.tooltipCache["pendingItems"];
@@ -588,8 +598,9 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 	local itemID = t.getItemID(itemLink);
 	local relatedItems = t.SORTED_DATA[itemID] or t.AQ_LOOKUP[itemID];
 
-	local pendingItems = t.tooltipCache["pendingItems"];
-	wipe(pendingItems);
+	wipe(t.tooltipCache["pendingItems"]);
+	wipe(t.tooltipCache["infoItems"]);
+	t.tooltipCache["textIndex"] = 1;
 
 	t.tooltipCache["active"] = false;
 
@@ -628,31 +639,36 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 		end
 
 		-- AQ Handling
-		local textIndex = 1;
 		for i = 1, #neededResult do
-			local subItemID = neededResult[i];
-			local subItemData = t.AQ_ENTRIES[subItemID];
-
-			if subItemData then
-				t.addTooltipLine(tooltip, BLUE .. "Appearance " .. textIndex .. " Requires:\n");
-
-				for componentID, componentAmount in pairs(subItemData) do
-					local itemName = GetItemInfo(componentID);
-
-					if not itemName then
-						itemName = "{" .. componentID .. "}";
-
-						if not pendingItems[componentID] then
-							pendingItems[componentID] = {};
-						end
-
-						table.insert(pendingItems[componentID], tooltip:NumLines() + 1);
-					end
-					t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
-				end
-				textIndex = textIndex + 1;
-			end
+			t.addItemInfo(tooltip, neededResult[i]);
 		end
+	end
+end
+
+TransmogTokens.addItemInfo = function(tooltip, itemID)
+	local subItemData = t.AQ_ENTRIES[itemID];
+	local pendingItems = t.tooltipCache["pendingItems"];
+
+	t.tooltipCache["infoItems"][itemID] = true;
+
+	if subItemData then
+		t.addTooltipLine(tooltip, BLUE .. "Appearance " .. t.tooltipCache["textIndex"] .. " Requires:\n");
+
+		for componentID, componentAmount in pairs(subItemData) do
+			local itemName = GetItemInfo(componentID);
+
+			if not itemName then
+				itemName = "{" .. componentID .. "}";
+
+				if not pendingItems[componentID] then
+					pendingItems[componentID] = {};
+				end
+
+				table.insert(pendingItems[componentID], tooltip:NumLines() + 1);
+			end
+			t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
+		end
+		t.tooltipCache["textIndex"] = t.tooltipCache["textIndex"] + 1;
 	end
 end
 

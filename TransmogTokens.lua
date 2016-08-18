@@ -560,8 +560,7 @@ TransmogTokens.calculateNeededSingle = function(itemID, bonus, stash, returnStas
 	if link ~= nil then
 		local appearanceID = t.getAppearanceID(link);
 
-		-- TEMP REMOVE
-		if appearanceID ~= nil then --and not t.hasApperance(appearanceID) then
+		if appearanceID ~= nil and not t.hasApperance(appearanceID) then
 			if not stash[appearanceID] then
 				stash[appearanceID] = true;
 				table.insert(returnStash, itemID);

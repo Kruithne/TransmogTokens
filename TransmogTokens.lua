@@ -96,8 +96,6 @@ eventFrame:SetScript("OnEvent", function(self, event, ...)
 			t.AQ_DATA = nil;
 		end
 	elseif event == "GET_ITEM_INFO_RECEIVED" then
-		local itemID = ...;
-
 		if t.tooltipCache["active"] then
 			eventFrame.DoTooltipUpdate = true;
 		end

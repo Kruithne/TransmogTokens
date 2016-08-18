@@ -241,6 +241,18 @@ t.AQ_DATA = {
 		}
 	},
 
+	[CLASS_HUNTER] = {
+		[21401] = { -- Scythe of the Unseen Path
+			["ITEMS"] = {
+				[20886] = 1, -- Qiraji Spiked Hilt,
+				[20866] = 2, -- Azure Idol,
+				[20860] = 5, -- Silver Scarab
+				[20864] = 5, -- Bone Scarab
+			},
+			["REDEEM"] = "Warden Haro"
+		},
+	},
+
 	[CLASS_WARRIOR] = {
 		[21394] = { -- Drape of Unyielding Strength
 			["ITEMS"] = {

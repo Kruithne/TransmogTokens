@@ -589,12 +589,6 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 	local itemID = t.getItemID(itemLink);
 	local relatedItems = t.SORTED_DATA[itemID] or t.AQ_LOOKUP[itemID];
 
-	--local aqItems = t.AQ_ENTRIES[itemID];
-	--if not relatedItems and t.AQ_ENTRIES[itemID] then
-		--relatedItems = {};
-		--for key, value in pairs(t.AQ_ENTRIES[itemID])
-	--end
-
 	local pendingItems = t.tooltipCache["pendingItems"];
 	wipe(pendingItems);
 

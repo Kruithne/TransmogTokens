@@ -251,6 +251,16 @@ t.AQ_DATA = {
 			},
 			["REDEEM"] = "Warden Haro"
 		},
+
+		[21365] = { -- Striker's Footguards
+			["ITEMS"] = {
+				[20928] = 1, -- Qiraji Bindings of Command
+				[20879] = 2, -- Idol of Life
+				[20858] = 5, -- Stone Scarab
+				[20864] = 5, -- Bone Scarab
+			},
+			["REDEEM"] = "Kandrostrasz"
+		}
 	},
 
 	[CLASS_WARRIOR] = {

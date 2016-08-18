@@ -3,6 +3,8 @@ TransmogTokens = {
 	["BONUS_LOOKUP"] = {},
 	["SPEC_CLASS_TOKENS"] = {},
 	["NOTES"] = {},
+	["AQ_LOOKUP"] = {},
+	["AQ_ENTRIES"] = {},
 	["SORTED_DATA"] = {},
 	["INVENTORY_SLOTS"] = {},
 	["SET_DATA"] = {},
@@ -21,7 +23,8 @@ t.tooltipCache = {
 	["lastTooltip"] = nil,
 	["lastItemID"] = 0,	
 	["lastItemBonus"] = 0,
-	["textLineID"] = 0
+	["textLineID"] = 0,
+	["pendingItems"] = {}
 };
 
 local BLUE = "|cff15abff";
@@ -70,6 +73,27 @@ eventFrame:SetScript("OnEvent", function(self, event, ...)
 
 			t.ALLIANCE_REDEEM_LOOKUP = nil;
 			t.HORDE_REDEEM_LOOKUP = nil;
+
+			-- AQ Lookup
+			local lookup = t.AQ_DATA[classIndex];
+			if lookup then
+				for itemID, itemData in pairs(lookup) do
+					local subItems = itemData["ITEMS"];
+					-- Copy the data for use when rendering tool-tips.
+					t.AQ_ENTRIES[itemID] = subItems;
+					t.REDEEM_LOOKUP[itemID] = itemData["REDEEM"];
+
+					-- Loop items needed for the item, create a look-up entry.
+					for subItemID, subItemCount in pairs(subItems) do
+						if t.AQ_LOOKUP[subItemID] then
+							table.insert(t.AQ_LOOKUP[subItemID], itemID);
+						else
+							t.AQ_LOOKUP[subItemID] = {itemID};
+						end
+					end
+				end
+			end
+			t.AQ_DATA = nil;
 		end
 	elseif event == "GET_ITEM_INFO_RECEIVED" then
 		local itemID = ...;
@@ -89,10 +113,23 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 			local tooltip = t.tooltipCache["lastTooltip"];
 
 			if tooltip ~= nil and tooltip:IsShown() then
-				local relatedItems = t.SORTED_DATA[itemID];
-				local line = _G[tooltip:GetName() .. "TextLeft" .. t.tooltipCache["textLineID"]];
+				local relatedItems = t.SORTED_DATA[itemID] or t.AQ_LOOKUP[itemID];
+				local tooltipName = tooltip:GetName() .. "TextLeft";
+				local line = _G[tooltipName .. t.tooltipCache["textLineID"]];
 
 				line:SetText(t.calculateNeededText(relatedItems, itemID, itemBonus));
+
+				-- AQ stuff.
+				local pendingItems = t.tooltipCache["pendingItems"];
+				for pendingItemID, lineIndex in pairs(pendingItems) do
+					local itemName = GetItemInfo(pendingItemID);
+					if itemName then
+						line = _G[tooltipName .. lineIndex];
+						line:SetText(string.gsub(line:GetText(), "{" .. pendingItemID .. "}", itemName));
+						table.remove(pendingItems, pendingItemID);
+					end
+				end
+
 				tooltip:Show();
 			end
 
@@ -491,6 +528,7 @@ end
 
 TransmogTokens.calculateNeeded = function(relatedItems, bonus)
 	local needed = {};
+	local neededReturn = {};
 
 	if relatedItems == nil then
 		return needed;
@@ -498,33 +536,26 @@ TransmogTokens.calculateNeeded = function(relatedItems, bonus)
 
 	if type(relatedItems) == "table" then
 		for key, value in pairs(relatedItems) do
-			t.calculateNeededSingle(value, bonus, needed);
+			t.calculateNeededSingle(value, bonus, needed, neededReturn);
 		end
 	else
-		t.calculateNeededSingle(relatedItems, bonus, needed);
+		t.calculateNeededSingle(relatedItems, bonus, needed, neededReturn);
 	end
 
-	return needed;
+	return neededReturn;
 end
 
-TransmogTokens.calculateNeededSingle = function(itemID, bonus, stash)
+TransmogTokens.calculateNeededSingle = function(itemID, bonus, stash, returnStash)
 	local itemName, link = GetItemInfo("item:" .. itemID .. ":0:0:0:0:0:0:0:0:0:0:0:1:" .. bonus);
 
 	if link ~= nil then
 		local appearanceID = t.getAppearanceID(link);
 
-		if appearanceID ~= nil and not t.hasApperance(appearanceID) then
-			local hasAlready = false;
-
-			for i, v in pairs(stash) do
-				if v == appearanceID then
-					hasAlready = true;
-					break;
-				end
-			end
-
-			if not hasAlready then
-				table.insert(stash, appearanceID);
+		-- TEMP REMOVE
+		if appearanceID ~= nil then --and not t.hasApperance(appearanceID) then
+			if not stash[appearanceID] then
+				stash[appearanceID] = true;
+				table.insert(returnStash, itemID);
 			end
 		end
 	end
@@ -551,12 +582,21 @@ TransmogTokens.calculateNeededText = function(relatedItems, itemID, bonus)
 		message = GRAY .. L["Can be exchanged for appearances you don't need."];
 	end
 
-	return message;
+	return message, needed;
 end
 
 TransmogTokens.processTooltip = function(tooltip, itemLink)
 	local itemID = t.getItemID(itemLink);
-	local relatedItems = t.SORTED_DATA[itemID];
+	local relatedItems = t.SORTED_DATA[itemID] or t.AQ_LOOKUP[itemID];
+
+	--local aqItems = t.AQ_ENTRIES[itemID];
+	--if not relatedItems and t.AQ_ENTRIES[itemID] then
+		--relatedItems = {};
+		--for key, value in pairs(t.AQ_ENTRIES[itemID])
+	--end
+
+	local pendingItems = t.tooltipCache["pendingItems"];
+	wipe(pendingItems);
 
 	t.tooltipCache["active"] = false;
 
@@ -573,7 +613,8 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 			end
 		end
 
-		t.addTooltipLine(tooltip, t.calculateNeededText(relatedItems, itemID, bonus));
+		local neededText, neededResult = t.calculateNeededText(relatedItems, itemID, bonus);
+		t.addTooltipLine(tooltip, neededText);
 
 		t.tooltipCache["active"] = true;
 		t.tooltipCache["lastTooltip"] = tooltip;
@@ -589,6 +630,28 @@ TransmogTokens.processTooltip = function(tooltip, itemLink)
 		local note = t.NOTES[itemID];
 		if note then
 			t.addTooltipLine(tooltip, GREEN .. note);
+		end
+
+		-- AQ Handling
+		local textIndex = 1;
+		for i = 1, #neededResult do
+			local subItemID = neededResult[i];
+			local subItemData = t.AQ_ENTRIES[subItemID];
+
+			if subItemData then
+				t.addTooltipLine(tooltip, BLUE .. "Appearance " .. textIndex .. " Requires:\n");
+
+				for componentID, componentAmount in pairs(subItemData) do
+					local itemName = GetItemInfo(componentID);
+
+					if not itemName then
+						itemName = "{" .. componentID .. "}";
+						pendingItems[componentID] = tooltip:NumLines() + 1;
+					end
+					t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
+				end
+				textIndex = textIndex + 1;
+			end
 		end
 	end
 end

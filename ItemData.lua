@@ -218,6 +218,52 @@ local TIER_17_BONUS_LOOKUP = {
 	[569] = TIER_17_MYTHIC, -- Mythic
 };
 
+t.AQ_DATA = {
+	[CLASS_DRUID] = {
+		[21409] = { -- Cloak of Unending Life
+			["ITEMS"] = {
+				[20864] = 5, -- Bone Scarab
+				[20860] = 5, -- Silver Scarab,
+				[20872] = 2, -- Vermilion Idol,
+				[20889] = 1, -- Qiraji Regal Drape
+			},
+			["REDEEM"] = "Keyl Swiftclaw"
+		},
+
+		[21354] = { -- Genesis Shoulderpads
+			["ITEMS"] = {
+				[20864] = 5, -- Bone Scarab
+				[20859] = 5, -- Gold Scarab
+				[20881] = 2, -- Idol of Strife
+				[20932] = 1, -- Qiraji Bindings of Dominance
+			},
+			["REDEEM"] = "Andorgos"
+		}
+	},
+
+	[CLASS_WARRIOR] = {
+		[21394] = { -- Drape of Unyielding Strength
+			["ITEMS"] = {
+				[20864] = 5, -- Bone Scarab
+				[20860] = 5, -- Silver Scrab
+				[20867] = 2, -- Onyx Idol
+				[20885] = 1, -- Qiraji Martial Drape
+			},
+			["REDEEM"] = "Keyl Swiftclaw"
+		},
+
+		[21331] = { -- Conquerors Breastplate
+			["ITEMS"] = {
+				[20929] = 1, -- Carapace of the Old God
+				[20882] = 2, -- Idol of War
+				[20860] = 5, -- Silver Scarab
+				[20864] = 5, -- Bone Scarab
+			},
+			["REDEEM"] = "Vethsera"
+		},
+	}
+};
+
 t.ITEM_DATA = {
 	-- Tier 17
 	[119320] = { -- Leggings of the Iron Protector

@@ -33,6 +33,7 @@ local ORANGE = "|cffff9333";
 local YELLOW = "|cfff0e442";
 local GRAY = "|cff888888";
 local GREEN = "|cff20ff20";
+local RED = "|cffff2020";
 
 local model = CreateFrame('DressUpModel');
 local eventFrame = CreateFrame("FRAME");
@@ -81,7 +82,7 @@ eventFrame:SetScript("OnEvent", function(self, event, ...)
 				for itemID, itemData in pairs(lookup) do
 					-- Copy the data for use when rendering tool-tips.
 					t.AQ_ENTRIES[itemID] = itemData;
-					t.REDEEM_LOOKUP[itemID] = itemData["REDEEM"];
+					--t.REDEEM_LOOKUP[itemID] = itemData["REDEEM"];
 
 					-- Loop items needed for the item, create a look-up entry.
 					for subItemID, subItemCount in pairs(itemData["ITEMS"]) do
@@ -649,7 +650,7 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 
 	if subItemNode then
 		local mainItemName = GetItemInfo(itemID);
-		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n" .. "Redeem: " .. subItemNode["REDEEM"] .. "\n");
+		t.addTooltipLine(tooltip, BLUE .. mainItemName .. "\n");
 
 		for componentID, componentAmount in pairs(subItemNode["ITEMS"]) do
 			local itemName = GetItemInfo(componentID);
@@ -663,8 +664,18 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 
 				table.insert(pendingItems[componentID], tooltip:NumLines() + 1);
 			end
-			t.addTooltipLine(tooltip, "   " .. itemName .. " x" .. componentAmount);
+
+			local amountColour = RED;
+			local itemCount = GetItemCount(componentID);
+
+			if itemCount >= componentAmount then
+				amountText = GREEN .. amountText;
+			end
+
+			t.addTooltipLine(tooltip, amountColour .. "   " .. itemName .. " x" .. componentAmount);
 		end
+
+		t.addTooltipLine(tooltip, "\n" .. BLUE .. t.REDEEM_LOOKUP[subItemNode["REDEEM"]]);
 	end
 end
 

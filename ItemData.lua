@@ -76,6 +76,11 @@ local REDEEM_TIER_4 = 17;
 local REDEEM_TIER_5 = 18;
 local REDEEM_FIRELANDS_BOE = 4;
 local REDEEM_TIER_17 = 19;
+local REDEEM_AQ_KEYL = 20;
+local REDEEM_AQ_HARO = 21;
+local REDEEM_AQ_ANDO = 22;
+local REDEEM_AQ_VETH = 23;
+local REDEEM_AQ_KAND = 24;
 
 t.REDEEM_LOOKUP = {
 	[REDEEM_TBC_SUNMOTE] = "Redeem: Yrma @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)",
@@ -87,6 +92,12 @@ t.REDEEM_LOOKUP = {
 	[REDEEM_MOP_OXHEART] = "Redeem: Commander Oxheart @ Townlong Steppes\nLocated in Niuzao Temple (37.8, 64.6)", -- Tier 14 (HoF/ToES)
 	[REDEEM_TIER_4] = "Redeem: Arodis Sunblade @ Shattrath [Scryers]\nLocated in Seer's Library (42.6, 90.6)\n\nRedeem: Asuur @ Shattrath [Aldor]\nLocated in Shrine of Unending Light (23.6, 32.6)\n\nRedeem: Karynna @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)", -- Tier 4
 	[REDEEM_TIER_5] = "Redeem: Veynna Dawnstar @ Shattrath [Scryers]\nLocated in Seer's Library (44.8, 91.6)\n\nRedeem: Kelara @ Shattrath [Aldor]\nLocated in Shrine of Unending Light (24.6, 27.8)\n\nRedeem: Olus @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)", -- Tier 5
+
+	[REDEEM_AQ_KEYL] = "Redeem: Keyl Swiftclaw @ Ruins of Ahn'Qiraj\nLocated outside raid enterance",
+	[REDEEM_AQ_HARO] = "Redeem: Warden Haro @ Ruins of Ahn'Qiraj\nLocated outside raid enterance",
+	[REDEEM_AQ_ANDO] = "Redeem: Andorgos @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
+	[REDEEM_AQ_VETH] = "Redeem: Vethsera @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
+	[REDEEM_AQ_KAND] = "Redeem: Kandrostrasz @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
 };
 
 t.ALLIANCE_REDEEM_LOOKUP = {
@@ -229,7 +240,7 @@ t.AQ_DATA = {
 				[20864] = 5, -- Bone Scarab
 				[20860] = 5, -- Silver Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21354] = { -- Genesis Shoulderpads
 			[ITEMS] = {
@@ -238,7 +249,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21357] = { -- Genesis Vest
 			[ITEMS] = {
@@ -247,7 +258,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21407] = { -- Mace of Unending Life
 			[ITEMS] = {
@@ -256,7 +267,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20858] = 5, -- Stone Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21356] = { -- Genesis Trousers
 			[ITEMS] = {
@@ -265,7 +276,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21353] = { -- Genesis Helm
 			[ITEMS] = {
@@ -274,7 +285,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21355] = { -- Genesis Boots
 			[ITEMS] = {
@@ -283,7 +294,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20860] = 5, -- Silver Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 	},
 
@@ -295,7 +306,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21365] = { -- Striker's Footguards
 			[ITEMS] = {
@@ -304,7 +315,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21368] = { -- Striker's Leggings
 			[ITEMS] = {
@@ -313,7 +324,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21366] = { -- Striker's Diadem
 			[ITEMS] = {
@@ -322,7 +333,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21403] = { -- Cloak of the Unseen Path
 			[ITEMS] = {
@@ -331,7 +342,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21367] = { -- Striker's Pauldrons
 			[ITEMS] = {
@@ -340,7 +351,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21370] = { -- Striker's Hauberk
 			[ITEMS] = {
@@ -349,7 +360,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 	},
 
@@ -361,7 +372,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21346] = { -- Enigma Leggings
 			[ITEMS] = {
@@ -370,7 +381,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21347] = { -- Enigma Circlet
 			[ITEMS] = {
@@ -379,7 +390,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21345] = { -- Enigma Shoulderpads
 			[ITEMS] = {
@@ -388,7 +399,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20861] = 5, -- Bronze Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21415] = { -- Drape of Vaulted Secrets
 			[ITEMS] = {
@@ -397,7 +408,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21344] = { -- Enigma Boots
 			[ITEMS] = {
@@ -406,7 +417,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21343] = { -- Enigma Robes
 			[ITEMS] = {
@@ -415,7 +426,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 	},
 
@@ -427,7 +438,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21395] = { -- Blade of Eternal Justice
 			[ITEMS] = {
@@ -436,7 +447,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21388] = { -- Avenger's Greaves
 			[ITEMS] = {
@@ -445,7 +456,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21390] = { -- Avenger's Legguards
 			[ITEMS] = {
@@ -454,7 +465,7 @@ t.AQ_DATA = {
 				[20865] = 5, -- Ivory Scarab
 				[20861] = 5, -- Bronze Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21387] = { -- Avenger's Crown
 			[ITEMS] = {
@@ -463,7 +474,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21391] = { -- Avenger's Pauldrons
 			[ITEMS] = {
@@ -472,7 +483,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21397] = { -- Cape of Eternal Justice
 			[ITEMS] = {
@@ -481,7 +492,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 	},
 
@@ -493,7 +504,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21410] = { -- Gavel of Infinite Wisdom
 			[ITEMS] = {
@@ -502,7 +513,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21349] = { -- Footwraps of the Oracle
 			[ITEMS] = {
@@ -511,7 +522,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20859] = 5, -- Gold Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21351] = { -- Vestments of the Oracle
 			[ITEMS] = {
@@ -520,7 +531,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21412] = { -- Shroud of Infinite Wisdom
 			[ITEMS] = {
@@ -529,7 +540,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21352] = { -- Trousers of the Oracle
 			[ITEMS] = {
@@ -538,7 +549,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21350] = { -- Mantle of the Oracle
 			[ITEMS] = {
@@ -547,7 +558,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 	},
 
@@ -559,7 +570,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21406] = { -- Cloak of Veiled Shadows
 			[ITEMS] = {
@@ -568,7 +579,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21364] = { -- Deathdealer's Vest
 			[ITEMS] = {
@@ -577,7 +588,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21362] = { -- Deathdealer's Leggings
 			[ITEMS] = {
@@ -586,7 +597,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21404] = { -- Dagger of Veiled Shadows
 			[ITEMS] = {
@@ -595,7 +606,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21360] = { -- Deathdealer's Helm
 			[ITEMS] = {
@@ -604,7 +615,7 @@ t.AQ_DATA = {
 				[20863] = 5, -- Clay Scarab
 				[20859] = 5, -- Gold Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21361] = { -- Deathdealer's Spaulders
 			[ITEMS] = {
@@ -613,7 +624,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 	},
 
@@ -625,7 +636,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21398] = { -- Hammer of the Gathering Storm
 			[ITEMS] = {
@@ -634,7 +645,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21373] = { -- Stormcaller's Footguards
 			[ITEMS] = {
@@ -643,7 +654,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21375] = { -- Stormcaller's Leggings
 			[ITEMS] = {
@@ -652,7 +663,7 @@ t.AQ_DATA = {
 				[20865] = 5, -- Ivory Scarab
 				[20861] = 5, -- Bronze Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21372] = { -- Stormcaller's Diadem
 			[ITEMS] = {
@@ -661,7 +672,7 @@ t.AQ_DATA = {
 				[20858] = 5, -- Stone Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21376] = { -- Stormcaller's Pauldrons
 			[ITEMS] = {
@@ -670,7 +681,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20862] = 5, -- Crystal Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21400] = { -- Cloak of the Gathering Storm
 			[ITEMS] = {
@@ -679,7 +690,7 @@ t.AQ_DATA = {
 				[20863] = 5, -- Clay Scarab
 				[20859] = 5, -- Gold Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 	},
 
@@ -691,7 +702,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21335] = { -- Doomcaller's Mantle
 			[ITEMS] = {
@@ -700,7 +711,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21418] = { -- Shroud of Unspoken Names
 			[ITEMS] = {
@@ -709,7 +720,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21334] = { -- Doomcaller's Robes
 			[ITEMS] = {
@@ -718,7 +729,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20858] = 5, -- Stone Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21416] = { -- Kris of Unspoken Names
 			[ITEMS] = {
@@ -727,7 +738,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21336] = { -- Doomcaller's Trousers
 			[ITEMS] = {
@@ -736,7 +747,7 @@ t.AQ_DATA = {
 				[20859] = 5, -- Gold Scarab
 				[20863] = 5, -- Clay Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21338] = { -- Doomcaller's Footwraps
 			[ITEMS] = {
@@ -745,7 +756,7 @@ t.AQ_DATA = {
 				[20863] = 5, -- Clay Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 	},
 
@@ -757,7 +768,7 @@ t.AQ_DATA = {
 				[20864] = 5, -- Bone Scarab
 				[20860] = 5, -- Silver Scarab
 			},
-			[REDEEM] = "Keyl Swiftclaw"
+			[REDEEM] = REDEEM_AQ_KEYL
 		},
 		[21331] = { -- Conqueror's Breastplate
 			[ITEMS] = {
@@ -766,7 +777,7 @@ t.AQ_DATA = {
 				[20860] = 5, -- Silver Scarab
 				[20864] = 5, -- Bone Scarab
 			},
-			[REDEEM] = "Vethsera"
+			[REDEEM] = REDEEM_AQ_VETH
 		},
 		[21332] = { -- Conqueror's Legguards
 			[ITEMS] = {
@@ -775,7 +786,7 @@ t.AQ_DATA = {
 				[20861] = 5, -- Bronze Scarab
 				[20865] = 5, -- Ivory Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 		[21392] = { -- Sickle of Unyielding Strength
 			[ITEMS] = {
@@ -784,7 +795,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20858] = 5, -- Stone Scarab
 			},
-			[REDEEM] = "Warden Haro"
+			[REDEEM] = REDEEM_AQ_HARO
 		},
 		[21329] = { -- Conqueror's Crown
 			[ITEMS] = {
@@ -793,7 +804,7 @@ t.AQ_DATA = {
 				[20862] = 5, -- Crystal Scarab
 				[20858] = 5, -- Stone Scarab
 			},
-			[REDEEM] = "Andorgos"
+			[REDEEM] = REDEEM_AQ_ANDO
 		},
 		[21333] = { -- Conqueror's Greaves
 			[ITEMS] = {
@@ -802,7 +813,7 @@ t.AQ_DATA = {
 				[20865] = 5, -- Ivory Scarab
 				[20859] = 5, -- Gold Scarab
 			},
-			[REDEEM] = "Kandrostrasz"
+			[REDEEM] = REDEEM_AQ_KAND
 		},
 	},
 };

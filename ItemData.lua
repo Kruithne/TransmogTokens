@@ -827,6 +827,32 @@ t.AQ_DATA = {
 };
 
 t.ITEM_DATA = {
+	-- Tier 18
+	[127963] = { -- Chest of Hellfire's Protector
+		[BONUS] = TIER_18_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 124319, [CLASS_MONK] = 124247, [CLASS_HUNTER] = 124284, [CLASS_SHAMAN] = 124303
+	},
+
+	[127967] = { -- Shoudlers of Hellfire's Protector
+		[BONUS] = TIER_18_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 124346, [CLASS_MONK] = 124273, [CLASS_HUNTER] = 124307, [CLASS_SHAMAN] = 124308
+	},
+
+	[127966] = { -- Helm of Hellfire's Protector
+		[BONUS] = TIER_18_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 124334, [CLASS_MONK] = 124262, [CLASS_HUNTER] = 124296, [CLASS_SHAMAN] = 124297
+	},
+
+	[127965] = { -- Leggings of Hellfire's Protector
+		[BONUS] = TIER_18_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 124340, [CLASS_MONK] = 124268, [CLASS_HUNTER] = 124301, [CLASS_SHAMAN] = 124302
+	},
+
+	[127964] = { -- Gauntlets of Hellfire's Protector
+		[BONUS] = TIER_18_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 124329, [CLASS_MONK] = 124256, [CLASS_HUNTER] = 124292, [CLASS_SHAMAN] = 124293
+	},
+
 	-- Tier 17
 	[119320] = { -- Leggings of the Iron Protector
 		[BONUS] = TIER_17_BONUS_LOOKUP,

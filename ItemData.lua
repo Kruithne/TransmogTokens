@@ -873,6 +873,26 @@ t.ITEM_DATA = {
 		[CLASS_DEMONHUNTER] = 139628, [CLASS_PALADIN] = 124339, [CLASS_PRIEST] = 124166, [CLASS_WARLOCK] = 124167
 	},
 
+	[127662] = { -- Chest of Hellfire's Vanquisher
+		[CLASS_DEATHKNIGHT] = 124317, [CLASS_DRUID] = 124246, [CLASS_MAGE] = 124171, [CLASS_ROGUE] = 124248
+	},
+
+	[127659] = { -- Helm of Hellfire's Vanquisher
+		[CLASS_DEATHKNIGHT] = 124332, [CLASS_DRUID] = 124261, [CLASS_MAGE] = 124160, [CLASS_ROGUE] = 124263
+	},
+
+	[127658] = { -- Gauntlets of Hellfire's Vanquisher
+		[CLASS_DEATHKNIGHT] = 124327, [CLASS_DRUID] = 124255, [CLASS_MAGE] = 124154, [CLASS_ROGUE] = 124257
+	},
+
+	[127661] = { -- Shoulders of Hellfire's Vanquisher
+		[CLASS_DEATHKNIGHT] = 124344, [CLASS_DRUID] = 124272, [CLASS_MAGE] = 124177, [CLASS_ROGUE] = 124274
+	},
+
+	[127660] = { -- Leggings of Hellfire's Vanquisher
+		[CLASS_DEATHKNIGHT] = 124338, [CLASS_DRUID] = 124267, [CLASS_MAGE] = 124165, [CLASS_ROGUE] = 124269
+	},
+
 	-- Tier 17
 	[119320] = { -- Leggings of the Iron Protector
 		[BONUS] = TIER_17_BONUS_LOOKUP,

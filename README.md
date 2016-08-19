@@ -21,8 +21,10 @@ Below you will find information on what this addon supports and does not support
 * Support for Tier 13 tokens (Raid Finder, Normal, Heroic).
 * Support for Tier 14 tokens (Raid Finder, Normal, Heroic).
 * Support for Tier 15 tokens (Raid Finder, Normal, Heroic).
-* Support for Tier 16 tokens (Raid Finder, Normal, Heroic, Mythic).
-* DOES NOT support Tier 17 or above, currently.
+* Support for Tier 16 tokens (Raid Finder, Normal, Heroic, Mythic) including multi-tokens.
+* Support for Tier 17 tokens (Normal, Heroic, Mythic) including multi-tokens.
+* Support for Tier 18 tokens (Normal, Heroic, Mythic).
+* Supports all exchangeable quest items from Temple/Ruins of Ahn'Qiraj.
 * Supports Timeless Isle gear tokens and armor caches.
 * Supports Baleful gear tokens from Tanaan Jungle.
 * Supports Crystallized Firestones from Firelands.

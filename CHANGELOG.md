@@ -1,5 +1,7 @@
 ** Version 1.4.3 **
+* Added full support for Tier 18 tokens, including Demon Hunters unique set!
 * Added full support for Tier 17 tokens, including exchangeable tokens from Blackhand.
+* Added detailed information to all quest items that drop in Temple/Ruins of Ahn'Qiraj.
 * Added information to Tier 10 set pieces that are exchanged in Dalaran for higher versions.
 * Added information to Sunwell items that are exchanged with Sunmotes for different versions.
 * Technical optimizations and reduced memory usage.

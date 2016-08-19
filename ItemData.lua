@@ -231,6 +231,11 @@ local TIER_17_BONUS_LOOKUP = {
 	[569] = TIER_17_MYTHIC, -- Mythic
 };
 
+local TIER_18_BONUS_LOOKUP = {
+	[570] = 1798, -- Heroic
+	[569] = 1799, -- Mythic
+};
+
 t.AQ_DATA = {
 	[CLASS_DRUID] = {
 		[21409] = { -- Cloak of Unending Life

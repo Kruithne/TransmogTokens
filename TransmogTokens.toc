@@ -10,4 +10,5 @@
 
 TransmogTokens.lua
 localization/deDE.lua
+localization/zhTW.lua
 ItemData.lua

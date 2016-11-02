@@ -2,9 +2,11 @@
 ## Title: TransmogTokens
 ## Notes: Adds tooltips to tier tokens.
 ## Author: Kruithne
-## Version: 1.4.3
+## Version: 1.4.4
 
 ## X-Curse-Project-ID: transmogtokens
+## X-GitHub-Repo: Kruithne/TransmogTokens
+## X-Localization: enUS, deDE
 ## X-Contributors: bloerwald
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/TransmogTokens
 

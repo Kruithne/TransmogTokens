@@ -669,7 +669,7 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 			local itemCount = GetItemCount(componentID);
 
 			if itemCount >= componentAmount then
-				amountText = GREEN .. amountText;
+				amountColour = GREEN;
 			end
 
 			t.addTooltipLine(tooltip, amountColour .. "   " .. itemName .. " x" .. componentAmount);

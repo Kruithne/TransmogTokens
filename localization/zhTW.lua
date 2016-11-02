@@ -1,3 +1,4 @@
+-- zhTW localization by GitHub user mcc1
 local L = TransmogTokens.L
 
 if GetLocale() == "zhTW" then

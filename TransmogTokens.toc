@@ -7,7 +7,7 @@
 ## X-Curse-Project-ID: transmogtokens
 ## X-GitHub-Repo: Kruithne/TransmogTokens
 ## X-Localization: enUS, deDE
-## X-Contributors: bloerwald
+## X-Contributors: bloerwald, mcc1
 ## X-License: All Rights Reserved. Modifications welcome on GitHub: https://github.com/Kruithne/TransmogTokens
 
 TransmogTokens.lua

@@ -63,7 +63,6 @@ local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
 local REDEEM_TIER_15 = 5;
 local REDEEM_TIER_10 = 14;
-local REDEEM_TIER_8 = 16;
 local REDEEM_TIER_4 = 17;
 local REDEEM_TIER_5 = 18;
 local REDEEM_FIRELANDS_BOE = 4;
@@ -106,52 +105,42 @@ t.HORDE_REDEEM_LOOKUP = {
 t.CLASS_REDEEM_LOOKUP = {
 	[CLASS_WARRIOR] = {
 		[REDEEM_TIER_10] = "Redeem: Crusader Grimtong @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warriors)
-		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Warriors)
 	},
 
 	[CLASS_PALADIN] = {
 		[REDEEM_TIER_10] = "Redeem: Crusader Halford @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Paladins)
-		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Paladins)
 	},
 
 	[CLASS_DEATHKNIGHT] = {
 		[REDEEM_TIER_10] = "Redeem: Ormus the Penitent @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Death Knights)
-		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Death Knights)
 	},
 
 	[CLASS_MAGE] = {
 		[REDEEM_TIER_10] = "Redeem: Malfus Grimfrost @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Mages)
-		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Mages)
 	},
 
 	[CLASS_WARLOCK] = {
 		[REDEEM_TIER_10] = "Redeem: Niby the Almighty @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warlocks)
-		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Warlocks)
 	},
 
 	[CLASS_PRIEST] = {
 		[REDEEM_TIER_10] = "Redeem: Scott the Merciful @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Priests)
-		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Priests)
 	},
 
 	[CLASS_DRUID] = {
 		[REDEEM_TIER_10] = "Redeem: Alana Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Druids)
-		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Druids)
 	},
 
 	[CLASS_ROGUE] = {
 		[REDEEM_TIER_10] = "Redeem: Yili @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Rogues)
-		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Rogues)
 	},
 
 	[CLASS_HUNTER] = {
 		[REDEEM_TIER_10] = "Redeem: Talan Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Hunters)
-		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Hunters)
 	},
 
 	[CLASS_SHAMAN] = {
 		[REDEEM_TIER_10] = "Redeem: Jadebia @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Shamans)
-		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Shamans)
 	}
 };
 
@@ -1675,21 +1664,18 @@ t.ITEM_DATA = {
 	},
 
 	[45632] = { -- Breastplate of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {46154, 46173, 46178},
 		[CLASS_PRIEST] = {46168, 46193},
 		[CLASS_WARLOCK] = 46137,
 	},
 
 	[45633] = { -- Breastplate of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {46146, 46162},
 		[CLASS_HUNTER] = 46141,
 		[CLASS_SHAMAN] = {46198, 46205, 46206},
 	},
 
 	[45634] = { -- Breastplate of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 46123,
 		[CLASS_DEATHKNIGHT] = {46111, 46118},
 		[CLASS_MAGE] = 46130,
@@ -1697,21 +1683,18 @@ t.ITEM_DATA = {
 	},
 
 	[45635] = { -- Chestguard of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {45374, 45375, 45381},
 		[CLASS_PRIEST] = {45389, 45395},
 		[CLASS_WARLOCK] = 45421,
 	},
 
 	[45636] = { -- Chestguard of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {45424, 45429},
 		[CLASS_HUNTER] = 45364,
 		[CLASS_SHAMAN] = {45405, 45411, 45413},
 	},
 
 	[45637] = { -- Chestguard of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 45396,
 		[CLASS_DEATHKNIGHT] = {45335, 45340},
 		[CLASS_MAGE] = 45368,
@@ -1719,21 +1702,18 @@ t.ITEM_DATA = {
 	},
 
 	[45638] = { -- Crown of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {46156, 46175, 46180},
 		[CLASS_PRIEST] = {46172, 46197},
 		[CLASS_WARLOCK] = 46140,
 	},
 
 	[45639] = { -- Crown of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {46151, 46166},
 		[CLASS_HUNTER] = 46143,
 		[CLASS_SHAMAN] = {46201, 46209, 46212},
 	},
 
 	[45640] = { -- Crown of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 46125,
 		[CLASS_DEATHKNIGHT] = {46115, 46120},
 		[CLASS_MAGE] = 46129,
@@ -1741,7 +1721,6 @@ t.ITEM_DATA = {
 	},
 
 	[45643] = { -- Gauntlets of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 46124,
 		[CLASS_DEATHKNIGHT] = {46113, 46119},
 		[CLASS_DRUID] = {46158, 46183, 46189},
@@ -1749,35 +1728,30 @@ t.ITEM_DATA = {
 	},
 
 	[45641] = { -- Gauntlets of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {46155, 46174, 46179},
 		[CLASS_PRIEST] = {46163, 46188},
 		[CLASS_WARLOCK] = 46135,
 	},
 
 	[45642] = { -- Gauntlets of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {46148, 46164},
 		[CLASS_HUNTER] = 46142,
 		[CLASS_SHAMAN] = {46199, 46200, 46207},
 	},
 
 	[45644] = { -- Gloves of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {45370, 45376, 45383},
 		[CLASS_PRIEST] = {45387, 45392},
 		[CLASS_WARLOCK] = 45419,
 	},
 
 	[45645] = { -- Gloves of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {45426, 45430},
 		[CLASS_HUNTER] = 45360,
 		[CLASS_SHAMAN] = {45401, 45406, 45414},
 	},
 
 	[45646] = { -- Gloves of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 45397,
 		[CLASS_DEATHKNIGHT] = {45337, 45341},
 		[CLASS_MAGE] = 46131,
@@ -1785,21 +1759,18 @@ t.ITEM_DATA = {
 	},
 
 	[45647] = { -- Helm of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {45372, 45377, 45382},
 		[CLASS_PRIEST] = {45386, 45391},
 		[CLASS_WARLOCK] = 45417,
 	},
 
 	[45648] = { -- Helm of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {45425, 45431},
 		[CLASS_HUNTER] = 45361,
 		[CLASS_SHAMAN] = {45402, 45408, 45412},
 	},
 
 	[45649] = { -- Helm of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 45398,
 		[CLASS_DEATHKNIGHT] = {45336, 45342},
 		[CLASS_MAGE] = 45365,
@@ -1807,21 +1778,18 @@ t.ITEM_DATA = {
 	},
 
 	[45650] = { -- Leggings of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {45371, 45379, 45384},
 		[CLASS_PRIEST] = {45388, 45394},
 		[CLASS_WARLOCK] = 45420,
 	},
 
 	[45651] = { -- Leggings of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {45427, 45432},
 		[CLASS_HUNTER] = 45362,
 		[CLASS_SHAMAN] = {45403, 45409, 45416},
 	},
 
 	[45652] = { -- Leggings of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 45399,
 		[CLASS_DEATHKNIGHT] = {45338, 45343},
 		[CLASS_MAGE] = 45367,
@@ -1829,21 +1797,18 @@ t.ITEM_DATA = {
 	},
 
 	[45653] = { -- Legplates of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {46153, 46176, 46181},
 		[CLASS_PRIEST] = {46170, 46195},
 		[CLASS_WARLOCK] = 46139,
 	},
 
 	[45654] = { -- Legplates of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {46150, 46169},
 		[CLASS_HUNTER] = 46144,
 		[CLASS_SHAMAN] = {46202, 46208, 46210},
 	},
 
 	[45655] = { -- Legplates of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 46126,
 		[CLASS_DEATHKNIGHT] = {46116, 46121},
 		[CLASS_MAGE] = 46133,
@@ -1851,21 +1816,18 @@ t.ITEM_DATA = {
 	},
 
 	[45656] = { -- Mantle of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {46177, 46182, 46152},
 		[CLASS_PRIEST] = {46165, 46190},
 		[CLASS_WARLOCK] = 46136,
 	},
 
 	[45657] = { -- Mantle of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {46149, 46167},
 		[CLASS_HUNTER] = 46145,
 		[CLASS_SHAMAN] = {46203, 46204, 46211},
 	},
 
 	[45658] = { -- Mantle of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 46127,
 		[CLASS_DEATHKNIGHT] = {46117, 46122},
 		[CLASS_MAGE] = 46134,
@@ -1873,21 +1835,18 @@ t.ITEM_DATA = {
 	},
 
 	[45659] = { -- Spaulders of the Wayward Conqueror
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_PALADIN] = {45373, 45380, 45385},
 		[CLASS_PRIEST] = {45390, 45393},
 		[CLASS_WARLOCK] = 45422,
 	},
 
 	[45660] = { -- Spaulders of the Wayward Protector
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_WARRIOR] = {45428, 45433},
 		[CLASS_HUNTER] = 45363,
 		[CLASS_SHAMAN] = {45404, 45410, 45415},
 	},
 
 	[45661] = { -- Spaulders of the Wayward Vanquisher
-		[REDEEM] = REDEEM_TIER_8,
 		[CLASS_ROGUE] = 45400,
 		[CLASS_DEATHKNIGHT] = {45339, 45344},
 		[CLASS_MAGE] = 45369,

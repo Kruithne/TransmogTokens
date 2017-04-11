@@ -1,3 +1,7 @@
+** Version 1.4.6 **
+* Remove redundant vendor locations from self-creation tokens.
+* Update Tier 10 tokens from Icecrown Citadel to use new vendors in Light's Hammer.
+
 ** Version 1.4.5 **
 * Fixed Lua error with AQ items.
 * Added localization support for zhTW.

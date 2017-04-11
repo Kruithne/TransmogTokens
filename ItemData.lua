@@ -62,7 +62,6 @@ local REDEEM_TBC_TIER_6 = 2;
 local REDEEM_TBC_HYJAL = 3;
 local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
-local REDEEM_TIER_12 = 8;
 local REDEEM_TIER_13 = 9;
 local REDEEM_TIER_15 = 5;
 local REDEEM_TIER_16_LFR = 10;
@@ -104,7 +103,6 @@ t.ALLIANCE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Laradia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Alliance)
 
 	[REDEEM_TIER_11] = "Redeem: Toren Landow @ Stormwind\nLocated in the Command Center (79.0, 70.0)", -- T11 (Alliance)
-	[REDEEM_TIER_12] = "Redeem: Magatha Silverton @ Stormwind\nLocated in the Command Center (79.0, 69.6)", -- Firelands T12 (Alliance)
 	[REDEEM_TIER_13] = "Redeem: Faldren Tillsdale @ Stormwind\nLocated in the Command Center (79.0, 69.6)", -- Dragon Soul T13 (Alliance)
 
 	[REDEEM_TIER_16_LFR] = "Redeem: Welbiz Cheerwhistle @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Raid Finder] (Alliance)
@@ -119,7 +117,6 @@ t.HORDE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Bressia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Horde)
 
 	[REDEEM_TIER_11] = "Redeem: Rugok @ Orgrimmar\nLocated in Grommash Hold (48.2, 71.6)", -- T11 (Horde)
-	[REDEEM_TIER_12] = "Redeem: Gunra @ Orgrimmar\nLocated in Grommash Hold (48.4, 71.6)", -- Firelands T12 (Horde)
 	[REDEEM_TIER_13] = "Redeem: Jamus'Vaz @ Orgrimmar\nLocated in Grommash Hold (48.6, 71.4)", -- Dragon Soul T13 (Horde)
 
 	[REDEEM_TIER_16_LFR] = "Redeem: Blizzix Sparkshiv @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Raid Finder] (Horde)
@@ -2319,7 +2316,6 @@ t.ITEM_DATA = {
 	},
 
 	[71669] = { -- Gauntlets of the Fiery Vanquisher
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = 71538,
 		[CLASS_DEATHKNIGHT] = {71477, 71482},
 		[CLASS_MAGE] = 71507,
@@ -2327,7 +2323,6 @@ t.ITEM_DATA = {
 	},
 
 	[71670] = { -- Crown of the Fiery Vanquisher
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = 71539,
 		[CLASS_DEATHKNIGHT] = {71478, 71483},
 		[CLASS_MAGE] = 71508,
@@ -2335,7 +2330,6 @@ t.ITEM_DATA = {
 	},
 
 	[71671] = { -- Leggings of the Fiery Vanquisher
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = 71540,
 		[CLASS_DEATHKNIGHT] = {71479, 71484},
 		[CLASS_MAGE] = 71509,
@@ -2343,7 +2337,6 @@ t.ITEM_DATA = {
 	},
 
 	[71672] = { -- Chest of the Fiery Vanquisher
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = 71537,
 		[CLASS_DEATHKNIGHT] = {71476, 71481},
 		[CLASS_MAGE] = 71510,
@@ -2351,7 +2344,6 @@ t.ITEM_DATA = {
 	},
 
 	[71673] = { -- Shoulders of the Fiery Vanquisher
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_ROGUE] = 71541,
 		[CLASS_DEATHKNIGHT] = {71480, 71485},
 		[CLASS_MAGE] = 71511,
@@ -2359,70 +2351,60 @@ t.ITEM_DATA = {
 	},
 
 	[71676] = { -- Gauntlets of the Fiery Conqueror
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_PALADIN] = {71513, 71518, 71523},
 		[CLASS_PRIEST] = {71527, 71532},
 		[CLASS_WARLOCK] = 71594,
 	},
 
 	[71677] = { -- Crown of the Fiery Conqueror
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_PALADIN] = {71514, 71519, 71524},
 		[CLASS_PRIEST] = {71528, 71533},
 		[CLASS_WARLOCK] = 71595,
 	},
 
 	[71678] = { -- Leggings of the Fiery Conqueror
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_PALADIN] = {71515, 71520, 71525},
 		[CLASS_PRIEST] = {71529, 71534},
 		[CLASS_WARLOCK] = 71596,
 	},
 
 	[71679] = { -- Chest of the Fiery Conqueror
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_PALADIN] = {71522, 71512, 71517},
 		[CLASS_PRIEST] = {71530, 71535},
 		[CLASS_WARLOCK] = 71597,
 	},
 
 	[71680] = { -- Shoulders of the Fiery Conqueror
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_PALADIN] = {71516, 71521, 71526},
 		[CLASS_PRIEST] = {71531, 71536},
 		[CLASS_WARLOCK] = 71598,
 	},
 
 	[71683] = { -- Gauntlets of the Fiery Protector
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_WARRIOR] = {71605, 71601},
 		[CLASS_HUNTER] = 71502,
 		[CLASS_SHAMAN] = {71543, 71548, 71553},
 	},
 
 	[71684] = { -- Crown of the Fiery Protector
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_WARRIOR] = {71599, 71606},
 		[CLASS_HUNTER] = 71503,
 		[CLASS_SHAMAN] = {71544, 71549, 71554},
 	},
 
 	[71685] = { -- Leggings of the Fiery Protector
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_WARRIOR] = {71602, 71607},
 		[CLASS_HUNTER] = 71504,
 		[CLASS_SHAMAN] = {71545, 71550, 71555},
 	},
 
 	[71686] = { -- Chest of the Fiery Protector
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_WARRIOR] = {71600, 71604},
 		[CLASS_HUNTER] = 71501,
 		[CLASS_SHAMAN] = {71542, 71547, 71552},
 	},
 
 	[71687] = { -- Shoulders of the Fiery Protector
-		[REDEEM] = REDEEM_TIER_12,
 		[CLASS_WARRIOR] = {71603, 71608},
 		[CLASS_HUNTER] = 71505,
 		[CLASS_SHAMAN] = {71556, 71546, 71551},

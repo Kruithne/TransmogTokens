@@ -63,7 +63,6 @@ local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
 local REDEEM_TIER_15 = 5;
 local REDEEM_TIER_10 = 14;
-local REDEEM_TIER_7 = 15;
 local REDEEM_TIER_8 = 16;
 local REDEEM_TIER_4 = 17;
 local REDEEM_TIER_5 = 18;
@@ -107,61 +106,51 @@ t.HORDE_REDEEM_LOOKUP = {
 t.CLASS_REDEEM_LOOKUP = {
 	[CLASS_WARRIOR] = {
 		[REDEEM_TIER_10] = "Redeem: Crusader Grimtong @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warriors)
-		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Warriors)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Warriors)
 	},
 
 	[CLASS_PALADIN] = {
 		[REDEEM_TIER_10] = "Redeem: Crusader Halford @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Paladins)
-		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Paladins)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Paladins)
 	},
 
 	[CLASS_DEATHKNIGHT] = {
 		[REDEEM_TIER_10] = "Redeem: Ormus the Penitent @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Death Knights)
-		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Death Knights)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Death Knights)
 	},
 
 	[CLASS_MAGE] = {
 		[REDEEM_TIER_10] = "Redeem: Malfus Grimfrost @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Mages)
-		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Mages)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Mages)
 	},
 
 	[CLASS_WARLOCK] = {
 		[REDEEM_TIER_10] = "Redeem: Niby the Almighty @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warlocks)
-		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Warlocks)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Warlocks)
 	},
 
 	[CLASS_PRIEST] = {
 		[REDEEM_TIER_10] = "Redeem: Scott the Merciful @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Priests)
-		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Priests)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Priests)
 	},
 
 	[CLASS_DRUID] = {
 		[REDEEM_TIER_10] = "Redeem: Alana Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Druids)
-		[REDEEM_TIER_7] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxxramas T7 (Druids)
 		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Druids)
 	},
 
 	[CLASS_ROGUE] = {
 		[REDEEM_TIER_10] = "Redeem: Yili @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Rogues)
-		[REDEEM_TIER_7] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxxramas T7 (Rogues)
 		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Rogues)
 	},
 
 	[CLASS_HUNTER] = {
 		[REDEEM_TIER_10] = "Redeem: Talan Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Hunters)
-		[REDEEM_TIER_7] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxramas T7 (Hunters)
 		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Hunters)
 	},
 
 	[CLASS_SHAMAN] = {
 		[REDEEM_TIER_10] = "Redeem: Jadebia @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Shamans)
-		[REDEEM_TIER_7] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxramas T7 (Shamans)
 		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Shamans)
 	}
 };
@@ -1467,7 +1456,6 @@ t.ITEM_DATA = {
 
 	[40610] = { -- Chestguard of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "The Four Horsemen (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39629, 39633, 39638},
 		[CLASS_PRIEST] = {39515, 39523},
 		[CLASS_WARLOCK] = 39497,
@@ -1475,7 +1463,6 @@ t.ITEM_DATA = {
 
 	[40611] = { -- Chestguard of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Gluth (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {39606, 39611},
 		[CLASS_HUNTER] = 39579,
 		[CLASS_SHAMAN] = {39597, 39588, 39592},
@@ -1483,7 +1470,6 @@ t.ITEM_DATA = {
 
 	[40612] = { -- Chestguard of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Gluth (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 39558,
 		[CLASS_DEATHKNIGHT] = {39617, 39623},
 		[CLASS_MAGE] = 39492,
@@ -1492,7 +1478,6 @@ t.ITEM_DATA = {
 
 	[40613] = { -- Gloves of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39632, 39634, 39639},
 		[CLASS_PRIEST] = {39519, 39530},
 		[CLASS_WARLOCK] = 39500,
@@ -1500,7 +1485,6 @@ t.ITEM_DATA = {
 
 	[40614] = { -- Gloves of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {39609, 39622},
 		[CLASS_HUNTER] = 39582,
 		[CLASS_SHAMAN] = {39591, 39593, 39601},
@@ -1508,7 +1492,6 @@ t.ITEM_DATA = {
 
 	[40615] = { -- Gloves of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 39560,
 		[CLASS_DEATHKNIGHT] = {39618, 39624},
 		[CLASS_MAGE] = 39495,
@@ -1517,7 +1500,6 @@ t.ITEM_DATA = {
 
 	[40616] = { -- Helm of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39628, 39635, 39640},
 		[CLASS_PRIEST] = {39514, 39521},
 		[CLASS_WARLOCK] = 39496,
@@ -1525,7 +1507,6 @@ t.ITEM_DATA = {
 
 	[40617] = { -- Helm of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {39605, 39610},
 		[CLASS_HUNTER] = 39578,
 		[CLASS_SHAMAN] = {39583, 39594, 39602},
@@ -1533,7 +1514,6 @@ t.ITEM_DATA = {
 
 	[40618] = { -- Helm of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 39561,
 		[CLASS_DEATHKNIGHT] = {39619, 39625},
 		[CLASS_MAGE] = 39491,
@@ -1542,7 +1522,6 @@ t.ITEM_DATA = {
 
 	[40619] = { -- Leggings of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39630, 39636, 39641},
 		[CLASS_PRIEST] = {39517, 39528},
 		[CLASS_WARLOCK] = 39498,
@@ -1550,7 +1529,6 @@ t.ITEM_DATA = {
 
 	[40620] = { -- Leggings of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {39607, 39612},
 		[CLASS_HUNTER] = 39580,
 		[CLASS_SHAMAN] = {39589, 39595, 39603},
@@ -1558,7 +1536,6 @@ t.ITEM_DATA = {
 
 	[40621] = { -- Leggings of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 39564,
 		[CLASS_DEATHKNIGHT] = {39620, 39626},
 		[CLASS_MAGE] = 39493,
@@ -1567,7 +1544,6 @@ t.ITEM_DATA = {
 
 	[40622] = { -- Spaulders of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {39631, 39637, 39642},
 		[CLASS_PRIEST] = {39518, 39529},
 		[CLASS_WARLOCK] = 39499,
@@ -1575,7 +1551,6 @@ t.ITEM_DATA = {
 
 	[40623] = { -- Spaulders of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {39608, 39613},
 		[CLASS_HUNTER] = 39581,
 		[CLASS_SHAMAN] = {39590, 39596, 39604},
@@ -1583,7 +1558,6 @@ t.ITEM_DATA = {
 
 	[40624] = { -- Spaulders of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [10-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 39565,
 		[CLASS_DEATHKNIGHT] = {39621, 39627},
 		[CLASS_MAGE] = 39494,
@@ -1592,7 +1566,6 @@ t.ITEM_DATA = {
 
 	[40625] = {	-- Breastplate of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Four Horsemen (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARLOCK] = 40423,
 		[CLASS_PRIEST] = {40449, 40458},
 		[CLASS_PALADIN] = {40569, 40574, 40579},
@@ -1600,7 +1573,6 @@ t.ITEM_DATA = {
 
 	[40626] = { -- Breastplate of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Four Horsemen (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {40525, 40544},
 		[CLASS_HUNTER] = 40503,
 		[CLASS_SHAMAN] = {40514, 40523, 40508},
@@ -1608,7 +1580,6 @@ t.ITEM_DATA = {
 
 	[40627] = { -- Breastplate of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Four Horsemen (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 40495,
 		[CLASS_DEATHKNIGHT] = {40550, 40559},
 		[CLASS_MAGE] = 40418,
@@ -1617,7 +1588,6 @@ t.ITEM_DATA = {
 
 	[40628] = { -- Gauntlets of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {40570, 40575, 40580},
 		[CLASS_PRIEST] = {40445, 40454},
 		[CLASS_WARLOCK] = 40420,
@@ -1625,7 +1595,6 @@ t.ITEM_DATA = {
 
 	[40629] = { -- Gauntlets of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {40527, 40545},
 		[CLASS_HUNTER] = 40504,
 		[CLASS_SHAMAN] = {40509, 40515, 40520},
@@ -1633,7 +1602,6 @@ t.ITEM_DATA = {
 
 	[40630] = { -- Gauntlets of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Sartharion (The Obsidian Sanctum [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 40496,
 		[CLASS_DEATHKNIGHT] = {40552, 40563},
 		[CLASS_MAGE] = 40415,
@@ -1642,7 +1610,6 @@ t.ITEM_DATA = {
 
 	[40631] = { -- Crown of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {40571, 40576, 40581},
 		[CLASS_PRIEST] = {40447, 40456},
 		[CLASS_WARLOCK] = 40421,
@@ -1650,7 +1617,6 @@ t.ITEM_DATA = {
 
 	[40632] = { -- Crown of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {40528, 40546},
 		[CLASS_HUNTER] = 40505,
 		[CLASS_SHAMAN] = {40521, 40510, 40516},
@@ -1658,7 +1624,6 @@ t.ITEM_DATA = {
 
 	[40633] = { -- Crown of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Kel'Thuzad (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 40499,
 		[CLASS_DEATHKNIGHT] = {40554, 40565},
 		[CLASS_MAGE] = 40416,
@@ -1667,7 +1632,6 @@ t.ITEM_DATA = {
 
 	[40634] = { -- Legplates of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {40572, 40577, 40583},
 		[CLASS_PRIEST] = {40448, 40457},
 		[CLASS_WARLOCK] = 40422,
@@ -1675,7 +1639,6 @@ t.ITEM_DATA = {
 
 	[40635] = { -- Legplates of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {40529, 40547},
 		[CLASS_HUNTER] = 40506,
 		[CLASS_SHAMAN] = {40512, 40517, 40522},
@@ -1683,7 +1646,6 @@ t.ITEM_DATA = {
 
 	[40636] = { -- Legplates of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Thaddius (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 40500,
 		[CLASS_DEATHKNIGHT] = {40556, 40567},
 		[CLASS_MAGE] = 40417,
@@ -1692,7 +1654,6 @@ t.ITEM_DATA = {
 
 	[40637] = { -- Mantle of the Lost Conqueror
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_PALADIN] = {40573, 40578, 40584},
 		[CLASS_PRIEST] = {40450, 40459},
 		[CLASS_WARLOCK] = 40424,
@@ -1700,7 +1661,6 @@ t.ITEM_DATA = {
 
 	[40638] = { -- Mantle of the Lost Protector
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_WARRIOR] = {40530, 40548},
 		[CLASS_HUNTER] = 40507,
 		[CLASS_SHAMAN] = {40513, 40518, 40524},
@@ -1708,7 +1668,6 @@ t.ITEM_DATA = {
 
 	[40639] = { -- Mantle of the Lost Vanquisher
 		["OBTAIN"] = {SET_TIER_7, "Loatheb (Naxxramas [25-Man])"},
-		[REDEEM] = REDEEM_TIER_7,
 		[CLASS_ROGUE] = 40502,
 		[CLASS_DEATHKNIGHT] = {40557, 40568},
 		[CLASS_MAGE] = 40419,

@@ -1,4 +1,5 @@
 local t = TransmogTokens;
+local L = t.L;
 
 t.INVENTORY_SLOTS = {
     ["INVTYPE_HEAD"] = {1},
@@ -74,32 +75,33 @@ local REDEEM_AQ_VETH = 23;
 local REDEEM_AQ_KAND = 24;
 
 t.REDEEM_LOOKUP = {
-	[REDEEM_TBC_SUNMOTE] = "Redeem: Yrma @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)",
-	[REDEEM_TBC_TIER_6] = "Redeem: Soryn @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)\n\nRedeem: Kayri @ Isle of Quel'Danas\nLocated in Sun's Reach Armor (49.0, 39.0)\n\nRedeem: Theremis @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)\n\n|cFFF58CBANote: Items can be purchased despite class requirement.|r",
-	[REDEEM_FIRELANDS_BOE] = "Redeem: Lurah Wrathvine @ Firelands\nLocated just inside the entrance of the raid.",
+	[REDEEM_TBC_SUNMOTE] = L.REDEEM_LOOKUP["REDEEM_TBC_SUNMOTE"],
+	[REDEEM_TBC_TIER_6] = L.REDEEM_LOOKUP["REDEEM_TBC_TIER_6"],
+	[REDEEM_TBC_HYJAL] = L.REDEEM_LOOKUP["REDEEM_TBC_HYJAL"],
+	[REDEEM_FIRELANDS_BOE] = L.REDEEM_LOOKUP["REDEEM_FIRELANDS_BOE"],
 
-	[REDEEM_TIER_15] = "Redeem: Ao Pye @ Townlong Steppes\nLocated in Niuzao Temple (37.8, 64.6)", -- Throne of Thunder T15,
-	[REDEEM_MOP_OXHEART] = "Redeem: Commander Oxheart @ Townlong Steppes\nLocated in Niuzao Temple (37.8, 64.6)", -- Tier 14 (HoF/ToES)
-	[REDEEM_TIER_4] = "Redeem: Arodis Sunblade @ Shattrath [Scryers]\nLocated in Seer's Library (42.6, 90.6)\n\nRedeem: Asuur @ Shattrath [Aldor]\nLocated in Shrine of Unending Light (23.6, 32.6)\n\nRedeem: Karynna @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)", -- Tier 4
-	[REDEEM_TIER_5] = "Redeem: Veynna Dawnstar @ Shattrath [Scryers]\nLocated in Seer's Library (44.8, 91.6)\n\nRedeem: Kelara @ Shattrath [Aldor]\nLocated in Shrine of Unending Light (24.6, 27.8)\n\nRedeem: Olus @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)", -- Tier 5
+	[REDEEM_TIER_15] = L.REDEEM_LOOKUP["REDEEM_TIER_15"],
+	[REDEEM_MOP_OXHEART] = L.REDEEM_LOOKUP["REDEEM_MOP_OXHEART"],
+	[REDEEM_TIER_4] = L.REDEEM_LOOKUP["REDEEM_TIER_4"],
+	[REDEEM_TIER_5] = L.REDEEM_LOOKUP["REDEEM_TIER_5"],
 
-	[REDEEM_AQ_KEYL] = "Redeem: Keyl Swiftclaw @ Ruins of Ahn'Qiraj\nLocated outside raid enterance",
-	[REDEEM_AQ_HARO] = "Redeem: Warden Haro @ Ruins of Ahn'Qiraj\nLocated outside raid enterance",
-	[REDEEM_AQ_ANDO] = "Redeem: Andorgos @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
-	[REDEEM_AQ_VETH] = "Redeem: Vethsera @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
-	[REDEEM_AQ_KAND] = "Redeem: Kandrostrasz @ Temple of Ahn'Qiarj\nLocated inside, after Skeram (Boss)",
+	[REDEEM_AQ_KEYL] = L.REDEEM_LOOKUP["REDEEM_AQ_KEYL"],
+	[REDEEM_AQ_HARO] = L.REDEEM_LOOKUP["REDEEM_AQ_HARO"],
+	[REDEEM_AQ_ANDO] = L.REDEEM_LOOKUP["REDEEM_AQ_ANDO"],
+	[REDEEM_AQ_VETH] = L.REDEEM_LOOKUP["REDEEM_AQ_VETH"],
+	[REDEEM_AQ_KAND] = L.REDEEM_LOOKUP["REDEEM_AQ_KAND"],
 };
 
 t.ALLIANCE_REDEEM_LOOKUP = {
-	[REDEEM_TOC] = "Redeem: Valiant Laradia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Alliance)
-	[REDEEM_TIER_11] = "Redeem: Toren Landow @ Stormwind\nLocated in the Command Center (79.0, 70.0)", -- T11 (Alliance)
-	[REDEEM_TIER_17] = "Redeem: Exarch Maladaar @ Draenor\nLocated in Talador (49.8, 48.6)", -- T17 Quest Hand-in (Alliance)
+	[REDEEM_TOC] = L.ALLIANCE_REDEEM_LOOKUP["REDEEM_TOC"],
+	[REDEEM_TIER_11] = L.ALLIANCE_REDEEM_LOOKUP["REDEEM_TIER_11"],
+	[REDEEM_TIER_17] = L.ALLIANCE_REDEEM_LOOKUP["REDEEM_TIER_17"],
 };
 
 t.HORDE_REDEEM_LOOKUP = {
-	[REDEEM_TOC] = "Redeem: Valiant Bressia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Horde)
-	[REDEEM_TIER_11] = "Redeem: Rugok @ Orgrimmar\nLocated in Grommash Hold (48.2, 71.6)", -- T11 (Horde)
-	[REDEEM_TIER_17] = "Redeem:Lady Liandrin @ Draenor\nLocated in Talador (50.0. 48.6)", -- T17 Quest Hand-in (Alliance)
+	[REDEEM_TOC] = L.HORDE_REDEEM_LOOKUP["REDEEM_TOC"],
+	[REDEEM_TIER_11] = L.HORDE_REDEEM_LOOKUP["REDEEM_TIER_11"],
+	[REDEEM_TIER_17] = L.HORDE_REDEEM_LOOKUP["REDEEM_TIER_17"],
 };
 
 t.CLASS_REDEEM_LOOKUP = {

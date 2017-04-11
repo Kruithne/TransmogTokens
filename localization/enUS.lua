@@ -1,12 +1,12 @@
 local L = TransmogTokens.L
 
-if GetLocale() == "deDE" then
-	L["Loading item information..."] = "Lade Gegenstandsinformationen...";
-	L["Can be exchanged for %d appearances you need."] = "Du benötigst %d Vorlagen von dieser Rüstungsmarke.";
-	L["Can be exchanged for 1 appearance you need."] = "Du benötigst 1 Vorlage von dieser Rüstungsmarke.";
-	L["Appearances from this are class and/or spec dependant."] = "Vorlagen von diesem Gegenstand sind abhängig von Klasse und/oder Spezialisierung.";
-	L["Can be exchanged for appearances you don't need."] = "Du benötigst keine Vorlagen von dieser Rüstungsmarke.";
-	L["This token cannot be redeemed for anything."] = "Diese Rüstungsmarke kann gegen nichts eingetauscht werden."
+if GetLocale() == "enUS" then
+	L["Loading item information..."] = "Loading item information...";
+	L["Can be exchanged for %d appearances you need."] = "Can be exchanged for %d appearances you need.";
+	L["Can be exchanged for 1 appearance you need."] = "Can be exchanged for 1 appearance you need.";
+	L["Appearances from this are class and/or spec dependant."] = "Appearances from this are class and/or spec dependant.";
+	L["Can be exchanged for appearances you don't need."] = "Can be exchanged for appearances you don't need.";
+	L["This token cannot be redeemed for anything."] = "This token cannot be redeemed for anything.";
 	
 	--redeem
 	L.REDEEM_LOOKUP = {

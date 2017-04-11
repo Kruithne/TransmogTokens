@@ -63,10 +63,6 @@ local REDEEM_TBC_HYJAL = 3;
 local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
 local REDEEM_TIER_15 = 5;
-local REDEEM_TIER_16_LFR = 10;
-local REDEEM_TIER_16_NORMAL = 11;
-local REDEEM_TIER_16_HEROIC = 12;
-local REDEEM_TIER_16_MYTHIC = 13;
 local REDEEM_TIER_10 = 14;
 local REDEEM_TIER_7 = 15;
 local REDEEM_TIER_8 = 16;
@@ -100,27 +96,13 @@ t.REDEEM_LOOKUP = {
 
 t.ALLIANCE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Laradia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Alliance)
-
 	[REDEEM_TIER_11] = "Redeem: Toren Landow @ Stormwind\nLocated in the Command Center (79.0, 70.0)", -- T11 (Alliance)
-
-	[REDEEM_TIER_16_LFR] = "Redeem: Welbiz Cheerwhistle @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Raid Finder] (Alliance)
-	[REDEEM_TIER_16_NORMAL] = "Redeem: Thelett Shaleheart @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Normal] (Alliance)
-	[REDEEM_TIER_16_HEROIC] = "Redeem: Clarice Chapmann @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Heroic] (Alliance)
-	[REDEEM_TIER_16_MYTHIC] = "Redeem: Lorry Warmheart @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Mythic] (Alliance)
-
 	[REDEEM_TIER_17] = "Redeem: Exarch Maladaar @ Draenor\nLocated in Talador (49.8, 48.6)", -- T17 Quest Hand-in (Alliance)
 };
 
 t.HORDE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Bressia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Horde)
-
 	[REDEEM_TIER_11] = "Redeem: Rugok @ Orgrimmar\nLocated in Grommash Hold (48.2, 71.6)", -- T11 (Horde)
-
-	[REDEEM_TIER_16_LFR] = "Redeem: Blizzix Sparkshiv @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Raid Finder] (Horde)
-	[REDEEM_TIER_16_NORMAL] = "Redeem: Nadina Stargem @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Normal] (Horde)
-	[REDEEM_TIER_16_HEROIC] = "Redeem: Ki'agnuu @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Heroic] (Horde)
-	[REDEEM_TIER_16_MYTHIC] = "Redeem: Tu'aho Pathcutter @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Mythic] (Horde)
-
 	[REDEEM_TIER_17] = "Redeem:Lady Liandrin @ Draenor\nLocated in Talador (50.0. 48.6)", -- T17 Quest Hand-in (Alliance)
 };
 
@@ -3369,7 +3351,6 @@ t.ITEM_DATA = {
 	},
 
 	[99667] = { -- Gauntlets of the Cursed Protector (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_WARRIOR] = {99034, 99038},
 		[CLASS_HUNTER] = 99086,
 		[CLASS_SHAMAN] = {98993, 99088, 98988},
@@ -3377,7 +3358,6 @@ t.ITEM_DATA = {
 	},
 
 	[99668] = { -- Shoulders of the Cursed Vanquisher (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = 99010,
 		[CLASS_DEATHKNIGHT] = {99040, 99059},
 		[CLASS_MAGE] = 99079,
@@ -3385,14 +3365,12 @@ t.ITEM_DATA = {
 	},
 
 	[99669] = { -- Shoulders of the Cursed Conqueror (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_PALADIN] = {98987, 99027, 99076},
 		[CLASS_PRIEST] = {99005, 99018},
 		[CLASS_WARLOCK] = 99045,
 	},
 
 	[99670] = { -- Shoulders of the Cursed Protector (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_WARRIOR] = {99030, 99036},
 		[CLASS_HUNTER] = 99082,
 		[CLASS_SHAMAN] = {99091, 98977, 98991},
@@ -3400,7 +3378,6 @@ t.ITEM_DATA = {
 	},
 
 	[99671] = { -- Helm of the Cursed Vanquisher (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = 99008,
 		[CLASS_DEATHKNIGHT] = {99049, 99057},
 		[CLASS_MAGE] = 99084,
@@ -3408,14 +3385,12 @@ t.ITEM_DATA = {
 	},
 
 	[99672] = { -- Helm of the Cursed Conqueror (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_PALADIN] = {98979, 98985, 99029},
 		[CLASS_PRIEST] = {99020, 99024},
 		[CLASS_WARLOCK] = 99054,
 	},
 
 	[99673] = { -- Helm of the Cursed Protector (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_WARRIOR] = {99032, 99046},
 		[CLASS_HUNTER] = 99080,
 		[CLASS_SHAMAN] = {99089, 98983, 98989},
@@ -3423,7 +3398,6 @@ t.ITEM_DATA = {
 	},
 
 	[99674] = { -- Leggings of the Cursed Vanquisher (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = 99009,
 		[CLASS_DEATHKNIGHT] = {99039, 99058},
 		[CLASS_MAGE] = 99077,
@@ -3431,14 +3405,12 @@ t.ITEM_DATA = {
 	},
 
 	[99675] = { -- Leggings of the Cursed Conqueror (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_PALADIN] = {99026, 98980, 98986},
 		[CLASS_PRIEST] = {99025, 99021},
 		[CLASS_WARLOCK] = 99055,
 	},
 
 	[99676] = { -- Leggings of the Cursed Protector (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_WARRIOR] = {99033, 99035},
 		[CLASS_HUNTER] = 99081,
 		[CLASS_SHAMAN] = {98984, 98990, 99090},
@@ -3446,7 +3418,6 @@ t.ITEM_DATA = {
 	},
 
 	[99677] = { -- Chest of the Cursed Vanquisher (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = 99006,
 		[CLASS_DEATHKNIGHT] = {99060, 99066},
 		[CLASS_MAGE] = 99078,
@@ -3454,14 +3425,12 @@ t.ITEM_DATA = {
 	},
 
 	[99678] = { -- Chest of the Cursed Conqueror (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_PALADIN] = {99003, 99031, 99052},
 		[CLASS_PRIEST] = {99004, 99017},
 		[CLASS_WARLOCK] = 99056,
 	},
 
 	[99679] = { -- Chest of the Cursed Protector (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_WARRIOR] = {99037, 99047},
 		[CLASS_HUNTER] = 99085,
 		[CLASS_SHAMAN] = {98992, 99011, 99087},
@@ -3469,7 +3438,6 @@ t.ITEM_DATA = {
 	},
 
 	[99680] = { -- Gauntlets of the Cursed Vanquisher (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_ROGUE] = 99007,
 		[CLASS_DEATHKNIGHT] = {99048, 99067},
 		[CLASS_MAGE] = 99083,
@@ -3477,14 +3445,12 @@ t.ITEM_DATA = {
 	},
 
 	[99681] = { -- Gauntlets of the Cursed Conqueror (Raid Finder)
-		[REDEEM] = REDEEM_TIER_16_LFR,
 		[CLASS_PALADIN] = {98982, 99002, 99028},
 		[CLASS_PRIEST] = {99019, 99023},
 		[CLASS_WARLOCK] = 99053,
 	},
 
 	[99682] = { -- Gauntlets of the Cursed Vanquisher (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = 99113,
 		[CLASS_DEATHKNIGHT] = {99189, 99193},
 		[CLASS_MAGE] = 99160,
@@ -3492,7 +3458,6 @@ t.ITEM_DATA = {
 	},
 
 	[99683] = { -- Helm of the Cursed Vanquisher (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = 99114,
 		[CLASS_DEATHKNIGHT] = {99190, 99194},
 		[CLASS_MAGE] = 99161,
@@ -3500,7 +3465,6 @@ t.ITEM_DATA = {
 	},
 
 	[99684] = { -- Leggings of the Cursed Vanquisher (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = 99115,
 		[CLASS_DEATHKNIGHT] = {99186, 99191},
 		[CLASS_MAGE] = 99162,
@@ -3508,7 +3472,6 @@ t.ITEM_DATA = {
 	},
 
 	[99685] = { -- Shoulders of the Cursed Vanquisher (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = 99116,
 		[CLASS_DEATHKNIGHT] = {99179, 99187},
 		[CLASS_MAGE] = 99153,
@@ -3516,42 +3479,36 @@ t.ITEM_DATA = {
 	},
 
 	[99686] = { -- Chest of the Cursed Conqueror (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_PALADIN] = {99126, 99133, 99136},
 		[CLASS_PRIEST] = {99110, 99119},
 		[CLASS_WARLOCK] = 99204,
 	},
 
 	[99687] = { -- Gauntlets of the Cursed Conqueror (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_PALADIN] = {99127, 99134, 99137},
 		[CLASS_PRIEST] = {99121, 99131},
 		[CLASS_WARLOCK] = 99096,
 	},
 
 	[99688] = { -- Leggings of the Cursed Conqueror (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_PALADIN] = {99124, 99129, 99139},
 		[CLASS_PRIEST] = {99118, 99123},
 		[CLASS_WARLOCK] = 99098,
 	},
 
 	[99689] = { -- Helm of the Cursed Conqueror (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_PALADIN] = {99128, 99135, 99138},
 		[CLASS_PRIEST] = {99117, 99122},
 		[CLASS_WARLOCK] = 99097,
 	},
 
 	[99690] = { -- Shoulders of the Cursed Conqueror (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_PALADIN] = {99125, 99130, 99132},
 		[CLASS_PRIEST] = {99111, 99120},
 		[CLASS_WARLOCK] = 99205,
 	},
 
 	[99691] = { -- Chest of the Cursed Protector (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_WARRIOR] = {99197, 99201},
 		[CLASS_HUNTER] = 99167,
 		[CLASS_SHAMAN] = {99101, 99106, 99107},
@@ -3559,7 +3516,6 @@ t.ITEM_DATA = {
 	},
 
 	[99692] = { -- Gauntlets of the Cursed Protector (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_WARRIOR] = {99198, 99202},
 		[CLASS_HUNTER] = 99168,
 		[CLASS_SHAMAN] = {99092, 99102, 99108},
@@ -3567,7 +3523,6 @@ t.ITEM_DATA = {
 	},
 
 	[99693] = { -- Leggings of the Cursed Protector (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_WARRIOR] = {99195, 99199},
 		[CLASS_HUNTER] = 99158,
 		[CLASS_SHAMAN] = {99094, 99099, 99104},
@@ -3575,7 +3530,6 @@ t.ITEM_DATA = {
 	},
 
 	[99694] = { -- Helm of the Cursed Protector (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_WARRIOR] = {99203, 99206},
 		[CLASS_HUNTER] = 99157,
 		[CLASS_SHAMAN] = {99093, 99103, 99109},
@@ -3583,7 +3537,6 @@ t.ITEM_DATA = {
 	},
 
 	[99695] = { -- Shoulders of the Cursed Protector (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_WARRIOR] = {99196, 99200},
 		[CLASS_HUNTER] = 99159,
 		[CLASS_SHAMAN] = {99095, 99100, 99105},
@@ -3591,7 +3544,6 @@ t.ITEM_DATA = {
 	},
 
 	[99696] = { -- Chest of the Cursed Vanquisher (Heroic)
-		[REDEEM] = REDEEM_TIER_16_HEROIC,
 		[CLASS_ROGUE] = 99112,
 		[CLASS_DEATHKNIGHT] = {99188, 99192},
 		[CLASS_MAGE] = 99152,
@@ -3599,14 +3551,12 @@ t.ITEM_DATA = {
 	},
 
 	[99712] = { -- Leggings of the Cursed Conqueror (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_PALADIN] = {99371, 99372, 99377},
 		[CLASS_PRIEST] = {99361, 99367},
 		[CLASS_WARLOCK] = 99426,
 	},
 
 	[99713] = { -- Leggings of the Cursed Protector (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_WARRIOR] = {99410, 99413},
 		[CLASS_HUNTER] = 99403,
 		[CLASS_SHAMAN] = {99333, 99342, 99354},
@@ -3614,7 +3564,6 @@ t.ITEM_DATA = {
 	},
 
 	[99714] = { -- Chest of the Cursed Vanquisher (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = 99356,
 		[CLASS_DEATHKNIGHT] = {99330, 99335},
 		[CLASS_MAGE] = 99400,
@@ -3622,14 +3571,12 @@ t.ITEM_DATA = {
 	},
 
 	[99715] = { -- Chest of the Cursed Conqueror (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_PALADIN] = {99368, 99374, 99387},
 		[CLASS_PRIEST] = {99357, 99362},
 		[CLASS_WARLOCK] = 99416,
 	},
 
 	[99716] = { -- Chest of the Cursed Protector (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_WARRIOR] = {99411, 99415},
 		[CLASS_HUNTER] = 99405,
 		[CLASS_SHAMAN] = {99344, 99347, 99351},
@@ -3637,7 +3584,6 @@ t.ITEM_DATA = {
 	},
 
 	[99717] = { -- Shoulders of the Cursed Vanquisher (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = 99350,
 		[CLASS_DEATHKNIGHT] = {99325, 99339},
 		[CLASS_MAGE] = 99401,
@@ -3645,14 +3591,12 @@ t.ITEM_DATA = {
 	},
 
 	[99718] = { -- Shoulders of the Cursed Conqueror (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_PALADIN] = {99364, 99373, 99378},
 		[CLASS_PRIEST] = {99358, 99363},
 		[CLASS_WARLOCK] = 99417,
 	},
 
 	[99719] = { -- Shoulders of the Cursed Protector (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_WARRIOR] = {99407, 99414},
 		[CLASS_HUNTER] = 99404,
 		[CLASS_SHAMAN] = {99334, 99343, 99346},
@@ -3660,7 +3604,6 @@ t.ITEM_DATA = {
 	},
 
 	[99720] = { -- Gauntlets of the Cursed Vanquisher (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = 99355,
 		[CLASS_DEATHKNIGHT] = {99331, 99336},
 		[CLASS_MAGE] = 99397,
@@ -3668,14 +3611,12 @@ t.ITEM_DATA = {
 	},
 
 	[99721] = { -- Gauntlets of the Cursed Conqueror (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_PALADIN] = {99369, 99375, 99380},
 		[CLASS_PRIEST] = {99359, 99365},
 		[CLASS_WARLOCK] = 99424,
 	},
 
 	[99722] = { -- Gauntlets of the Cursed Protector (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_WARRIOR] = {99408, 99412},
 		[CLASS_HUNTER] = 99406,
 		[CLASS_SHAMAN] = {99340, 99345, 99352},
@@ -3683,7 +3624,6 @@ t.ITEM_DATA = {
 	},
 
 	[99723] = { -- Helm of the Cursed Vanquisher (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = 99348,
 		[CLASS_DEATHKNIGHT] = {99323, 99337},
 		[CLASS_MAGE] = 99398,
@@ -3691,14 +3631,12 @@ t.ITEM_DATA = {
 	},
 
 	[99724] = { -- Helm of the Cursed Conqueror (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_PALADIN] = {99370, 99376, 99379},
 		[CLASS_PRIEST] = {99360, 99366},
 		[CLASS_WARLOCK] = 99425,
 	},
 
 	[99725] = { -- Helm of the Cursed Protector (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_WARRIOR] = {99409, 99418},
 		[CLASS_HUNTER] = 99402,
 		[CLASS_SHAMAN] = {99332, 99341, 99353},
@@ -3706,7 +3644,6 @@ t.ITEM_DATA = {
 	},
 
 	[99726] = { -- Leggings of the Cursed Vanquisher (Mythic)
-		[REDEEM] = REDEEM_TIER_16_MYTHIC,
 		[CLASS_ROGUE] = 99349,
 		[CLASS_DEATHKNIGHT] = {99324, 99338},
 		[CLASS_MAGE] = 99399,
@@ -3714,7 +3651,6 @@ t.ITEM_DATA = {
 	},
 
 	[99742] = { -- Chest of the Cursed Vanquisher
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = 99629,
 		[CLASS_DEATHKNIGHT] = {99608, 99640},
 		[CLASS_MAGE] = 99658,
@@ -3722,14 +3658,12 @@ t.ITEM_DATA = {
 	},
 
 	[99743] = { -- Chest of the Cursed Conqueror
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_PALADIN] = {99566, 99598, 99626},
 		[CLASS_PRIEST] = {99584, 99627},
 		[CLASS_WARLOCK] = 99570,
 	},
 
 	[99744] = { -- Chest of the Cursed Protector
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_WARRIOR] = {99562, 99603},
 		[CLASS_HUNTER] = 99577,
 		[CLASS_SHAMAN] = {99636, 99579, 99615},
@@ -3737,7 +3671,6 @@ t.ITEM_DATA = {
 	},
 
 	[99745] = { -- Gauntlets of the Cursed Vanquisher
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = 99630,
 		[CLASS_DEATHKNIGHT] = {99604, 99609},
 		[CLASS_MAGE] = 99575,
@@ -3745,14 +3678,12 @@ t.ITEM_DATA = {
 	},
 
 	[99746] = { -- Gauntlets of the Cursed Conqueror
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_PALADIN] = {99595, 99625, 99648},
 		[CLASS_PRIEST] = {99586, 99590},
 		[CLASS_WARLOCK] = 99567,
 	},
 
 	[99747] = { -- Gauntlets of the Cursed Protector
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_WARRIOR] = {99559, 99563},
 		[CLASS_HUNTER] = 99578,
 		[CLASS_SHAMAN] = {99616, 99580, 99611},
@@ -3760,7 +3691,6 @@ t.ITEM_DATA = {
 	},
 
 	[99748] = { -- Helm of the Cursed Vanquisher
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = 99631,
 		[CLASS_DEATHKNIGHT] = {99571, 99605},
 		[CLASS_MAGE] = 99576,
@@ -3768,14 +3698,12 @@ t.ITEM_DATA = {
 	},
 
 	[99749] = { -- Helm of the Cursed Conqueror
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_PALADIN] = {99596, 99651, 99665},
 		[CLASS_PRIEST] = {99587, 99591},
 		[CLASS_WARLOCK] = 99568,
 	},
 
 	[99750] = { -- Helm of the Cursed Protector
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_WARRIOR] = {99557, 99602},
 		[CLASS_HUNTER] = 99660,
 		[CLASS_SHAMAN] = {99612, 99645, 99649},
@@ -3783,7 +3711,6 @@ t.ITEM_DATA = {
 	},
 
 	[99751] = { -- Leggings of the Cursed Vanquisher
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = 99634,
 		[CLASS_DEATHKNIGHT] = {99564, 99572},
 		[CLASS_MAGE] = 99657,
@@ -3791,14 +3718,12 @@ t.ITEM_DATA = {
 	},
 
 	[99752] = { -- Leggings of the Cursed Conqueror
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_PALADIN] = {99593, 99661, 99666},
 		[CLASS_PRIEST] = {99588, 99592},
 		[CLASS_WARLOCK] = 99569,
 	},
 
 	[99753] = { -- Leggings of the Cursed Protector
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_WARRIOR] = {99558, 99560},
 		[CLASS_HUNTER] = 99573,
 		[CLASS_SHAMAN] = {99613, 99646, 99650},
@@ -3806,7 +3731,6 @@ t.ITEM_DATA = {
 	},
 
 	[99754] = { -- Shoulders of the Cursed Vanquisher
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_ROGUE] = 99635,
 		[CLASS_DEATHKNIGHT] = {99639, 99652},
 		[CLASS_MAGE] = 99659,
@@ -3814,14 +3738,12 @@ t.ITEM_DATA = {
 	},
 
 	[99755] = { -- Shoulders of the Cursed Conqueror
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_PALADIN] = {99594, 99656, 99662},
 		[CLASS_PRIEST] = {99585, 99628},
 		[CLASS_WARLOCK] = 99601,
 	},
 
 	[99756] = { -- Shoulders of the Cursed Protector
-		[REDEEM] = REDEEM_TIER_16_NORMAL,
 		[CLASS_WARRIOR] = {99561, 99597},
 		[CLASS_HUNTER] = 99574,
 		[CLASS_SHAMAN] = {99614, 99647, 99663},

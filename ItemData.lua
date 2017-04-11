@@ -2219,21 +2219,18 @@ t.ITEM_DATA = {
 	},
 
 	[65000] = { -- Crown of the Forlorn Protector
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_WARRIOR] = {65266, 65271},
 		[CLASS_HUNTER] = 65206,
 		[CLASS_SHAMAN] = {65246, 65251, 65256},
 	},
 
 	[65001] = { -- Crown of the Forlorn Conqueror
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_PALADIN] = {65216, 65221, 65226},
 		[CLASS_PRIEST] = {65230, 65235},
 		[CLASS_WARLOCK] = 65260,
 	},
 
 	[65002] = { -- Crown of the Forlorn Vanquisher
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = 65241,
 		[CLASS_DEATHKNIGHT] = {65181, 65186},
 		[CLASS_MAGE] = 65210,
@@ -2241,21 +2238,18 @@ t.ITEM_DATA = {
 	},
 
 	[65087] = { -- Shoulders of the Forlorn Protector
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_WARRIOR] = {65268, 65273},
 		[CLASS_HUNTER] = 65208,
 		[CLASS_SHAMAN] = {65248, 65253, 65258},
 	},
 
 	[65088] = { -- Shoulders of the Forlorn Conqueror
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_PALADIN] = {65218, 65223, 65228},
 		[CLASS_PRIEST] = {65233, 65238},
 		[CLASS_WARLOCK] = 65263,
 	},
 
 	[65089] = { -- Shoulders of the Forlorn Vanquisher
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = 65243,
 		[CLASS_DEATHKNIGHT] = {65183, 65188},
 		[CLASS_MAGE] = 65213,
@@ -2263,21 +2257,18 @@ t.ITEM_DATA = {
 	},
 
 	[67423] = { -- Chest of the Forlorn Conqueror
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_PALADIN] = {65224, 65219, 65214},
 		[CLASS_PRIEST] = {65237, 65232},
 		[CLASS_WARLOCK] = 65262,
 	},
 
 	[67424] = { -- Chest of the Forlorn Protector
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_WARRIOR] = {65269, 65264},
 		[CLASS_HUNTER] = 65204,
 		[CLASS_SHAMAN] = {65254, 65249, 65244},
 	},
 
 	[67425] = { -- Chest of the Forlorn Vanquisher
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = 65239,
 		[CLASS_DEATHKNIGHT] = {65184, 65179},
 		[CLASS_MAGE] = 65212,
@@ -2285,7 +2276,6 @@ t.ITEM_DATA = {
 	},
 
 	[67426] = { -- Leggings of the Forlorn Vanquisher
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = 65242,
 		[CLASS_DEATHKNIGHT] = {65187, 65182},
 		[CLASS_MAGE] = 65211,
@@ -2293,35 +2283,30 @@ t.ITEM_DATA = {
 	},
 
 	[67427] = { -- Leggings of the Forlorn Protector
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_WARRIOR] = {65267, 65272},
 		[CLASS_HUNTER] = 65207,
 		[CLASS_SHAMAN] = {65257, 65252, 65247},
 	},
 
 	[67428] = { -- Leggings of the Forlorn Conqueror
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_PALADIN] = {65227, 65222, 65217},
 		[CLASS_PRIEST] = {65236, 65231},
 		[CLASS_WARLOCK] = 65261,
 	},
 
 	[67429] = { -- Gauntlets of the Forlorn Conqueror
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_PALADIN] = {65215, 65220, 65225},
 		[CLASS_PRIEST] = {65229, 65234},
 		[CLASS_WARLOCK] = 65259,
 	},
 
 	[67430] = { -- Gauntlets of the Forlorn Protector
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_WARRIOR] = {65265, 65270},
 		[CLASS_HUNTER] = 65205,
 		[CLASS_SHAMAN] = {65255, 65245, 65250},
 	},
 
 	[67431] = { -- Gauntlets of the Forlorn Vanquisher
-		[REDEEM] = REDEEM_TIER_11,
 		[CLASS_ROGUE] = 65240,
 		[CLASS_DEATHKNIGHT] = {65180, 65185},
 		[CLASS_MAGE] = 65209,

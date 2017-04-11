@@ -106,61 +106,61 @@ t.HORDE_REDEEM_LOOKUP = {
 
 t.CLASS_REDEEM_LOOKUP = {
 	[CLASS_WARRIOR] = {
-		[REDEEM_TIER_10] = "Redeem: Horace Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Icecrown Citadel T10 (Warriors)
+		[REDEEM_TIER_10] = "Redeem: Crusader Grimtong @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warriors)
 		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Warriors)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Warriors)
 	},
 
 	[CLASS_PALADIN] = {
-		[REDEEM_TIER_10] = "Redeem: Horace Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Icecrown Citadel T10 (Paladins)
+		[REDEEM_TIER_10] = "Redeem: Crusader Halford @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Paladins)
 		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Paladins)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Paladins)
 	},
 
 	[CLASS_DEATHKNIGHT] = {
-		[REDEEM_TIER_10] = "Redeem: Horace Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Icecrown Citadel T10 (Death Knights)
+		[REDEEM_TIER_10] = "Redeem: Ormus the Penitent @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Death Knights)
 		[REDEEM_TIER_7] = "Redeem: Griselda Hunderland @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Naxxramas T7 (Death Knights)
 		[REDEEM_TIER_8] = "Redeem: Dubin Clay @ Dalaran (Northrend)\nLocated in Tanks for Everything (47.0, 28.4)", -- Ulduar T8 (Death Knights)
 	},
 
 	[CLASS_MAGE] = {
-		[REDEEM_TIER_10] = "Redeem: Rueben Lauren @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Icecrown Citadel T10 (Mages)
+		[REDEEM_TIER_10] = "Redeem: Malfus Grimfrost @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Mages)
 		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Mages)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Mages)
 	},
 
 	[CLASS_WARLOCK] = {
-		[REDEEM_TIER_10] = "Redeem: Rueben Lauren @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Icecrown Citadel T10 (Warlocks)
+		[REDEEM_TIER_10] = "Redeem: Niby the Almighty @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Warlocks)
 		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Warlocks)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Warlocks)
 	},
 
 	[CLASS_PRIEST] = {
-		[REDEEM_TIER_10] = "Redeem: Rueben Lauren @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Icecrown Citadel T10 (Priests)
+		[REDEEM_TIER_10] = "Redeem: Scott the Merciful @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Priests)
 		[REDEEM_TIER_7] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Naxxramas T7 (Priests)
 		[REDEEM_TIER_8] = "Redeem: Paldesse @ Dalaran (Northrend)\nLocated in Threads of Fate (43.4, 50.2)", -- Ulduar T8 (Priests)
 	},
 
 	[CLASS_DRUID] = {
-		[REDEEM_TIER_10] = "Redeem: Rafael Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Icecrown Citadel T10 (Druids)
+		[REDEEM_TIER_10] = "Redeem: Alana Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Druids)
 		[REDEEM_TIER_7] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxxramas T7 (Druids)
 		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Druids)
 	},
 
 	[CLASS_ROGUE] = {
-		[REDEEM_TIER_10] = "Redeem: Rafael Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Icecrown Citadel T10 (Rogues)
+		[REDEEM_TIER_10] = "Redeem: Yili @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Rogues)
 		[REDEEM_TIER_7] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxxramas T7 (Rogues)
 		[REDEEM_TIER_8] = "Redeem: Valerie Langrom @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Rogues)
 	},
 
 	[CLASS_HUNTER] = {
-		[REDEEM_TIER_10] = "Redeem: Matilda Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Icecrown Citadel T10 (Hunters)
+		[REDEEM_TIER_10] = "Redeem: Talan Moonstrike @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Hunters)
 		[REDEEM_TIER_7] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxramas T7 (Hunters)
 		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Hunters)
 	},
 
 	[CLASS_SHAMAN] = {
-		[REDEEM_TIER_10] = "Redeem: Matilda Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Icecrown Citadel T10 (Shamans)
+		[REDEEM_TIER_10] = "Redeem: Jadebia @ Icecrown Citadel\nLocated in Light's Hammer", -- Icecrown Citadel T10 (Shamans)
 		[REDEEM_TIER_7] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Naxramas T7 (Shamans)
 		[REDEEM_TIER_8] = "Redeem: Bragund Brightlink @ Dalaran (Northrend)\nLocated in Langrom's Leather & Links (51.6, 71.6)", -- Ulduar T8 (Shamans)
 	}

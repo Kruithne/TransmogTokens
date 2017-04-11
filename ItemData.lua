@@ -62,7 +62,6 @@ local REDEEM_TBC_TIER_6 = 2;
 local REDEEM_TBC_HYJAL = 3;
 local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
-local REDEEM_TIER_13 = 9;
 local REDEEM_TIER_15 = 5;
 local REDEEM_TIER_16_LFR = 10;
 local REDEEM_TIER_16_NORMAL = 11;
@@ -103,7 +102,6 @@ t.ALLIANCE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Laradia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Alliance)
 
 	[REDEEM_TIER_11] = "Redeem: Toren Landow @ Stormwind\nLocated in the Command Center (79.0, 70.0)", -- T11 (Alliance)
-	[REDEEM_TIER_13] = "Redeem: Faldren Tillsdale @ Stormwind\nLocated in the Command Center (79.0, 69.6)", -- Dragon Soul T13 (Alliance)
 
 	[REDEEM_TIER_16_LFR] = "Redeem: Welbiz Cheerwhistle @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Raid Finder] (Alliance)
 	[REDEEM_TIER_16_NORMAL] = "Redeem: Thelett Shaleheart @ Pandaria\nLocated in Shrine of Seven Stars (41.6, 42.6)", -- Siege of Orgrimmar T16 [Normal] (Alliance)
@@ -117,7 +115,6 @@ t.HORDE_REDEEM_LOOKUP = {
 	[REDEEM_TOC] = "Redeem: Valiant Bressia @ Icecrown\nLocated at Argent Tournament (75.4, 21.6)", -- ToC Trophy Vendor T9 (Horde)
 
 	[REDEEM_TIER_11] = "Redeem: Rugok @ Orgrimmar\nLocated in Grommash Hold (48.2, 71.6)", -- T11 (Horde)
-	[REDEEM_TIER_13] = "Redeem: Jamus'Vaz @ Orgrimmar\nLocated in Grommash Hold (48.6, 71.4)", -- Dragon Soul T13 (Horde)
 
 	[REDEEM_TIER_16_LFR] = "Redeem: Blizzix Sparkshiv @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Raid Finder] (Horde)
 	[REDEEM_TIER_16_NORMAL] = "Redeem: Nadina Stargem @ Pandaria\nLocated in Shrine of Two Moons (43.6, 74.8)", -- Siege of Orgrimmar T16 [Normal] (Horde)
@@ -2411,7 +2408,6 @@ t.ITEM_DATA = {
 	},
 
 	[78170] = { -- Shoulders of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 77027,
 		[CLASS_DEATHKNIGHT] = {76978, 77012},
 		[CLASS_MAGE] = 76216,
@@ -2419,7 +2415,6 @@ t.ITEM_DATA = {
 	},
 
 	[78171] = { -- Leggings of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 77026,
 		[CLASS_DEATHKNIGHT] = {76977, 77011},
 		[CLASS_MAGE] = 76214,
@@ -2427,7 +2422,6 @@ t.ITEM_DATA = {
 	},
 
 	[78172] = { -- Crown of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 77025,
 		[CLASS_DEATHKNIGHT] = {76976, 77010},
 		[CLASS_MAGE] = 76213,
@@ -2435,7 +2429,6 @@ t.ITEM_DATA = {
 	},
 
 	[78173] = { -- Gauntlets of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 77024,
 		[CLASS_DEATHKNIGHT] = {76975, 77009},
 		[CLASS_MAGE] = 76212,
@@ -2443,7 +2436,6 @@ t.ITEM_DATA = {
 	},
 
 	[78174] = { -- Chest of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 77023,
 		[CLASS_DEATHKNIGHT] = {76974, 77008},
 		[CLASS_MAGE] = 76215,
@@ -2451,91 +2443,78 @@ t.ITEM_DATA = {
 	},
 
 	[78175] = { -- Shoulders of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {76987, 76992},
 		[CLASS_HUNTER] = 77032,
 		[CLASS_SHAMAN] = {76760, 77035, 77044},
 	},
 
 	[78176] = { -- Leggings of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {76986, 76991},
 		[CLASS_HUNTER] = 77031,
 		[CLASS_SHAMAN] = {76759, 77036, 77043},
 	},
 
 	[78177] = { -- Crown of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {76983, 76990},
 		[CLASS_HUNTER] = 77030,
 		[CLASS_SHAMAN] = {76758, 77037, 77042},
 	},
 
 	[78178] = { -- Gauntlets of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {76985, 76989},
 		[CLASS_HUNTER] = 77029,
 		[CLASS_SHAMAN] = {76757, 77038, 77041},
 	},
 
 	[78179] = { -- Chest of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {76984, 76988},
 		[CLASS_HUNTER] = 77028,
 		[CLASS_SHAMAN] = {76756, 77039, 77040},
 	},
 
 	[78180] = { -- Shoulders of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {76769, 76878, 77007},
 		[CLASS_PRIEST] = {76344, 76361},
 		[CLASS_WARLOCK] = 76339,
 	},
 
 	[78181] = { -- Leggings of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {76768, 76877, 77006},
 		[CLASS_PRIEST] = {76346, 76359},
 		[CLASS_WARLOCK] = 76341,
 	},
 
 	[78182] = { -- Crown of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {76767, 76876, 77005},
 		[CLASS_PRIEST] = {76347, 76358},
 		[CLASS_WARLOCK] = 76342,
 	},
 
 	[78183] = { -- Gauntlets of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {76766, 76875, 77004},
 		[CLASS_PRIEST] = {76348, 76357},
 		[CLASS_WARLOCK] = 76343,
 	},
 
 	[78184] = { -- Chest of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {76765, 76874, 77003},
 		[CLASS_PRIEST] = {76345, 76360},
 		[CLASS_WARLOCK] = 76340,
 	},
 
 	[78847] = { -- Chest of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78726, 78727, 78732},
 		[CLASS_PRIEST] = {78728, 78731},
 		[CLASS_WARLOCK] = 78730,
 	},
 
 	[78848] = { -- Chest of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78658, 78657},
 		[CLASS_HUNTER] = 78661,
 		[CLASS_SHAMAN] = {78723, 78724, 78725},
 	},
 
 	[78849] = { -- Chest of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78664,
 		[CLASS_DEATHKNIGHT] = {78659, 78663},
 		[CLASS_MAGE] = 78729,
@@ -2543,21 +2522,18 @@ t.ITEM_DATA = {
 	},
 
 	[78850] = { -- Crown of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78692, 78693, 78695},
 		[CLASS_PRIEST] = {78700, 78703},
 		[CLASS_WARLOCK] = 78702,
 	},
 
 	[78851] = { -- Crown of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78688, 78689},
 		[CLASS_HUNTER] = 78698,
 		[CLASS_SHAMAN] = {78685, 78686, 78691},
 	},
 
 	[78852] = { -- Crown of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78699,
 		[CLASS_DEATHKNIGHT] = {78687, 78697},
 		[CLASS_MAGE] = 78701,
@@ -2565,21 +2541,18 @@ t.ITEM_DATA = {
 	},
 
 	[78853] = { -- Gauntlets of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78673, 78675, 78677},
 		[CLASS_PRIEST] = {78682, 78683},
 		[CLASS_WARLOCK] = 78681,
 	},
 
 	[78854] = { -- Gauntlets of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78668, 78669},
 		[CLASS_HUNTER] = 78674,
 		[CLASS_SHAMAN] = {78666, 78667, 78672},
 	},
 
 	[78855] = { -- Gauntlets of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78679,
 		[CLASS_DEATHKNIGHT] = {78670, 78678},
 		[CLASS_MAGE] = 78671,
@@ -2587,21 +2560,18 @@ t.ITEM_DATA = {
 	},
 
 	[78856] = { -- Leggings of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78712, 78715, 78717},
 		[CLASS_PRIEST] = {78719, 78722},
 		[CLASS_WARLOCK] = 78721,
 	},
 
 	[78857] = { -- Leggings of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78705, 78706},
 		[CLASS_HUNTER] = 78709,
 		[CLASS_SHAMAN] = {78704, 78711, 78718},
 	},
 
 	[78858] = { -- Leggings of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78708,
 		[CLASS_DEATHKNIGHT] = {78716, 78707},
 		[CLASS_MAGE] = 78720,
@@ -2609,21 +2579,18 @@ t.ITEM_DATA = {
 	},
 
 	[78859] = { -- Shoulders of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78742, 78745, 78746},
 		[CLASS_PRIEST] = {78747, 78750},
 		[CLASS_WARLOCK] = 78749,
 	},
 
 	[78860] = { -- Shoulders of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78734, 78735},
 		[CLASS_HUNTER] = 78737,
 		[CLASS_SHAMAN] = {78739, 78741, 78733},
 	},
 
 	[78861] = { -- Shoulders of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78738,
 		[CLASS_DEATHKNIGHT] = {78736, 78751},
 		[CLASS_MAGE] = 78748,
@@ -2631,7 +2598,6 @@ t.ITEM_DATA = {
 	},
 
 	[78862] = { -- Chest of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78759,
 		[CLASS_DEATHKNIGHT] = {78754, 78758},
 		[CLASS_MAGE] = 78824,
@@ -2639,21 +2605,18 @@ t.ITEM_DATA = {
 	},
 
 	[78863] = { -- Chest of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78821, 78822, 78827},
 		[CLASS_PRIEST] = {78823, 78826},
 		[CLASS_WARLOCK] = 78825,
 	},
 
 	[78864] = { -- Chest of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78752, 78753},
 		[CLASS_HUNTER] = 78756,
 		[CLASS_SHAMAN] = {78818, 78819, 78820},
 	},
 
 	[78865] = { -- Gauntlets of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78774,
 		[CLASS_DEATHKNIGHT] = {78765, 78773},
 		[CLASS_MAGE] = 78766,
@@ -2661,21 +2624,18 @@ t.ITEM_DATA = {
 	},
 
 	[78866] = { -- Gauntlets of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78768, 78770, 78772},
 		[CLASS_PRIEST] = {78777, 78778},
 		[CLASS_WARLOCK] = 78776,
 	},
 
 	[78867] = { -- Gauntlets of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78763, 78764},
 		[CLASS_HUNTER] = 78769,
 		[CLASS_SHAMAN] = {78761, 78762, 78767},
 	},
 
 	[78868] = { -- Crown of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78794,
 		[CLASS_DEATHKNIGHT] = {78782, 78792},
 		[CLASS_MAGE] = 78796,
@@ -2683,21 +2643,18 @@ t.ITEM_DATA = {
 	},
 
 	[78869] = { -- Crown of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78787, 78788, 78790},
 		[CLASS_PRIEST] = {78795, 78798},
 		[CLASS_WARLOCK] = 78797,
 	},
 
 	[78870] = { -- Crown of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78783, 78784},
 		[CLASS_HUNTER] = 78793,
 		[CLASS_SHAMAN] = {78780, 78781, 78786},
 	},
 
 	[78871] = { -- Leggings of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78803,
 		[CLASS_DEATHKNIGHT] = {78802, 78811},
 		[CLASS_MAGE] = 78815,
@@ -2705,21 +2662,18 @@ t.ITEM_DATA = {
 	},
 
 	[78872] = { -- Leggings of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78807, 78810, 78812},
 		[CLASS_PRIEST] = {78814, 78817},
 		[CLASS_WARLOCK] = 78816,
 	},
 
 	[78873] = { -- Leggings of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78800, 78801},
 		[CLASS_HUNTER] = 78804,
 		[CLASS_SHAMAN] = {78799, 78806, 78813},
 	},
 
 	[78874] = { -- Shoulders of the Corrupted Vanquisher
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_ROGUE] = 78833,
 		[CLASS_DEATHKNIGHT] = {78846, 78831},
 		[CLASS_MAGE] = 78843,
@@ -2727,14 +2681,12 @@ t.ITEM_DATA = {
 	},
 
 	[78875] = { -- Shoulders of the Corrupted Conqueror
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_PALADIN] = {78840, 78841, 78837},
 		[CLASS_PRIEST] = {78842, 78845},
 		[CLASS_WARLOCK] = 78844,
 	},
 
 	[78876] = { -- Shoulders of the Corrupted Protector
-		[REDEEM] = REDEEM_TIER_13,
 		[CLASS_WARRIOR] = {78829, 78830},
 		[CLASS_HUNTER] = 78832,
 		[CLASS_SHAMAN] = {78828, 78834, 78836},

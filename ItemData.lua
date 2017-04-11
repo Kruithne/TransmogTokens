@@ -59,7 +59,6 @@ t.CLASS_ITEM_TYPE = {
 local REDEEM_TBC_SUNMOTE = 0;
 local REDEEM_TOC = 1;
 local REDEEM_TBC_TIER_6 = 2;
-local REDEEM_TBC_HYJAL = 3;
 local REDEEM_MOP_OXHEART = 6;
 local REDEEM_TIER_11 = 7;
 local REDEEM_TIER_15 = 5;
@@ -79,7 +78,6 @@ local REDEEM_AQ_KAND = 24;
 t.REDEEM_LOOKUP = {
 	[REDEEM_TBC_SUNMOTE] = "Redeem: Yrma @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)",
 	[REDEEM_TBC_TIER_6] = "Redeem: Soryn @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)\n\nRedeem: Kayri @ Isle of Quel'Danas\nLocated in Sun's Reach Armor (49.0, 39.0)\n\nRedeem: Theremis @ Isle of Quel'Danas\nLocated on Sun's Reach Harbour [Boat] (50.2, 28.6)\n\n|cFFF58CBANote: Items can be purchased despite class requirement.|r",
-	[REDEEM_TBC_HYJAL] = "Redeem: Tydormu @ Hyjal Summit\nLocated just inside the entrance of the raid.\n\nRedeem: Soryn @ Isle of Quel'Danas\nLocated in Sun's Reach Armory (49.0, 39.0)\n\nRedeem: Kayri @ Isle of Quel'Danas\nLocated in Sun's Reach Armor (49.0, 39.0)",
 	[REDEEM_FIRELANDS_BOE] = "Redeem: Lurah Wrathvine @ Firelands\nLocated just inside the entrance of the raid.",
 
 	[REDEEM_TIER_15] = "Redeem: Ao Pye @ Townlong Steppes\nLocated in Niuzao Temple (37.8, 64.6)", -- Throne of Thunder T15,
@@ -1274,7 +1272,6 @@ t.ITEM_DATA = {
 
 	[31089] = { -- Chestguard of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Illidan Stormrage (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_PALADIN] = {30990, 30992, 30991, 32039, 31992, 32020},
 		[CLASS_PRIEST] = {31065, 31066, 32019, 32038},
 		[CLASS_WARLOCK] = {31052, 31982, 31977},
@@ -1282,7 +1279,6 @@ t.ITEM_DATA = {
 
 	[31090] = { -- Chestguard of the Forgotten Vanquisher
 		["OBTAIN"] = {SET_TIER_6, "Illidan Stormrage (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_ROGUE] = {31028, 32002},
 		[CLASS_MAGE] = {31057, 32050},
 		[CLASS_DRUID] = {31041, 31042, 31043, 31972, 31991, 32060},
@@ -1290,7 +1286,6 @@ t.ITEM_DATA = {
 
 	[31091] = { -- Chestguard of the Forgotten Protector
 		["OBTAIN"] = {SET_TIER_6, "Illidan Stormrage (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_WARRIOR] = {30975, 30976, 30486},
 		[CLASS_HUNTER] = {31004, 31960},
 		[CLASS_SHAMAN] = {31018, 31016, 31017, 32004, 32009, 32029},
@@ -1298,7 +1293,6 @@ t.ITEM_DATA = {
 
 	[31092] = { -- Gloves of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Azgalor (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_PALADIN] = {30982, 30985, 30983, 32021, 32040, 31993},
 		[CLASS_PRIEST] = {31060, 31061, 32015, 32034},
 		[CLASS_WARLOCK] = {31050, 31981, 31973},
@@ -1306,7 +1300,6 @@ t.ITEM_DATA = {
 
 	[31093] = { -- Gloves of the Forgotten Vanquisher
 		["OBTAIN"] = {SET_TIER_6, "Azgalor (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_ROGUE] = {31026, 31998},
 		[CLASS_MAGE] = {31055, 32049},
 		[CLASS_DRUID] = {31032, 31034, 31035, 31967, 31987, 32056},
@@ -1314,7 +1307,6 @@ t.ITEM_DATA = {
 
 	[31094] = { -- Gloves of the Forgotten Protector
 		["OBTAIN"] = {SET_TIER_6, "Azgalor (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_WARRIOR] = {30969, 30970, 30487},
 		[CLASS_HUNTER] = {31001, 31961},
 		[CLASS_SHAMAN] = {31011, 31007, 31008, 32010, 32030, 32005},
@@ -1322,7 +1314,6 @@ t.ITEM_DATA = {
 
 	[31095] = { -- Helm of the Forgotten Protector
 		["OBTAIN"] = {SET_TIER_6, "Archimonde (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_WARRIOR] = {30972, 30974, 30488},
 		[CLASS_HUNTER] = {31003, 31962},
 		[CLASS_SHAMAN] = {31015, 31012, 31014, 32006, 32011, 32031},
@@ -1330,7 +1321,6 @@ t.ITEM_DATA = {
 
 	[31096] = { -- Helm of the Forgotten Vanquisher
 		["OBTAIN"] = {SET_TIER_6, "Archimonde (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_ROGUE] = {31027, 31999},
 		[CLASS_MAGE] = {31056, 32048},
 		[CLASS_DRUID] = {31037, 31039, 31040, 31968, 31988, 32057},
@@ -1338,7 +1328,6 @@ t.ITEM_DATA = {
 
 	[31097] = { -- Helm of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Archimonde (Hyjal Summit)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_PALADIN] = {30987, 30989, 30988, 32041, 31997, 32022},
 		[CLASS_PRIEST] = {31063, 31064, 32016, 32035},
 		[CLASS_WARLOCK] = {31051, 31980, 31974},
@@ -1346,7 +1335,6 @@ t.ITEM_DATA = {
 
 	[31098] = { -- Leggings of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "The Illidari Council (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_PALADIN] = {30993, 30995, 30994, 32042, 31995, 32023},
 		[CLASS_PRIEST] = {31067, 31068, 32017, 32036},
 		[CLASS_WARLOCK] = {31053, 31983, 31975},
@@ -1354,7 +1342,6 @@ t.ITEM_DATA = {
 
 	[31099] = { -- Leggings of the Forgotten Vanquisher
 		["OBTAIN"] = {SET_TIER_6, "The Illidari Council (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_ROGUE] = {31029, 32000},
 		[CLASS_MAGE] = {31058, 32051},
 		[CLASS_DRUID] = {31044, 31045, 31046, 31969, 31989, 32058},
@@ -1362,7 +1349,6 @@ t.ITEM_DATA = {
 
 	[31100] = { -- Leggings of the Forgotten Protector
 		["OBTAIN"] = {SET_TIER_6, "The Illidari Council (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_WARRIOR] = {30977, 30978, 30489},
 		[CLASS_HUNTER] = {31005, 31963},
 		[CLASS_SHAMAN] = {31019, 31020, 31021, 32007, 32012, 32032},
@@ -1370,7 +1356,6 @@ t.ITEM_DATA = {
 
 	[31101] = { -- Pauldrons of the Forgotten Conqueror
 		["OBTAIN"] = {SET_TIER_6, "Mother Shahraz (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_PALADIN] = {30996, 30998, 30997, 32043, 31996, 32024},
 		[CLASS_PRIEST] = {31069, 31070, 32018, 32037},
 		[CLASS_WARLOCK] = {31054, 31979, 31976},
@@ -1378,7 +1363,6 @@ t.ITEM_DATA = {
 
 	[31102] = { -- Pauldrons of the Forgotten Vanquisher
 		["OBTAIN"] = {SET_TIER_6, "Mother Shahraz (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_ROGUE] = {31030, 32001},
 		[CLASS_MAGE] = {31059, 32047},
 		[CLASS_DRUID] = {31047, 31048, 31049, 32059, 31971, 31990},
@@ -1386,7 +1370,6 @@ t.ITEM_DATA = {
 
 	[31103] = { -- Pauldrons of the Forgotten Protector
 		["OBTAIN"] = {SET_TIER_6, "Mother Shahraz (Black Temple)"},
-		[REDEEM] = REDEEM_TBC_HYJAL,
 		[CLASS_WARRIOR] = {30979, 30980, 30490},
 		[CLASS_HUNTER] = {31006, 31964},
 		[CLASS_SHAMAN] = {31024, 31022, 31023, 32008, 32013, 32033},

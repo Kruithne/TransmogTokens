@@ -1,4 +1,4 @@
-## Interface: 72000
+## Interface: 70300
 ## Title: TransmogTokens
 ## Notes: Adds tooltips to tier tokens.
 ## Author: Kruithne
@@ -14,4 +14,5 @@ TransmogTokens.lua
 localization/enUS.lua
 localization/deDE.lua
 localization/zhTW.lua
+localization/ruRU.lua
 ItemData.lua

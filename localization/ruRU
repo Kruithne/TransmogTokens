@@ -2,7 +2,7 @@ local L = TransmogTokens.L
 
 if GetLocale() == "ruRU" then
 	L["Loading item information..."] = "Загружается информация о предмете...";
-	L["Can be exchanged for %d appearances you need."] = "Можно обменять на %d новых моделей.";
+	L["Can be exchanged for %d appearances you need."] = "Можно обменять на %d новых модели(-ей).";
 	L["Can be exchanged for 1 appearance you need."] = "Можно обменять на одну новую модель.";
 	L["Appearances from this are class and/or spec dependant."] = "Модели с токена зависят от класса и/или специализации.";
 	L["Can be exchanged for appearances you don't need."] = "Открыты все модели с данного токена.";

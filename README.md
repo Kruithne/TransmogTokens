@@ -24,9 +24,12 @@ Below you will find information on what this addon supports and does not support
 * Support for Tier 16 tokens (Raid Finder, Normal, Heroic, Mythic) including multi-tokens.
 * Support for Tier 17 tokens (Normal, Heroic, Mythic) including multi-tokens.
 * Support for Tier 18 tokens (Normal, Heroic, Mythic).
+* Support for Tier 19 tokens.
+* Support for Tier 20 tokens.
 * Supports all exchangeable quest items from Temple/Ruins of Ahn'Qiraj.
 * Supports Timeless Isle gear tokens and armor caches.
 * Supports Baleful gear tokens from Tanaan Jungle.
+* Supports Unsullied gear tokens from Argus.
 * Supports Crystallized Firestones from Firelands.
 * Supports Sunmotes redeemed on Isle of Quel'Danas.
 * Supports Essence of the Forlorn from Throne of the Four Winds.

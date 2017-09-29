@@ -1,3 +1,9 @@
+** Version 1.4.7 **
+* Added localization support for ruRU.
+* Added support for Tier 19 tokens.
+* Added support for Tier 20 tokens.
+* Added support for Unsullied item tokens.
+
 ** Version 1.4.6 **
 * Remove redundant vendor locations from self-creation tokens.
 * Update Tier 10 tokens from Icecrown Citadel to use new vendors in Light's Hammer.

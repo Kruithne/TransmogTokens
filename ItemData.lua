@@ -193,6 +193,16 @@ local TIER_18_BONUS_LOOKUP = {
 	[569] = 1799, -- Mythic
 };
 
+local TIER_19_BONUS_LOOKUP = {
+	[570] = 3516, -- Heroic
+	[569] = 3518, -- Mythic
+};
+
+local TIER_20_BONUS_LOOKUP = {
+	[570] = 3562, -- Heroic
+	[596] = 3563, -- Mythic
+};
+
 t.AQ_DATA = {
 	[CLASS_DRUID] = {
 		[21409] = { -- Cloak of Unending Life
@@ -781,6 +791,188 @@ t.AQ_DATA = {
 };
 
 t.ITEM_DATA = {
+	-- Tier 20
+	[147318] = { -- Chest of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147187, [CLASS_MONK] = 147151, [CLASS_HUNTER] = 147139, [CLASS_SHAMAN] = 147175
+	},
+	
+	[147330] = { -- Shoulders of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147192, [CLASS_MONK] = 147156, [CLASS_HUNTER] = 147144, [CLASS_SHAMAN] = 147180
+	},
+	
+	[147324] = { -- Helm of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147190, [CLASS_MONK] = 147154, [CLASS_HUNTER] = 147142, [CLASS_SHAMAN] = 147178
+	},
+	
+	[147327] = { -- Leggings of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147191, [CLASS_MONK] = 147155, [CLASS_HUNTER] = 147143, [CLASS_SHAMAN] = 147179
+	},
+	
+	[147321] = { -- Gauntlets of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147189, [CLASS_MONK] = 147153, [CLASS_HUNTER] = 147141, [CLASS_SHAMAN] = 147177
+	},
+	
+	[147333] = { -- Cloak of the Foregone Protector
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 147188, [CLASS_MONK] = 147152, [CLASS_HUNTER] = 147140, [CLASS_SHAMAN] = 147176
+	},
+	
+	[147317] = { -- Chest of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147127, [CLASS_PALADIN] = 147157, [CLASS_PRIEST] = 147167, [CLASS_WARLOCK] = 147185
+	},
+	
+	[147329] = { -- Shoulders of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147132, [CLASS_PALADIN] = 147162, [CLASS_PRIEST] = 147168, [CLASS_WARLOCK] = 147186
+	},
+	
+	[147323] = { -- Helm of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147130, [CLASS_PALADIN] = 147160, [CLASS_PRIEST] = 147165, [CLASS_WARLOCK] = 147183
+	},
+	
+	[147326] = { -- Leggings of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147131, [CLASS_PALADIN] = 147161, [CLASS_PRIEST] = 147166, [CLASS_WARLOCK] = 147184
+	},
+	
+	[147320] = { -- Gauntlets of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147129, [CLASS_PALADIN] = 147159, [CLASS_PRIEST] = 147164, [CLASS_WARLOCK] = 147182
+	},
+	
+	[147332] = { -- Cloak of the Foregone Conqueror
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 147128, [CLASS_PALADIN] = 147158, [CLASS_PRIEST] = 147163, [CLASS_WARLOCK] = 147181
+	},
+	
+	[147316] = { -- Chest of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147121, [CLASS_DRUID] = 147133, [CLASS_MAGE] = 147149, [CLASS_ROGUE] = 147169
+	},
+	
+	[147328] = { -- Shoulders of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147126, [CLASS_DRUID] = 147138, [CLASS_MAGE] = 147150, [CLASS_ROGUE] = 147174
+	},
+	
+	[147322] = { -- Helm of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147124, [CLASS_DRUID] = 147136, [CLASS_MAGE] = 147147, [CLASS_ROGUE] = 147172
+	},
+	
+	[147325] = { -- Leggings of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147125, [CLASS_DRUID] = 147137, [CLASS_MAGE] = 147148, [CLASS_ROGUE] = 147173
+	},
+	
+	[147319] = { -- Gauntlets of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147123, [CLASS_DRUID] = 147135, [CLASS_MAGE] = 147146, [CLASS_ROGUE] = 147171
+	},
+	
+	[147331] = { -- Cloak of the Foregone Vanquisher
+		[BONUS] = TIER_20_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 147122, [CLASS_DRUID] = 147134, [CLASS_MAGE] = 147145, [CLASS_ROGUE] = 147170
+	},
+
+	-- Tier 19
+	[143572] = { -- Chest of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138351, [CLASS_MONK] = 138325, [CLASS_HUNTER] = 138339, [CLASS_SHAMAN] = 138341 
+	},
+	
+	[143576] = { -- Shoudlers of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138363, [CLASS_MONK] = 138337, [CLASS_HUNTER] = 138347, [CLASS_SHAMAN] = 138348
+	},
+	
+	[143575] = { -- Helm of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138357, [CLASS_MONK] = 138331, [CLASS_HUNTER] = 138342, [CLASS_SHAMAN] = 138343 
+	},
+	
+	[143574] = { -- Leggings of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138360, [CLASS_MONK] = 138334, [CLASS_HUNTER] = 138344, [CLASS_SHAMAN] = 138345
+	},
+	
+	[143573] = { -- Gauntlets of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138354, [CLASS_MONK] = 138328, [CLASS_HUNTER] = 138340, [CLASS_SHAMAN] = 138341
+	},
+	
+	[143579] = { -- Cloak of the Foreseen Protector
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 138374, [CLASS_MONK] = 138367, [CLASS_HUNTER] = 138368, [CLASS_SHAMAN] = 138372
+	},
+	
+	[143562] = { -- Chest of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138376, [CLASS_PALADIN] = 138350, [CLASS_PRIEST] = 138319, [CLASS_WARLOCK] = 138320
+	},
+	
+	[143566] = { -- Shoulders of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138380, [CLASS_PALADIN] = 138362, [CLASS_PRIEST] = 138322, [CLASS_WARLOCK] = 138323
+	},
+	
+	[143565] = { -- Helm of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138378, [CLASS_PALADIN] = 138356, [CLASS_PRIEST] = 138313, [CLASS_WARLOCK] = 138314
+	},
+	
+	[143564] = { -- Leggings of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138379, [CLASS_PALADIN] = 138359, [CLASS_PRIEST] = 138316, [CLASS_WARLOCK] = 138317
+	},
+	
+	[143563] = { -- Gauntlets of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138377, [CLASS_PALADIN] = 138353, [CLASS_PRIEST] = 138310, [CLASS_WARLOCK] = 138311
+	},
+	
+	[143577] = { -- Cloak of the Foreseen Conqueror
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 138375, [CLASS_PALADIN] = 138369, [CLASS_PRIEST] = 138370, [CLASS_WARLOCK] = 138373
+	},
+	
+	[143571] = { -- Chest of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138349, [CLASS_DRUID] = 138324, [CLASS_MAGE] = 138318, [CLASS_ROGUE] = 138326
+	},
+	
+	[143570] = { -- Shoulders of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138361, [CLASS_DRUID] = 138336, [CLASS_MAGE] = 138321, [CLASS_ROGUE] = 138338
+	},
+	
+	[143568] = { -- Helm of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138355, [CLASS_DRUID] = 138330, [CLASS_MAGE] = 138312, [CLASS_ROGUE] = 138332
+	},
+	
+	[143569] = { -- Leggings of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138358, [CLASS_DRUID] = 138333, [CLASS_MAGE] = 138315, [CLASS_ROGUE] = 138335
+	},
+	
+	[143567] = { -- Gauntlets of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138352, [CLASS_DRUID] = 138327, [CLASS_MAGE] = 138309, [CLASS_ROGUE] = 138329
+	},
+	
+	[143578] = { -- Cloak of the Foreseen Vanquisher
+		[BONUS] = TIER_19_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 138364, [CLASS_DRUID] = 138366, [CLASS_MAGE] = 138365, [CLASS_ROGUE] = 138371
+	},
+	
 	-- Tier 18
 	[127963] = { -- Chest of Hellfire's Protector
 		[BONUS] = TIER_18_BONUS_LOOKUP,
@@ -3653,6 +3845,246 @@ t.ITEM_DATA = {
 		[CLASS_MONK] = {99565, 99642, 99655},
 	},
 
+		[152740] = { -- Unsullied Cloak
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152778,
+		[CLASS_PALADIN] = 152778,
+		[CLASS_DEATHKNIGHT] = 152778,
+		[CLASS_HUNTER] = 152778,
+		[CLASS_SHAMAN] = 152778,
+		[CLASS_MAGE] = 152778,
+		[CLASS_PRIEST] = 152778,
+		[CLASS_WARLOCK] = 152778,
+		[CLASS_DRUID] = 152778,
+		[CLASS_DEMONHUNTER] = 152778,
+		[CLASS_MONK] = 152778,
+		[CLASS_ROGUE] = 152778,
+	},
+	
+	[152742] = { -- Unsullied Cloth Cuffs 
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152773,
+		[CLASS_PRIEST] = 152773,
+		[CLASS_WARLOCK] = 152773,
+	},
+	
+	[153135] = { -- Unsullied Cloth Robes 
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152775,
+		[CLASS_PRIEST] = 152775,
+		[CLASS_WARLOCK] = 152775,
+	},
+	
+	[153144] = { -- Unsullied Cloth Slippers
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152774,
+		[CLASS_PRIEST] = 152774,
+		[CLASS_WARLOCK] = 152774,
+	},
+	
+	[153141] = { -- Unsullied Cloth Mitts
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152771,
+		[CLASS_PRIEST] = 152771,
+		[CLASS_WARLOCK] = 152771,
+	},
+	
+	[152738] = { -- Unsullied Cloth Cap
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152770,
+		[CLASS_PRIEST] = 152770,
+		[CLASS_WARLOCK] = 152770,
+	},
+	
+	[153154] = { -- Unsullied Cloth Leggings
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152776,
+		[CLASS_PRIEST] = 152776,
+		[CLASS_WARLOCK] = 152776,
+	},
+	
+	[152734] = { -- Unsullied Cloth Mantle
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152777,
+		[CLASS_PRIEST] = 152777,
+		[CLASS_WARLOCK] = 152777,
+	},
+	
+	[153156] = { -- Unsullied Cloth Sash
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_MAGE] = 152772,
+		[CLASS_PRIEST] = 152772,
+		[CLASS_WARLOCK] = 152772,
+	},
+	
+	[153142] = { -- Unsullied Leather Armbands
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152754,
+		[CLASS_DEMONHUNTER] = 152754,
+		[CLASS_MONK] = 152754,
+		[CLASS_ROGUE] = 152754,
+	},
+	
+	[153151] = { -- Unsullied Leather Tunic
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152758,
+		[CLASS_DEMONHUNTER] = 152758,
+		[CLASS_MONK] = 152758,
+		[CLASS_ROGUE] = 152758,
+	},
+	
+	[153136] = { -- Unsullied Leather Treads
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152757,
+		[CLASS_DEMONHUNTER] = 152757,
+		[CLASS_MONK] = 152757,
+		[CLASS_ROGUE] = 152757,
+	},
+	
+	[152739] = { -- Unsullied Leather Grips
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152755,
+		[CLASS_DEMONHUNTER] = 152755,
+		[CLASS_MONK] = 152755,
+		[CLASS_ROGUE] = 152755,
+	},
+	
+	[153139] = { -- Unsullied Leather Headgear
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152759,
+		[CLASS_DEMONHUNTER] = 152759,
+		[CLASS_MONK] = 152759,
+		[CLASS_ROGUE] = 152759,
+	},
+	
+	[152737] = { -- Unsullied Leather Trousers
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152761,
+		[CLASS_DEMONHUNTER] = 152761,
+		[CLASS_MONK] = 152761,
+		[CLASS_ROGUE] = 152761,
+	},
+	
+	[153145] = { -- Unsullied Leather Spaulders
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152760,
+		[CLASS_DEMONHUNTER] = 152760,
+		[CLASS_MONK] = 152760,
+		[CLASS_ROGUE] = 152760,
+	},
+	
+	[153148] = { -- Unsullied Leather Belt
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_DRUID] = 152756,
+		[CLASS_DEMONHUNTER] = 152756,
+		[CLASS_MONK] = 152756,
+		[CLASS_ROGUE] = 152756,
+	},
+	
+	[153152] = { -- Unsullied Mail Boots
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152766,
+		[CLASS_SHAMAN] = 152766,
+	},
+	
+	[153158] = { -- Unsullied Mail Bracers
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152762,
+		[CLASS_SHAMAN] = 152762,
+	},
+	
+	[152741] = { -- Unsullied Mail Chestguard
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152768,
+		[CLASS_SHAMAN] = 152768,
+	},
+	
+	[153147] = { -- Unsullied Mail Coif
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152765,
+		[CLASS_SHAMAN] = 152765,
+	},
+	
+	[152744] = { -- Unsullied Mail Girdle
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152767,
+		[CLASS_SHAMAN] = 152767,
+	},
+	
+	[153149] = { -- Unsullied Mail Gloves
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152763,
+		[CLASS_SHAMAN] = 152763,
+	},
+	
+	[153138] = { -- Unsullied Mail Legguards
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 153138,
+		[CLASS_SHAMAN] = 153138,
+	},
+	
+	[153137] = { -- Unsullied Mail Spaulders
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_HUNTER] = 152769,
+		[CLASS_SHAMAN] = 152769,
+	},
+	
+	[153143] = { -- Unsullied Plate Breastplate
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152748,
+		[CLASS_PALADIN] = 152748,
+		[CLASS_DEATHKNIGHT] = 152748,
+	},
+	
+	[153157] = { -- Unsullied Plate Gauntlets
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152751,
+		[CLASS_PALADIN] = 152751,
+		[CLASS_DEATHKNIGHT] = 152751,
+	},
+	
+	[153146] = { -- Unsullied Plate Greaves
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152746,
+		[CLASS_PALADIN] = 152746,
+		[CLASS_DEATHKNIGHT] = 152746,
+	},
+	
+	[153155] = { -- Unsullied Plate Helmet
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152747,
+		[CLASS_PALADIN] = 152747,
+		[CLASS_DEATHKNIGHT] = 152747,
+	},
+	
+	[153153] = { -- Unsullied Plate Pauldrons
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152750,
+		[CLASS_PALADIN] = 152750,
+		[CLASS_DEATHKNIGHT] = 152750,
+	},
+	
+	[152743] = { -- Unsullied Plate Sabatons
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152753,
+		[CLASS_PALADIN] = 152753,
+		[CLASS_DEATHKNIGHT] = 152753,
+	},
+	
+	[153150] = { -- Unsullied Plate Vambraces
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152752,
+		[CLASS_PALADIN] = 152752,
+		[CLASS_DEATHKNIGHT] = 152752,
+	},
+	
+	[153140] = { -- Unsullied Plate Waistplate
+		["DEPENDANT_WARNING"] = false,
+		[CLASS_WARRIOR] = 152749,
+		[CLASS_PALADIN] = 152749,
+		[CLASS_DEATHKNIGHT] = 152749,
+	},
+	
 	[124550] = { -- Baleful Bracers
 		["DEPENDANT_WARNING"] = true,
 		[CLASS_WARRIOR] = 124566,

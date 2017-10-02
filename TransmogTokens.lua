@@ -132,7 +132,9 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 					if itemName then
 						for i = 1, #lineIndex do
 							line = _G[tooltipName .. lineIndex[i]];
-							line:SetText(string.gsub(line:GetText(), "{" .. pendingItemID .. "}", itemName));
+							if line ~= nil then
+								line:SetText(string.gsub(line:GetText(), "{" .. pendingItemID .. "}", itemName));
+							end
 						end
 						table.remove(pendingItems, pendingItemID);
 					end

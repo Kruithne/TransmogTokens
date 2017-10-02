@@ -1,3 +1,7 @@
+** Version 1.4.8 **
+* Fixed Tier 18 tier tokens.
+* Fix issue with rapidly changing tooltips.
+
 ** Version 1.4.7 **
 * Added localization support for ruRU.
 * Added support for Tier 19 tokens.

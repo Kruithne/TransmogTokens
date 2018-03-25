@@ -202,6 +202,11 @@ local TIER_20_BONUS_LOOKUP = {
 	[596] = 3563, -- Mythic
 };
 
+local TIER_21_BONUS_LOOKUP = {
+	[570] = 3611, -- Heroic
+	[569] = 3612, -- Mythic
+}; 
+
 t.AQ_DATA = {
 	[CLASS_DRUID] = {
 		[21409] = { -- Cloak of Unending Life
@@ -790,6 +795,97 @@ t.AQ_DATA = {
 };
 
 t.ITEM_DATA = {
+	-- Tier 21
+	[152520] = { -- Chest of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152178, [CLASS_MONK] = 152142, [CLASS_HUNTER] = 152130, [CLASS_SHAMAN] = 152166
+	},
+	
+	[152523] = { -- Shoulders of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152183, [CLASS_MONK] = 152147, [CLASS_HUNTER] = 152135, [CLASS_SHAMAN] = 152171
+	},
+	
+	[152526] = { -- Helm of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152181, [CLASS_MONK] = 152145, [CLASS_HUNTER] = 152133, [CLASS_SHAMAN] = 152169
+	},
+	
+	[152529] = { -- Leggings of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152182, [CLASS_MONK] = 152146, [CLASS_HUNTER] = 152134, [CLASS_SHAMAN] = 152170
+	},
+	
+	[152523] = { -- Gauntlets of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152180, [CLASS_MONK] = 152144, [CLASS_HUNTER] = 152132, [CLASS_SHAMAN] = 152168
+	},
+	
+	[152515] = { -- Cloak of the Antoran Protector
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_WARRIOR] = 152179, [CLASS_MONK] = 152143, [CLASS_HUNTER] = 152131, [CLASS_SHAMAN] = 152167
+	},
+	
+	[152519] = { -- Chest of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152118, [CLASS_PALADIN] = 152148, [CLASS_PRIEST] = 152158, [CLASS_WARLOCK] = 152176
+	},
+	
+	[152531] = { -- Shoudlers of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152123, [CLASS_PALADIN] = 152153, [CLASS_PRIEST] = 152159, [CLASS_WARLOCK] = 152177
+	},
+	
+	[152525] = { -- Helm of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152121, [CLASS_PALADIN] = 152151, [CLASS_PRIEST] = 152156, [CLASS_WARLOCK] = 152174
+	},
+	
+	[152528] = { -- Leggings of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152122, [CLASS_PALADIN] = 152152, [CLASS_PRIEST] = 152157, [CLASS_WARLOCK] = 152175
+	},
+	
+	[152522] = { -- Gauntlets of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152120, [CLASS_PALADIN] = 152150, [CLASS_PRIEST] = 152155, [CLASS_WARLOCK] = 152173
+	},
+	
+	[152516] = { -- Cloak of the Antoran Conqueror
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEMONHUNTER] = 152119, [CLASS_PALADIN] = 152149, [CLASS_PRIEST] = 152154, [CLASS_WARLOCK] = 152172
+	},
+	
+	[152518] = { -- Chest of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152112, [CLASS_DRUID] = 152124, [CLASS_MAGE] = 152140, [CLASS_ROGUE] = 152160
+	},
+	
+	[152530] = { -- Shoulders of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152117, [CLASS_DRUID] = 152129, [CLASS_MAGE] = 152141, [CLASS_ROGUE] = 152165
+	},
+	
+	[152524] = { -- Helm of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152115, [CLASS_DRUID] = 152127, [CLASS_MAGE] = 152138, [CLASS_ROGUE] = 152163
+	},
+	
+	[152527] = { -- Leggings of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152116, [CLASS_DRUID] = 152128, [CLASS_MAGE] = 152139, [CLASS_ROGUE] = 152164
+	},
+	
+	[152521] = { -- Gauntlets of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152114, [CLASS_DRUID] = 152126, [CLASS_MAGE] = 152137, [CLASS_ROGUE] = 152162
+	},
+	
+	[152517] = { -- Cloak of the Antoran Vanquisher
+		[BONUS] = TIER_21_BONUS_LOOKUP,
+		[CLASS_DEATHKNIGHT] = 152113, [CLASS_DRUID] = 152125, [CLASS_MAGE] = 152136, [CLASS_ROGUE] = 152161
+	},
+		
 	-- Tier 20
 	[147318] = { -- Chest of the Foregone Protector
 		[BONUS] = TIER_20_BONUS_LOOKUP,
@@ -1076,7 +1172,7 @@ t.ITEM_DATA = {
 	[119318] = { -- Chest of the Iron Protector
 		[BONUS] = TIER_17_BONUS_LOOKUP,
 		[DUPLICATE_BONUS] = {[120252] = TIER_17_MYTHIC, [120237] = TIER_17_HEROIC, [120222] = 0},
-		[CLASS_WARRIOR] = 115582, [CLASS_MONK] = 115548, [CLASS_HUNTER] = 115558, [CLASS_SHAMAN] = 115577
+		[CLASS_WARRIOR] = 115582, [CLASS_MONK] = 115558, [CLASS_HUNTER] = 115548, [CLASS_SHAMAN] = 115577
 	},
 
 	[119305] = { -- Chest of the Iron Conqueror

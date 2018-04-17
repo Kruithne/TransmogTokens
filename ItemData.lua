@@ -4114,8 +4114,8 @@ t.ITEM_DATA = {
 	
 	[153138] = { -- Unsullied Mail Legguards
 		["DEPENDANT_WARNING"] = false,
-		[CLASS_HUNTER] = 153138,
-		[CLASS_SHAMAN] = 153138,
+		[CLASS_HUNTER] = 152764,
+		[CLASS_SHAMAN] = 152764,
 	},
 	
 	[153137] = { -- Unsullied Mail Spaulders

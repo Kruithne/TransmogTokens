@@ -1,3 +1,6 @@
+** Version 1.4.9 **
+* Updated interface version for Battle for Azeroth (8.0)
+
 ** Version 1.4.8 **
 * Fixed Tier 18 tier tokens.
 * Fix issue with rapidly changing tooltips.

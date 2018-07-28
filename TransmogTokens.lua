@@ -129,7 +129,7 @@ eventFrame:SetScript("OnUpdate", function(self, elapsed)
 				local pendingItems = t.tooltipCache["pendingItems"];
 				for pendingItemID, lineIndex in pairs(pendingItems) do
 					local itemName = GetItemInfo(pendingItemID);
-					if itemName then
+					if itemName ~= nil then
 						for i = 1, #lineIndex do
 							line = _G[tooltipName .. lineIndex[i]];
 							if line ~= nil then

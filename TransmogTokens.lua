@@ -165,7 +165,7 @@ TransmogTokens.showTierWindow = function()
 end
 
 TransmogTokens.createTierWindow = function()
-	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent);
+	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent, "BackdropTemplate");
 	frame:SetPoint("CENTER", 0, 0);
 
 	local backdrop = {

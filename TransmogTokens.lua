@@ -165,7 +165,7 @@ TransmogTokens.showTierWindow = function()
 end
 
 TransmogTokens.createTierWindow = function()
-	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent, "BackdropTemplate");
+	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent);
 	frame:SetPoint("CENTER", 0, 0);
 
 	local backdrop = {
@@ -494,6 +494,11 @@ TransmogTokens.getSource = function(itemLink)
 		return;
 	end
 
+    local source = select(2, C_TransmogCollection.GetItemInfo(itemLink))
+    if source then
+        return source
+    end
+
     local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
     local slots = t.INVENTORY_SLOTS[slotName];
 
@@ -506,10 +511,10 @@ TransmogTokens.getSource = function(itemLink)
 
 	for i, slot in pairs(slots) do
     	model:TryOn(itemLink, slot);
-		local source = model:GetSlotTransmogSources(slot);
+		local info = model:GetItemTransmogInfo(slot);
 
-		if source ~= 0 then
-			return source;
+		if info and info.appearanceID ~= nil and info.appearanceID ~= 0 then
+			return info.appearanceID;
 		end
 	end
 end

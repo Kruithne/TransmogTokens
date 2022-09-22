@@ -513,6 +513,7 @@ TransmogTokens.getSource = function(itemLink)
     	model:TryOn(itemLink, slot);
 		local info = model:GetItemTransmogInfo(slot);
 
+		-- The appearanceID property is misnamed and is actually the sourceID
 		if info and info.appearanceID ~= nil and info.appearanceID ~= 0 then
 			return info.appearanceID;
 		end

@@ -1,3 +1,6 @@
+** Version 1.5.0 **
+* Updated for Dragonflight (10.0)
+
 ** Version 1.4.9 **
 * Updated interface version for Battle for Azeroth (8.0)
 

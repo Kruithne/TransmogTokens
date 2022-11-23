@@ -165,7 +165,7 @@ TransmogTokens.showTierWindow = function()
 end
 
 TransmogTokens.createTierWindow = function()
-	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent, "BackdropTemplate");
+	local frame = CreateFrame("FRAME", "TransmogTokensFrame", UIParent);
 	frame:SetPoint("CENTER", 0, 0);
 
 	local backdrop = {
@@ -494,6 +494,11 @@ TransmogTokens.getSource = function(itemLink)
 		return;
 	end
 
+    local source = select(2, C_TransmogCollection.GetItemInfo(itemLink))
+    if source then
+        return source
+    end
+
     local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
     local slots = t.INVENTORY_SLOTS[slotName];
 
@@ -506,10 +511,11 @@ TransmogTokens.getSource = function(itemLink)
 
 	for i, slot in pairs(slots) do
     	model:TryOn(itemLink, slot);
-		local source = model:GetSlotTransmogSources(slot);
+		local info = model:GetItemTransmogInfo(slot);
 
-		if source ~= 0 then
-			return source;
+		-- The appearanceID property is misnamed and is actually the sourceID
+		if info and info.appearanceID ~= nil and info.appearanceID ~= 0 then
+			return info.appearanceID;
 		end
 	end
 end
@@ -681,20 +687,16 @@ TransmogTokens.addItemInfo = function(tooltip, itemID)
 	end
 end
 
-local function hookToTooltip(self)
-	local link = select(2, self:GetItem());
-	if link then
-		t.processTooltip(self, link);
+local function hookToTooltip(tooltip, data)	
+	if tooltip == GameTooltip then
+		local link = select(2, tooltip:GetItem());
+		if link then
+			t.processTooltip(tooltip, link);
+		end
 	end
 end
 
-GameTooltip:HookScript("OnTooltipSetItem", hookToTooltip);
-ItemRefTooltip:HookScript("OnTooltipSetItem", hookToTooltip);
-ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", hookToTooltip);
-ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", hookToTooltip);
-ShoppingTooltip1:HookScript("OnTooltipSetItem", hookToTooltip);
-ShoppingTooltip2:HookScript("OnTooltipSetItem", hookToTooltip);
-
+TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, hookToTooltip)
 
 local function onSetHyperlink(self, link)
 	local type, id = string.match(link, "^(%a+):(%d+)");
